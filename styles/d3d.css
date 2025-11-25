@@ -5,59 +5,31 @@
   text-align: center;      /* centers inline text */
   padding: 90px 20px;
   background:
-  /* 🌿 minty aqua glow (soft left tint) */
-  radial-gradient(circle at 20% 30%,
-    rgba(204,250,241,1) 0%,
-    rgba(204,250,241,0.7) 25%,
-    rgba(204,250,241,0.25) 45%,
-    transparent 70%),
-
-  /* 💜 lavender mist (adds cool depth top-right) */
-  radial-gradient(circle at 80% 20%,
-    rgba(230,219,255,1) 0%,
-    rgba(230,219,255,0.65) 22%,
-    rgba(230,219,255,0.22) 44%,
-    transparent 72%),
-
-  /* 💙 enhanced soft blue center haze — makes blue pop */
-  radial-gradient(circle at 50% 55%,
-    rgba(206,233,255,1) 0%,
-    rgba(206,233,255,0.75) 28%,
-    rgba(206,233,255,0.35) 50%,
-    transparent 75%),
-
-  /* 🩵 periwinkle blend bottom-left */
-  radial-gradient(circle at 15% 78%,
-    rgba(210,230,255,1) 0%,
-    rgba(210,230,255,0.65) 30%,
-    rgba(210,230,255,0.25) 55%,
-    transparent 78%),
-
-  /* ❄️ frosted turquoise accent (soft cool bridge mid-right) */
-  radial-gradient(circle at 65% 45%,
-    rgba(185,245,240,1) 0%,
-    rgba(185,245,240,0.45) 25%,
-    rgba(185,245,240,0.18) 50%,
-    transparent 75%),
-
-  /* 💠 mint-lavender bridge lower-right */
-  radial-gradient(circle at 75% 65%,
-    rgba(217,255,249,1) 0%,
-    rgba(217,255,249,0.6) 28%,
-    rgba(217,255,249,0.22) 50%,
-    transparent 78%);
+  /* top-left: soft sky-blue + hint of blush */
+  radial-gradient(circle at 12% 18%, #bae6fd 0%, #fbcfe8 40%, transparent 72%),
+  /* top-right: mint-aqua with gentle lemon warmth */
+  radial-gradient(circle at 85% 20%, #99f6e4 0%, #fef9c3 50%, transparent 75%),
+  /* middle-left: peach-lavender fusion for balance */
+  radial-gradient(circle at 28% 48%, #fed7aa 0%, #c4b5fd 50%, transparent 78%),
+  /* bottom-left: lemon + blush for gentle warmth */
+  radial-gradient(circle at 35% 80%, #fef9c3 0%, #fbcfe8 50%, transparent 80%),
+  /* bottom-right: mint-teal softened with pastel peach */
+  radial-gradient(circle at 75% 72%, #a7f3d0 0%, #fed7aa 45%, transparent 80%),
+  /* center: light sky-blue and peachy glow to unify */
+  radial-gradient(circle at 50% 50%, #bae6fd 0%, #fee2e2 40%, transparent 82%);
 }
 
 .label-box{
   display: inline-block; 
-  background-color: #f5f5f5;  
-  color: brown;               
+  background: rgba(255, 255, 255, 0.2);  
+  color: #5A2A00;               
   font-weight: bold;
   padding: 6px 14px;         
   border-radius: 20px;         
-  border: 2px solid brown;     
-  font-family: 'poppins';
+  border: 2px solid #5A2A00;     
+  font-family: 'nunito';
   margin-bottom: 8px;    /* spacing before tool boxes */
+  font-weight: 800;
 }
 
 .tool-section {
@@ -67,7 +39,6 @@
   align-items: center;   /* vertically center label + boxes */
   gap: 15px;             /* spacing between items */
   flex-wrap: wrap;       /* allow wrap if screen too small */
-
 }
 
 .tool-box-container {
@@ -78,37 +49,22 @@
 }
 
 .tool-box {
-  background: 
-  /* inner fill gradient */
-  linear-gradient(
-  135deg,
-  #f9c5d1,
-  #fdd0b3, 
-  #c3f5e6
-  ) padding-box,
-
-  /* outer border gradient */
-  linear-gradient(
-  135deg,
-  #FF0000,
-  #D100A6,  
-  #00838F  
-  ) border-box; 
-
+  background: rgba(255, 255, 255, 0.2);
   border: 1.75px solid transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: darkslategray;
+  color: #5A2A00;
+  border: 2px solid #5A2A00;
   border-radius: 20px;
   padding: 15px 20px;
   width: 85px;
   height: 85px;
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
-  font-family: 'poppins';
+  font-weight: 800;
+  font-family: 'nunito';
 }
 
 .tool-box:hover {
@@ -157,12 +113,12 @@ h4 {
   margin: 30px auto 10px;   /* space above & below */
   font-size: 22px;          /* slightly bigger than p */
   line-height: 1.4;
-  color: #5F4B8B;           /* purple accent (pairs with your scheme) */
-  font-family: 'Comic Neue';
-  font-weight: 900;         /* heavier for emphasis */
+  color: #5A2A00;          
+  font-family: 'Nunito';
+  font-weight: 800;      
   text-align: left;
-  padding: 0 10px;
-  border-bottom: 2px solid brown; /* optional underline for clarity */
+  padding: 5px 10px;
+  border-radius: 16px;
 }
 
 p {
@@ -171,9 +127,9 @@ p {
   margin: 0 auto 14px;   /* center + add spacing between paragraphs */
   font-size: 20px;
   line-height: 1.5;
-  color: goldenrod;
-  font-family: 'Comic Neue';
-  font-weight: 700;
+  color: #5A2A00;
+  font-family: 'Nunito';
+  font-weight: 500;
   text-align: left;
   padding: 0 10px;
 }
@@ -181,8 +137,8 @@ p {
 
 /* === Default link style (used for Google Docs, GitHub, etc.) === */
 a:not(.back-link):not(.topnav a) {
-  color: teal;
-  border-color: teal;
+  color: #5A2A00;
+  border-color: #5A2A00;
   font-family: 'Nunito';
   text-decoration: none;
   display: inline-flex;
@@ -190,20 +146,18 @@ a:not(.back-link):not(.topnav a) {
   font-size: 16px;
 }
 
-a:not(.back-link):not(.topnav a):hover {
-  background-color: teal;
+a:not(.topnav a):hover {
+  background: linear-gradient(to right, #FFD700, #FFC107);
 }
 
-/* Firebrick link (Back link) */
+/* Back link */
 .back-link {
   margin-top: 20px;
-  color: firebrick;
-  border-color: firebrick;
-  font-family: 'Outfit';
+  color: #008584;
+  border-color: white;
+  font-family: 'Nunito';
 }
-.back-link:hover {
-  background-color: firebrick;
-}
+
 
 /* === Pictures === */
 .gallery {
@@ -221,12 +175,6 @@ a:not(.back-link):not(.topnav a):hover {
   margin: 5px;
   border-radius: 8px; /* still keeps slight rounding */
   padding: 3px; /* spacing for border effect */
-  background: linear-gradient(
-    135deg,
-    #FFD700,   /* golden yellow */
-    #FF69B4,   /* hot pink */
-    #00BFFF    /* bright blue */
-  ) border-box;
 }
 
 img {
@@ -240,33 +188,37 @@ img {
 }
 
 /* === Gallery slideshow === */
+body.modal-open {
+  overflow: hidden;
+  height: 100vh;  /* ensures body doesn’t expand */
+}
+
 .modal {
   display: none;
   position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  inset: 0;
+  z-index: 9999;
+  isolation: isolate; /* optional, adds safety */
+  width: 100%;
   height: 100vh;
-  background: linear-gradient(
-    135deg, 
-    rgba(255, 223, 0, 0.3),   /* golden yellow */
-    rgba(255, 105, 180, 0.3), /* hot pink */
-    rgba(0, 191, 255, 0.3)    /* bright blue */
-  );
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
-  display: flex;
   padding: 20px;
-  flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;               /* ⬅ remove extra spacing */
 }
 
 /* Wrapper enforces the curve */
 .modal-img-wrapper {
   border-radius: 20px;
   overflow: hidden;          /* forces the clipping */
+  max-width: 70vw;    /* ✅ limit width to 90% of viewport */
+  max-height: 70vh;   /* ✅ limit height */
   max-width: 90vw;
   max-height: 80vh;
   margin: auto;
@@ -284,24 +236,37 @@ img {
   display: block;
 }
 
-.modal-label {
-  color: orange;
-  font-size: 18px;
-  margin-top: 16px;
-  text-align: center;
-  color: #00BFFF;
-  background: linear-gradient(
-  120deg,
-  #FFE680 20%,    /* pastel gold start */
-  #FFD1DC 40%,   /* pastel pink starts around 40% */
-  #FFBC80 70%    /* pastel orange ends around 70% */
-);
+/* Give modal a background for the frosted effect to blur */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  padding: 6px 12px;
+/* Gradient border wrapper */
+.modal-label-wrapper {
+  padding: 2px; /* border thickness */
   border-radius: 16px;
+  display: inline-block;
+  margin-top: 16px;
   z-index: 11;
-  position: static; 
-  font-family: 'comic neue';
+}
+
+/* Frosted label */
+.modal-label {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color: #5A2A00;
+  text-align: center;
+  display: inline-block;
 }
 
 .close {
@@ -342,7 +307,6 @@ img {
   display: inline-block;         /* shrink to video size only */
   padding: 6px;                  /* gradient thickness */
   border-radius: 16px;
-  background: linear-gradient(45deg, #ff7e5f, #feb47b);
   margin: 20px auto;             /* center horizontally */
 }
 

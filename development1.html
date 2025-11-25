@@ -26,7 +26,7 @@
 
   <section class="display">
 
-    <h2 class="h2-1 gtxt">JavaScript hobby website</h2>
+    <h2 class="h2">JavaScript hobby website</h2>
 
     <div class="tool-section">
       <div class="label-box">Languages Used:</div>
@@ -60,14 +60,10 @@
       Pug, etc) and view engines like EJS cannot be used. Only GET and POST methods can be used for this particular
       website.
       Bootstrap must be applied which CSS cannot be applied resulting in constraints of the webpage design.
-      I chose navbar to be yellow because it is my favourite colour. It consists of 5 pages which each page serving
+      Instead of the standard black navbar, I chose navbar to be yellow because it is my favourite colour. It consists
+      of 5 pages which each page serving
       different functionalities, its built using GET and POST methods with in-memory data.
     </p>
-
-
-    <div class="intro-box center">
-      Click on either image to view the webpages in detail.
-    </div>
 
     <div class="gallery">
       <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
@@ -91,13 +87,16 @@
         <img class="modal-content" id="modal-img" alt="Expanded view">
       </div>
 
-      <!-- Label below the image -->
-      <div class="modal-label" id="modal-label">Home Page</div>
+      <!-- Label with gradient border + frosted background -->
+      <div class="modal-label-wrapper">
+        <div class="modal-label" id="modal-label">Home Page</div>
+      </div>
 
       <!-- Navigation Arrows -->
       <div class="nav left" id="prev">&#10094;</div>
       <div class="nav right" id="next">&#10095;</div>
     </div>
+
 
     <a href="portfolio.html" class="back-link">← Go back to Portfolio</a>
 

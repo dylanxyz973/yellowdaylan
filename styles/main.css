@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 body,
 html {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: auto;
+  min-height: 100%;    
   overflow: auto; 
   cursor: none;
+  overflow-x: hidden; /* prevent horizontal scroll */
+  color: #5A2A00; /* dark brown text color */
 }
+
 
 /* Chrome, Edge, Safari, Opera */
 ::-webkit-scrollbar {
@@ -69,38 +68,22 @@ html {
 .answer-box,
 .detail-box,
 .modal-label {
-  font-family: 'comic neue';
+  font-family: 'Nunito';
   font-weight: 700;
 }
 
 /* === Used by about, portfolio, display work pages  === */ 
-.intro-box{
+.intro-box {
   display: inline-block !important;
   width: auto;                /* remove full width */
-  max-width: fit-content; /* ensures no extra space */
-
-  background: 
-  linear-gradient(135deg, 
-  #88FF66 5%,   /* softer green, slightly more saturated */
-  #FFEB66 30%,  /* pastel yellow with more warmth */
-  #FF7F66 95%   /* coral/red with enough saturation */
-  ) padding-box,
-
-  linear-gradient(90deg,
-  #FF6600 10%,   /* vibrant orange */
-  #9400D3 50%,   /* deep purple */
-  #1E90FF 90%    /* Dodger Blue */
-  ) border-box;
-
+  max-width: fit-content;    /* ensures no extra space */
   text-align: left; 
-  color: #9400D3; 
   font-family: 'Nunito';
   font-weight: 700; /* Extra Bold */
   font-weight: bold;
   font-size: 20px;
   border-radius: 20px;
   padding: 7px 9px;
-  border: 2px solid transparent;
   margin-bottom: 15px;
 }
 
@@ -116,38 +99,14 @@ html {
 }
 
 /* === H1 text stylings  === */ 
-.h1-box{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2000px;
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(8px);
-  padding: 8px 20px;
-  margin-bottom: 30px;
-}
-
-.gtxt { 
-  display: inline-block; 
-  -webkit-background-clip: text; 
-  background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  color: transparent;
-  background-position: center;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-h1.gtxt {
-  -webkit-text-stroke: 1px #FFFACD; /* pale warm outline */
-}
-
 h1 {
-  font-family: 'Caveat';
-  font-weight: 700;
+  font-family: 'Nunito';
+  font-weight: 900;
   font-size: 4rem; 
   text-align: center; 
   margin: 0; 
+  margin-bottom: 20px;
+  color: #7F2B0A;
 }
 
 .center-h1 {
@@ -157,21 +116,13 @@ h1 {
   width: 100%;
 }
 
-.h1-1 { background-image: linear-gradient(to right, #ff6f61, #ffb347, #ffd54f); } 
-.h1-2 { background-image: linear-gradient(to right, #42a5f5, #7e57c2, #ab47bc); } 
-.h1-3 { background-image: linear-gradient(to right,#ec407a, #ba68c8, #7e57c2); }
-
-
 h2 {
   font-size: 32px;
-  font-family: 'Rubik Doodle Shadow';
+  font-family: 'Nunito';
   text-align: center;
   margin: 0.5em 0 1em 0; /* top right bottom left */
+  color: #5A2A00;
 }
-
-.h2-1 { background-image: linear-gradient(90deg, #FFD27F 0%, #FF8AA8 100%); }
-.h2-2 { background-image: linear-gradient(90deg, #6A1B9A 0%, #FF8AA8 50%, #00BCD4 100% ); }
-
 
 /* === Nav Bar === */
 .topnav,
@@ -183,7 +134,7 @@ h2 {
 
 .topnav a,
 .dropdown-content a {
-  color: #ff2fa9; /* vivid pink core */
+  color: #008584; /* deep cyan */
   text-shadow:
     0 0 1px rgba(215,30,135,0.86),  /* richer magenta-ish hint (not the same as core) */
     0 0 14px rgba(0,200,255,0.50);  /* strong cyan outer glow for maximum separation */
