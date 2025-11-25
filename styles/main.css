@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: auto; 
+  cursor: none;
+}
+
+/* Chrome, Edge, Safari, Opera */
+::-webkit-scrollbar {
+  width: 10px; /* width of vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(18); /* gradient yellow track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FFD54F, #FFC107); /* gradient yellow thumb */
+  border-radius: 10px; /* rounded corners */
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.cursor-shape {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.6);
+}
+
+.portfolio-section,
+.home-section,
+.about-section,
+.certificate-section,
+.display {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center; /* ensures background image stays centered */
+  background-repeat: no-repeat; /* prevents background from repeating */
+  overflow-y: auto;  /* allows vertical scrolling if content overflows */
+}
+
+.arrow-text,
+.answer-box,
+.detail-box,
+.modal-label {
+  font-family: 'comic neue';
+  font-weight: 700;
+}
+
+/* === Used by about, portfolio, display work pages  === */ 
+.intro-box{
+  display: inline-block !important;
+  width: auto;                /* remove full width */
+  max-width: fit-content; /* ensures no extra space */
+
+  background: 
+  linear-gradient(135deg, 
+  #88FF66 5%,   /* softer green, slightly more saturated */
+  #FFEB66 30%,  /* pastel yellow with more warmth */
+  #FF7F66 95%   /* coral/red with enough saturation */
+  ) padding-box,
+
+  linear-gradient(90deg,
+  #FF6600 10%,   /* vibrant orange */
+  #9400D3 50%,   /* deep purple */
+  #1E90FF 90%    /* Dodger Blue */
+  ) border-box;
+
+  text-align: left; 
+  color: #9400D3; 
+  font-family: 'Nunito';
+  font-weight: 700; /* Extra Bold */
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 7px 9px;
+  border: 2px solid transparent;
+  margin-bottom: 15px;
+}
+
+/* === Used by portfolio page  === */ 
+.intro-box.center {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* === Used by about page  === */ 
+.intro-box.end {
+  margin-top: 30px;
+}
+
+/* === H1 text stylings  === */ 
+.h1-box{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2000px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  padding: 8px 20px;
+  margin-bottom: 30px;
+}
+
+.gtxt { 
+  display: inline-block; 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  color: transparent;
+  background-position: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+h1.gtxt {
+  -webkit-text-stroke: 1px #FFFACD; /* pale warm outline */
+}
+
+h1 {
+  font-family: 'Caveat';
+  font-weight: 700;
+  font-size: 4rem; 
+  text-align: center; 
+  margin: 0; 
+}
+
+.center-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.h1-1 { background-image: linear-gradient(to right, #ff6f61, #ffb347, #ffd54f); } 
+.h1-2 { background-image: linear-gradient(to right, #42a5f5, #7e57c2, #ab47bc); } 
+.h1-3 { background-image: linear-gradient(to right,#ec407a, #ba68c8, #7e57c2); }
+
+
+h2 {
+  font-size: 32px;
+  font-family: 'Rubik Doodle Shadow';
+  text-align: center;
+  margin: 0.5em 0 1em 0; /* top right bottom left */
+}
+
+.h2-1 { background-image: linear-gradient(90deg, #FFD27F 0%, #FF8AA8 100%); }
+.h2-2 { background-image: linear-gradient(90deg, #6A1B9A 0%, #FF8AA8 50%, #00BCD4 100% ); }
+
+
+/* === Nav Bar === */
+.topnav,
+.dropdown-content {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  z-index: 20;
+}
+
+.topnav a,
+.dropdown-content a {
+  color: #ff2fa9; /* vivid pink core */
+  text-shadow:
+    0 0 1px rgba(215,30,135,0.86),  /* richer magenta-ish hint (not the same as core) */
+    0 0 14px rgba(0,200,255,0.50);  /* strong cyan outer glow for maximum separation */
+  font-size: 19px;
+  text-decoration: none;
+  font-family: 'Rubik Doodle Shadow'; 
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}
+
+.topnav a.active,
+.topnav a:hover {
+  border-radius: 20px;
+}
+
+.topnav {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 4px 8px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.topnav a {
+  font-weight: bold;
+  padding: 8px 10px;
+}
+
+.topnav a.active {
+  color: #e65a2e; /* deeper burnt coral — still warm, but reduced brightness */
+  background-color: rgba(20, 90, 160, 0.12); /* cool transparent blue — clear contrast */
+  text-shadow:
+    0 0 4px rgba(255, 160, 120, 0.55),  /* gentle warm halo */
+    0 0 10px rgba(255, 220, 180, 0.35); /* diffuse soft glow */
+}
+
+.topnav a:hover,
+.dropdown-content a:hover {
+  color: #40e6ff; /* bright cyan — energetic but still balanced */
+  background-color: rgba(200, 70, 40, 0.20); /* warm translucent ember tone */
+  text-shadow:
+    0 0 6px rgba(120, 240, 255, 0.7),  /* full soft halo — main luminous glow */
+    0 0 14px rgba(180, 250, 255, 0.45); /* outer diffusion — smooth radiance */
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  overflow: visible; 
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  border-radius: 12px;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

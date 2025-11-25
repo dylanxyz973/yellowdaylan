@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Portfolio Page</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="home.html">WELCOME</a>
+    <a href="about.html">PROFILE</a>
+    <a href="#" class="active">WORKS</a>
+
+    <div class="dropdown">
+      <a href="#">CONNECT ▾</a>
+      <div class="dropdown-content">
+        <a href="mailto:23021395@myrp.edu.sg">Email</a>
+        <a href="https://linkedin.com/in/chin-ding-rui-dylan-0a8712276/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/dylanxyz973" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="portfolio-section">
+
+    <div class="h1-box">
+      <h1 class="h1-2 gtxt">THE CREATIONS</h1>
+    </div>
+
+    <div class="intro-box center">
+      Click a box to find out more about each work!
+    </div>
+
+    <div class="filter-buttons">
+      <button onclick="filterWorks('all', this)">All</button>
+      <button onclick="filterWorks('design', this)">Designer</button>
+      <button onclick="filterWorks('development', this)">Coder</button>
+    </div>
+
+    <div class="portfolio-box-container">
+
+      <div class="portfolio-box" data-category="design" data-link="design1.html">
+        <img src="pictures/page.png" alt="Brand Package" style="width:100%; border-radius:20px;">
+        <h2>Brand Package</h2>
+        <p>Graphic Design</p>
+      </div>
+
+      <div class="portfolio-box" data-category="design" data-link="design2.html">
+        <img src="pictures/wtjk.png" alt="App Prototype" style="width:100%; border-radius:20px;">
+        <h2>App Prototype</h2>
+        <p>UI/UX Design</p>
+      </div>
+
+      <div class="portfolio-box" data-category="development" data-link="development1.html">
+        <img src="pictures/onfire.png" alt="Hobby Page" style="width:100%; border-radius:20px;">
+        <h2>Hobby Page</h2>
+        <p>Web Development</p>
+      </div>
+
+      <div class="portfolio-box" data-category="development" data-link="development2.html">
+        <img src="pictures/fruits.jpg" alt="supermarket" style="width:100%; border-radius:20px;">
+        <h2>Supermarket</h2>
+        <p>Web Development</p>
+      </div>
+
+      <div class="portfolio-box" data-category="development" data-link="development3.html">
+        <img src="pictures/uni.png" alt="Unity Project" style="width:100%; border-radius:20px;">
+        <h2>Unity 3D</h2>
+        <p>VR Development</p>
+      </div>
+
+      <div class="portfolio-box" data-category="development" data-link="development4.html">
+        <img src="pictures/wtjk.png" alt="React" style="width:100%; border-radius:20px;">
+        <h2>React</h2>
+        <p>Mobile Development</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="custom-cursor">
+    <div class="cursor-shape"></div>
+  </div>
+
+  <script src="js/click.js"></script>
+  <script src="js/cursor.js"></script>
+
+</body>
+
+</html>

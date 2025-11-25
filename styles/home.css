@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+
+.home-section {
+  justify-content: flex-start;
+  justify-content: center; /* centers vertically */
+  align-items: center;     /* centers horizontally */
+  text-align: center;      /* centers inline text */
+  padding: 90px 20px 20px;
+   background-image:
+    /* magenta coral — center-left */
+    radial-gradient(circle at 22% 45%,
+      rgba(255, 40, 120, 0.95) 0%,
+      rgba(255, 40, 120, 0.60) 18%,
+      rgba(255, 40, 120, 0.12) 40%,
+      transparent 65%),
+
+    /* electric sky blue — top-right */
+    radial-gradient(circle at 82% 12%,
+      rgba(45, 200, 255, 0.95) 0%,
+      rgba(45, 200, 255, 0.55) 20%,
+      rgba(45, 200, 255, 0.10) 42%,
+      transparent 68%),
+
+    /* neon lemon — bottom-left */
+    radial-gradient(circle at 12% 88%,
+      rgba(255, 240, 50, 0.94) 0%,
+      rgba(255, 240, 50, 0.46) 16%,
+      rgba(255, 240, 50, 0.08) 36%,
+      transparent 60%),
+
+    /* mint teal — mid-right */
+    radial-gradient(circle at 68% 72%,
+      rgba(40, 255, 200, 0.90) 0%,
+      rgba(40, 255, 200, 0.40) 18%,
+      transparent 46%),
+
+    /* orange-punch — top-center */
+    radial-gradient(circle at 50% 8%,
+      rgba(255, 120, 30, 0.88) 0%,
+      rgba(255, 120, 30, 0.35) 18%,
+      transparent 42%),
+
+    /* luminous violet — bottom-right accent */
+    radial-gradient(circle at 88% 82%,
+      rgba(165, 95, 255, 0.92) 0%,
+      rgba(165, 95, 255, 0.38) 22%,
+      transparent 48%),
+
+    /* soft vertical shimmer to unify and add depth */
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));
+
+  /* preserve the vividness and make overlays luminous */
+  background-blend-mode: screen, screen, screen, screen, screen, screen, overlay;
+
+  /* large sizes so gradients are soft and not tightly cut off */
+  background-size: 160% 140%, 140% 120%, 150% 140%, 140% 130%, 120% 110%, 120% 120%, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* === Hero Bubble Wrapper === */
+.hero-bubble {
+  display: inline-block;
+  position: relative;
+  padding: 30px 60px;
+  background: radial-gradient(
+  circle at 35% 40%,
+  #ffdf66 0%,    /* softer yellow (smaller, subtler glow) */
+  #ffae42 25%,   /* warm amber-orange takes over early */
+  #e86b4f 55%,   /* coral red-orange transition */
+  #3a2a7a 100%   /* deep twilight violet */
+);
+
+  border: 4px solid black; /* cool comic ink outline */
+  border-radius: 35% 45% 50% 40% / 40% 55% 35% 50%;
+  box-shadow:
+  4px 4px 0 #f44336,   /* true comic red */
+  -4px -4px 0 #00e5ff; /* bright cyan highlight */
+
+}
+
+/* === Hero Content Layout === */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Logo */
+.hero-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Title */
+.hero-title {
+  font-family: 'Bangers';
+  letter-spacing: 2px;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+  font-style: italic;
+  color: #ffeb3b; /* title yellow */
+  text-shadow:
+    2px 2px 0 #000,    /* black outline for depth */
+    4px 4px 0 #fff;  /* neon cyan offset for punch */
+}
+
+/* Subtitle */
+.hero-subtitle {
+  font-family: 'Luckiest Guy';
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 1px; /* slight spacing for clarity */
+  color: #b8faff; /* bright aqua-mint — readable on warm zones */
+  text-shadow:
+    1.5px 1.5px 0 #bf360c, /* burnt orange inner outline for warmth contrast */
+    2.5px 2.5px 0 #311b92; /* cool purple offset for depth */
+}
+
+/* Hero Quote Box */
+.hero-quote-box {
+  position: relative;
+  border-radius: 24px;
+  padding: 50px 40px 40px 60px; /* extra left padding for quote mark */
+  margin: 40px auto;
+  max-width: 900px;
+  border: 2px solid transparent;
+  text-align: left;
+  quotes: "“" "”"; /* CSS quote marks */
+  background: linear-gradient(to bottom, #fff9f3 0%, #e6dfd7 100%);
+  box-shadow:
+    inset 0 3px 0 rgba(255, 255, 255, 1),      /* bright top edge */
+    inset 0 -3px 0 rgba(0, 0, 0, 0.25),        /* darker bottom edge */
+    inset 3px 0 0 rgba(255, 255, 255, 0.3),    /* left side light */
+    inset -3px 0 0 rgba(0, 0, 0, 0.15);        /* right side depth */
+}
+
+/* Decorative quotation mark */
+.hero-quote-box::before {
+  content: open-quote;
+  font-size: 80px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: rgba(124, 27, 124, 0.2); /* subtle background quote */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+
+
+/* Quote text */
+.hero-quote-box .quote-text {
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.4;
+  background: linear-gradient(90deg,
+  #FF3B3B 0%,    /* bright red */
+  #FF6600 20%,   /* vibrant orange */
+  #FFD700 40%,   /* vivid yellow */
+  #00CC66 60%,   /* bright green */
+  #3399FF 80%,   /* medium-bright blue */
+  #9933CC 100%   /* rich purple */
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+/* Emphasis span inside quote */
+.hero-quote-box .quote-text span {
+  display: block;
+  margin-top: 12px;
+  font-size: 22px;
+  font-style: italic;
+  color: #fefae0; 
+}
+
+/* Author attribution */
+.hero-quote-box .quote-author {
+  text-align: right;
+  margin-top: 1em;
+  font-style: italic;
+  color: #555; 
+  font-weight: bold;
+}
+
+/* Note box intro */
+.warm-code-block {
+  display: block;
+  text-align: left !important;
+  width: min(880px, 95%);
+  border-radius: 12px;
+  font-family: 'JetBrains Mono';
+  white-space: pre; /* preserves spacing and indentation */
+  overflow-x: auto;
+  font-size: 14px;               /* ~ equivalent to 10pt in IDLE */
+  line-height: 1.6;              /* same vertical rhythm as IDLE */
+  letter-spacing: 0.2px;         /* subtle text separation */
+  padding: 6px 18px;             /* matches the margins around IDLE’s text area */
+  border-radius: 10px;
+  background: #1e1e1e;
+  box-shadow:
+    inset 0 3px 0 rgba(255, 255, 255, 0.15),  /* strong top light edge */
+    inset 0 -3px 0 rgba(0, 0, 0, 0.9),        /* strong bottom dark edge */
+    inset 3px 0 0 rgba(255, 255, 255, 0.05),  /* left bevel light */
+    inset -3px 0 0 rgba(0, 0, 0, 0.8);        /* right bevel dark */
+}
+
+
+.warm-code-block code {
+  display: block;
+  padding-bottom: 12px; /* subtle balance for bottom */
+}
+
+/* syntax highlighting */
+.warm-code-block .comment  { color: #6a9955; font-style: italic; }
+.warm-code-block .keyword  { color: #569cd6; font-weight: 600; }
+.warm-code-block .string   { color: #d69d85; }
+.warm-code-block .function { color: #dcdcaa; }
+.warm-code-block .var      { color: #9cdcfe; }
+.warm-code-block .value    { color: #b5cea8; }
+.warm-code-block .operator { color: #d4d4d4; }
+
+/* link styling */
+.warm-code-block a {
+  color: #c586c0;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline;      /* ensures it stays on same line */
+  white-space: normal;  /* allows natural wrapping if needed */
+}
+
+.warm-code-block a:hover { color: #9a4d9a; }
+
+
+
+

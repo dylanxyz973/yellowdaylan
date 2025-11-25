@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hobby Website</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/d3d.css">
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="home.html">WELCOME</a>
+    <a href="about.html">PROFILE</a>
+    <a href="portfolio.html">WORKS</a>
+
+    <div class="dropdown">
+      <a href="#">CONNECT ▾</a>
+      <div class="dropdown-content">
+        <a href="mailto:23021395@myrp.edu.sg">Email</a>
+        <a href="https://linkedin.com/in/chin-ding-rui-dylan-0a8712276/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/dylanxyz973" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="display">
+
+    <h2 class="h2-1 gtxt">JavaScript hobby website</h2>
+
+    <div class="tool-section">
+      <div class="label-box">Languages Used:</div>
+      <div class="tool-box">
+        <img src="pictures/js.webp" alt="JavaScript">
+        <div>JavaScript</div>
+      </div>
+      <div class="tool-box">
+        <img src="pictures/bo.png" alt="Bootstrap">
+        <div>Bootstrap</div>
+      </div>
+    </div>
+
+    <h4>Objectives:</h4>
+
+    <p>To create an simple hobby website as part of mini project by applying knowledge of web
+      development by building a fully functional Node.js Express web application. This project requires the ability
+      to handle routing, form submission, and display of information using only GET and POST
+      methods with in-memory data</p>
+
+    <h4>Functionalites:</h4>
+
+    <p>- Adding, editing, and deleting the drawings.</p>
+    <p>- Separate detail page to view context description of drawings.</p>
+    <p>- Browser warning delete prompt pop up to confirm deletion. </p>
+
+    <h4>Building process:</h4>
+
+    <p>
+      Based on technical rules, only node.js and express.js can be used. Databases, REST APIs, or templates (E.g. EJS,
+      Pug, etc) and view engines like EJS cannot be used. Only GET and POST methods can be used for this particular
+      website.
+      Bootstrap must be applied which CSS cannot be applied resulting in constraints of the webpage design.
+      I chose navbar to be yellow because it is my favourite colour. It consists of 5 pages which each page serving
+      different functionalities, its built using GET and POST methods with in-memory data.
+    </p>
+
+
+    <div class="intro-box center">
+      Click on either image to view the webpages in detail.
+    </div>
+
+    <div class="gallery">
+      <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
+        data-label="Home Page">
+      <img src="pictures/list.png" class="gallery-item" alt="Very cute" data-src="pictures/list.png"
+        data-label="List Page">
+      <img src="pictures/det.png" class="gallery-item" alt="description" data-src="pictures/det.png"
+        data-label="Details Page">
+      <img src="pictures/del.png" class="gallery-item" alt="Prompt appearing" data-src="pictures/del.png"
+        data-label="Delete Prompt">
+      <img src="pictures/edit.png" class="gallery-item" alt="Edit Page" data-src="pictures/edit.png"
+        data-label="Edit Page">
+      <img src="pictures/add.png" class="gallery-item" alt="Add Page" data-src="pictures/add.png" data-label="Add Page">
+    </div>
+
+    <div class="modal" id="modal">
+      <span class="close" id="modalClose">&times;</span>
+
+      <!-- Modal Image -->
+      <div class="modal-img-wrapper">
+        <img class="modal-content" id="modal-img" alt="Expanded view">
+      </div>
+
+      <!-- Label below the image -->
+      <div class="modal-label" id="modal-label">Home Page</div>
+
+      <!-- Navigation Arrows -->
+      <div class="nav left" id="prev">&#10094;</div>
+      <div class="nav right" id="next">&#10095;</div>
+    </div>
+
+    <a href="portfolio.html" class="back-link">← Go back to Portfolio</a>
+
+  </section>
+
+  <div class="custom-cursor">
+    <div class="cursor-shape"></div>
+  </div>
+
+  <script src="js/cursor.js"></script>
+  <script src="js/gallery.js"></script>
+
+</body>
+
+</html>

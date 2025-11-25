@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap');
+
+/* Portfolio Section */
+.portfolio-section {
+  justify-content: flex-start;  
+  align-items: center;        
+  text-align: center;          
+  padding: 90px 20px 20px; 
+  background:
+  /* 🍊 vivid orange top-left (replaces apricot, warmer punch but controlled) */
+  radial-gradient(at -10% 28%, #FF983F 0%, #FFB35Ccc 20%, #FFD09966 38%, transparent 55%), 
+  
+  /* 🌿 mint right */
+  radial-gradient(at 110% 25%, #A5E6C3 0%, #A5E6C3cc 20%, #A5E6C355 38%, transparent 55%), 
+  
+  /* 🔴 mellow coral red bottom-left (softer, smoother transition) */
+  radial-gradient(at 18% 105%, #F68F7A 0%, #F68F7Acc 22%, #F9A08A88 40%, transparent 55%), 
+  
+  /* 🟠 peachy orange bottom-center */
+  radial-gradient(at 45% 105%, #FFBC9A 0%, #FFBC9Acc 20%, transparent 42%), 
+  
+  /* 🌸 brighter coral bridge (center warmth boost, brightens middle) */
+  radial-gradient(at 30% 102%, #FFB49Dcc 0%, #FFB49Daa 26%, transparent 50%),  
+  
+  /* 🔵 sky blue bottom-right */
+  radial-gradient(at 90% 100%, #90C9FF 0%, #90C9FFcc 20%, transparent 42%), 
+  
+  /* 🟢 teal bottom-right */
+  radial-gradient(at 70% 105%, #7CEAD2 0%, #7CEAD2cc 20%, transparent 42%), 
+  
+  /* 🌊 aqua bridge */
+  radial-gradient(at 82% 103%, #6FD8DDcc 0%, #6FD8DDaa 24%, transparent 50%), 
+  
+  /* 💛 brightened yellow bridge (adds subtle sunlight center glow) */
+  radial-gradient(at 58% 98%, #FFFED9ff 0%, #FFFBD9dd 30%, #FFF7B8bb 45%, transparent 60%), 
+  
+  /* 🌟 orange haze top-left (kept for warmth continuity) */
+  radial-gradient(at 26% 12%, #FFE6A3 0%, #FFD166cc 20%, #FFD16655 38%, transparent 55%),     
+  
+  /* 🌿 mint haze top-right */
+  radial-gradient(at 74% 8%, #C4F1D7 0%, #9BE3B6cc 20%, #9BE3B655 38%, transparent 55%), 
+  
+  /* 🟠 faint orange wash mid-left */
+  radial-gradient(at 6% 52%, #FFD5B3bb 0%, #FFD5B388 25%, transparent 48%), 
+  
+  /* 🌿 faint mint wash mid-right */
+  radial-gradient(at 96% 50%, #B7F2D8bb 0%, #B7F2D888 25%, transparent 48%);
+}
+
+.portfolio-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* === Portfolio Boxes === */
+.portfolio-box { 
+  background: 
+
+  /* inner fill gradient */
+  linear-gradient(
+  135deg,
+  #DFFF33 16% ,   /* yellowish-green */
+  #7FDBB8 36%,    /* Pastel Teal */
+  #0097A7 66%,   /* turquoise */
+  #FFB300 70%    /* golden yellow */
+  ) padding-box, 
+
+  /* outer border gradient */
+  linear-gradient(
+  135deg,
+  #FF0000,
+  #D100A6,  
+  #00838F  
+  ) border-box; 
+
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 15px 20px 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.portfolio-box h2 {
+  margin: 10px 0 5px;
+  font-size: 24px;
+  color: transparent;
+  background: linear-gradient(90deg, 
+  #FFFDD0 50%, 
+  #FFFACD 50%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Rubik';
+  font-weight: 700; 
+  -webkit-text-stroke: 0.65px #8B008B;
+}
+
+.portfolio-box p {
+  margin: 0px 0px 4px; /* Reduced gap between h2 and p*/
+  font-size: 17px;
+  color: transparent;
+  background: linear-gradient(90deg, 
+  #FFFDD0 50%, 
+  #FFFACD 50%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Rubik';
+  font-weight: 700; 
+  -webkit-text-stroke: 0.65px #8B008B;
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+
+  /* gradient border on the image */
+  border: 1.75px solid transparent;
+  border-radius: 20px;
+  background:
+    linear-gradient(#fff, #fff) padding-box,           
+    linear-gradient(135deg, #FF0000, #D100A6,#00838F ) border-box;
+  display: block;
+}
+
+/* hover effect */
+.portfolio-box:hover {
+  background:
+  linear-gradient(
+  135deg,
+  #9999CB 19%,  /* Crayola bluebell */
+  #62A6D1 45%,   /* Sky Blue */
+  #FFA94D 48%,   /* Warm pastel orange */
+  #FF6F00 84%   /* Strong Orange */
+  ) padding-box,
+
+  /* new outer border gradient */
+  linear-gradient(135deg,
+  #4A00E0,   /* deep electric violet */
+  #3BA55C,    /* leafy green */
+  #008B8B   /* deep teal */
+  ) border-box;
+
+  transform: scale(1.03); 
+}
+
+.portfolio-box:hover img {
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #4A00E0, #3BA55C,#008B8B) border-box;
+}
+
+.portfolio-box:hover h2,
+.portfolio-box:hover p {
+  color: #007FFF; 
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-stroke: 0; 
+}
+
+/* === Filter Buttons === */
+.filter-buttons {
+  text-align: center;
+}
+
+.filter-buttons button {
+  font-size: 22px;
+  padding: 8px 18px;
+  margin: 10px;  /* Space between buttons */
+  background: linear-gradient(to right, #E6FF33, #BFFF33);
+  color: #3399FF;
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'manrope';
+  border: 2px solid #996666;
+}
+
+/* Hover only for non-active buttons */
+.filter-buttons button:hover:not(.active) {
+  background: linear-gradient(to right, #FF7A7A, #FF6961);
+  color: #FFFFFF;
+  border: 2px solid #33CCCC;
+}
+
+.filter-buttons button.active {  
+  background: linear-gradient(to right, #FFD700, #FFC107); 
+  color: #E30B5C;
+  border: 2px solid #996666; 
+}
+

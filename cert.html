@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Certifcates</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/certs.css">
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="home.html">WELCOME</a>
+    <a href="about.html">PROFILE</a>
+    <a href="portfolio.html">WORKS</a>
+
+    <div class="dropdown">
+      <a href="#">CONNECT ▾</a>
+      <div class="dropdown-content">
+        <a href="mailto:23021395@myrp.edu.sg">Email</a>
+        <a href="https://linkedin.com/in/chin-ding-rui-dylan-0a8712276/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/dylanxyz973" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="certificate-section">
+
+    <ul class="cert-list">
+      <p>Here are some HackerRank certifications which do not represent my skills but shows that I have learn these appplications on the basic skill level:</p>
+      <li>
+        <span>Certificate 1 – Problem Solving</span>
+        <button class="view-btn" onclick="openModal('certificates/problem solving.pdf')">View</button>
+      </li>
+      <li>
+        <span>Certificate 2 - Python </span>
+        <button class="view-btn" onclick="openModal('certificates/python.pdf')">View</button>
+      </li>
+      <li>
+        <span>Certificate 3 – CSS</span>
+        <button class="view-btn" onclick="openModal('certificates/css.pdf')">View</button>
+      </li>
+       <li>
+        <span>Certificate 4 – SQL Database</span>
+        <button class="view-btn" onclick="openModal('certificates/sql.pdf')">View</button>
+      </li>
+      <li>
+        <span>Certificate 5 – Javascript</span>
+        <button class="view-btn" onclick="openModal('certificates/javascript.pdf')">View</button>
+      </li>
+       <li>
+        <span>Certificate 6 – NodeJS</span>
+        <button class="view-btn" onclick="openModal('certificates/nodejs.pdf')">View</button>
+      </li>
+    </ul>
+
+    <!-- Modal -->
+    <div id="pdfModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+
+    <script src="js/cert.js"></script>
+
+  </section>
+
+</body>
+
+</html>
