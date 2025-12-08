@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Agency Website</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/d3d.css">
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="home.html">WELCOME</a>
+        <a href="about.html">PROFILE</a>
+        <a href="portfolio.html">WORKS</a>
+
+        <div class="dropdown">
+            <a href="#">CONNECT ▾</a>
+            <div class="dropdown-content">
+                <a href="mailto:23021395@myrp.edu.sg">Email</a>
+                <a href="https://linkedin.com/in/chin-ding-rui-dylan-0a8712276/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/dylanxyz973" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="display">
+
+        <div class="tool-section">
+            <div class="label-box">Languages Used:</div>
+            <div class="tool-box-container">
+                <div class="tool-box">
+                    <img src="pictures/js.webp" alt="EJS">
+                    <div>EJS</div>
+                </div>
+                <div class="tool-box">
+                    <img src="pictures/css.svg" alt="CSS">
+                    <div>CSS</div>
+                </div>
+            </div>
+        </div>
+
+        <h4>Objectives:</h4>
+
+        <p>
+            Application of React Native skills to buiild a list task management protoype mobile app , 
+            MyTaskApp which is a list task management app built using React Native based on a Expo GO ecosystem.
+            This will need to utilise the creation of task screens with Create, Read, Update and Delete (CRUD) operations.
+        </p>
+
+        <h4>Functionalites:</h4>
+
+        <p>
+          1. Task List Screen
+        When no tasks are available, it will display a message on the screen.
+        Each task card shows the task title, description, due date, and its completion status.
+        Tapping on the card toggles its completion state—turning the title to a strike-through with a status completed
+        The card also has a:
+        •	Edit button
+        •	Delete icon with a confirmation alert
+        At the bottom of the screen, there are two main buttons:
+        •	Add Task
+        •	Overall Summary which shows a popup summarising total number of tasks , how many completed and incompleted tasks with the result in percentage form.
+
+        2. Add Task Screen
+        This screen allows users to create new tasks with these fields:
+        •	Title
+        •	Description
+        •  	Due date
+        •	Additional details which are optional
+
+        3. Edit Task Screen
+        Upon clicking the edit button in the card, user can update any existing task. The fields are pre-filled with the current information retrieved from any existing information written in the card .
+        Behind the Scenes: Data Handling
+        All tasks are stored in a central context called TaskContext.
+        This ensures that adding, editing, deleting, and toggling tasks works from across all screens in the app.
+
+        4.
+        This screen displays all information about the selected task in a clean layout:
+        title, description, due date, details, and completion status.
+        
+        5.
+        There is a search bar, which filters tasks instantly based on title or description.
+        A more details which users can click on it to view details of the tasks which users are directed to a screen called TaskDetails. Details are not shown on Task Cards.
+        
+        4.
+        This screen displays all information about the selected task in a clean layout:
+        title, description, due date, details, and completion status.
+
+        </p>
+
+        <h4>Building process:</h4>
+
+        <p>
+            Completed within a timeline of 2 days, Style
+            Throughout the app, I use:
+            •	Light Pastel Rainbow Gradient backgrounds and Vibrant Pastel Rainbow Gradient Cards to help energise users.
+            •	Golden and bronze tones for text and borders
+            •	Silver Rose Navigation header 
+            •	Transparent input bars and rounded corners for a refreshing look.
+            This design aims to make the task app both functional and visually appealing giving a sense of vibrancy and elegance with a touch of premium app feel
+
+            Watch the video to see how the website works! 
+        </p>
+
+        <!-- Simple link with GitHub logo -->
+        <a href="https://github.com/dylanxyz973/SupermarketWebsite" target="_blank" rel="noopener"
+            class="external-link">
+            <!-- GitHub logo SVG -->
+            <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" class="github-logo">
+                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
+    2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49
+    -2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+    -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 
+    1.87.87 2.33.66.07-.52.28-.87.51-1.07
+    -1.78-.2-3.64-.89-3.64-3.95 
+    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+    0 0 .67-.21 2.2.82a7.68 7.68 0 0 1 2-.27
+    c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 
+    2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
+    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+            View on GitHub
+        </a>
+
+        <a href="portfolio.html" class="back-link">← Back to Works</a>
+
+    </section>
+
+    <div class="custom-cursor">
+        <div class="cursor-shape"></div>
+    </div>
+
+    <script src="js/cursor.js"></script>
+    <script src="gallery.js"></script>
+
+</body>
+
+</html>

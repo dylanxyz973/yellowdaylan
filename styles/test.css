@@ -1,0 +1,75 @@
+/* top-left: soft sky-blue + hint of blush */
+  radial-gradient(circle at 12% 18%, #bae6fd 0%, #fbcfe8 40%, transparent 72%),
+  /* top-right: mint-aqua with gentle lemon warmth */
+  radial-gradient(circle at 85% 20%, #99f6e4 0%, #fef9c3 50%, transparent 75%),
+  /* middle-left: peach-lavender fusion for balance */
+  radial-gradient(circle at 28% 48%, #fed7aa 0%, #c4b5fd 50%, transparent 78%),
+  /* bottom-left: lemon + blush for gentle warmth */
+  radial-gradient(circle at 35% 80%, #fef9c3 0%, #fbcfe8 50%, transparent 80%),
+  /* bottom-right: mint-teal softened with pastel peach */
+  radial-gradient(circle at 75% 72%, #a7f3d0 0%, #fed7aa 45%, transparent 80%),
+  /* center: light sky-blue and peachy glow to unify */
+  radial-gradient(circle at 50% 50%, #bae6fd 0%, #fee2e2 40%, transparent 82%);
+
+  background: radial-gradient(circle,
+  #FFD6E8,   /* pastel pink   */
+  #FFEFD5,   /* pastel peach  */
+  #FFFDD0,   /* pastel yellow */
+  #DFFFE0,   /* pastel mint   */
+  #D6EEFF,   /* pastel blue   */
+  #E7D6FF    /* pastel lavender */
+
+    background-image:
+  /* Magenta coral — center-left (softened a bit) */
+  radial-gradient(circle at 22% 46%,
+    rgba(255, 40, 120, 0.88) 0%,
+    rgba(255, 40, 120, 0.46) 18%,
+    rgba(255, 40, 120, 0.10) 40%,
+    transparent 65%),
+
+  /* Electric sky blue — top-right (stronger presence) */
+  radial-gradient(circle at 82% 14%,
+    rgba(45, 200, 255, 0.92) 0%,
+    rgba(45, 200, 255, 0.72) 16%,
+    rgba(45, 200, 255, 0.30) 36%,
+    transparent 65%),
+
+  /* Neon lemon — bottom-left (warmer yellow edge, not overblown) */
+  radial-gradient(circle at 14% 88%,
+    rgba(255, 240, 80, 0.90) 0%,
+    rgba(255, 235, 60, 0.50) 20%,
+    rgba(255, 230, 50, 0.18) 38%,
+    transparent 64%),
+
+  /* Mint teal — mid-right (slightly brighter and higher) */
+  radial-gradient(circle at 72% 68%,
+    rgba(40, 255, 200, 0.82) 0%,
+    rgba(40, 255, 200, 0.48) 22%,
+    rgba(40, 255, 200, 0.16) 40%,
+    transparent 60%),
+
+  /* Orange punch — top-center (keep it hot but less flattening) */
+  radial-gradient(circle at 50% 12%,
+    rgba(255, 140, 40, 0.86) 0%,
+    rgba(255, 130, 35, 0.44) 20%,
+    transparent 46%),
+
+  /* Violet accent — bottom-right (brighter, cooler anchor) */
+  radial-gradient(circle at 88% 82%,
+    rgba(165, 95, 255, 0.85) 0%,
+    rgba(165, 95, 255, 0.45) 18%,
+    rgba(165, 95, 255, 0.18) 40%,
+    transparent 52%),
+
+  /* Soft vertical shimmer to unify and add depth */
+  linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.14));
+
+background-blend-mode: screen, screen, screen, screen, screen, screen, overlay;
+
+background-size:
+  160% 140%, 140% 120%, 150% 140%, 140% 130%, 120% 110%, 120% 120%, cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+filter: saturate(1.25) contrast(1.08) brightness(1.06);
+);

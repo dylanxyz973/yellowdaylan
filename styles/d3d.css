@@ -4,19 +4,56 @@
   align-items: center;     /* centers horizontally */
   text-align: center;      /* centers inline text */
   padding: 90px 20px;
-  background:
-  /* top-left: soft sky-blue + hint of blush */
-  radial-gradient(circle at 12% 18%, #bae6fd 0%, #fbcfe8 40%, transparent 72%),
-  /* top-right: mint-aqua with gentle lemon warmth */
-  radial-gradient(circle at 85% 20%, #99f6e4 0%, #fef9c3 50%, transparent 75%),
-  /* middle-left: peach-lavender fusion for balance */
-  radial-gradient(circle at 28% 48%, #fed7aa 0%, #c4b5fd 50%, transparent 78%),
-  /* bottom-left: lemon + blush for gentle warmth */
-  radial-gradient(circle at 35% 80%, #fef9c3 0%, #fbcfe8 50%, transparent 80%),
-  /* bottom-right: mint-teal softened with pastel peach */
-  radial-gradient(circle at 75% 72%, #a7f3d0 0%, #fed7aa 45%, transparent 80%),
-  /* center: light sky-blue and peachy glow to unify */
-  radial-gradient(circle at 50% 50%, #bae6fd 0%, #fee2e2 40%, transparent 82%);
+  background-image:
+    /* magenta coral — center-left */
+    radial-gradient(circle at 22% 45%,
+      rgba(255, 40, 120, 0.95) 0%,
+      rgba(255, 40, 120, 0.60) 18%,
+      rgba(255, 40, 120, 0.12) 40%,
+      transparent 65%),
+
+    /* electric sky blue — top-right */
+    radial-gradient(circle at 82% 12%,
+      rgba(45, 200, 255, 0.95) 0%,
+      rgba(45, 200, 255, 0.55) 20%,
+      rgba(45, 200, 255, 0.10) 42%,
+      transparent 68%),
+
+    /* neon lemon — bottom-left */
+    radial-gradient(circle at 12% 88%,
+      rgba(255, 240, 50, 0.94) 0%,
+      rgba(255, 240, 50, 0.46) 16%,
+      rgba(255, 240, 50, 0.08) 36%,
+      transparent 60%),
+
+    /* mint teal — mid-right */
+    radial-gradient(circle at 68% 72%,
+      rgba(40, 255, 200, 0.90) 0%,
+      rgba(40, 255, 200, 0.40) 18%,
+      transparent 46%),
+
+    /* orange-punch — top-center */
+    radial-gradient(circle at 50% 8%,
+      rgba(255, 120, 30, 0.88) 0%,
+      rgba(255, 120, 30, 0.35) 18%,
+      transparent 42%),
+
+    /* luminous violet — bottom-right accent */
+    radial-gradient(circle at 88% 82%,
+      rgba(165, 95, 255, 0.92) 0%,
+      rgba(165, 95, 255, 0.38) 22%,
+      transparent 48%),
+
+    /* soft vertical shimmer to unify and add depth */
+    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));
+
+  /* preserve the vividness and make overlays luminous */
+  background-blend-mode: screen, screen, screen, screen, screen, screen, overlay;
+
+  /* large sizes so gradients are soft and not tightly cut off */
+  background-size: 160% 140%, 140% 120%, 150% 140%, 140% 130%, 120% 110%, 120% 120%, cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .label-box{
@@ -28,7 +65,7 @@
   border-radius: 20px;         
   border: 2px solid #5A2A00;     
   font-family: 'nunito';
-  margin-bottom: 8px;    /* spacing before tool boxes */
+  margin-bottom: 8px; 
   font-weight: 800;
 }
 
@@ -36,9 +73,9 @@
   margin: 30px 0;
   text-align: left;
   display: flex;
-  align-items: center;   /* vertically center label + boxes */
-  gap: 15px;             /* spacing between items */
-  flex-wrap: wrap;       /* allow wrap if screen too small */
+  align-items: center;  
+  gap: 15px;           
+  flex-wrap: wrap;       
 }
 
 .tool-box-container {
@@ -77,12 +114,10 @@
   object-fit: contain;
   display: block;
   margin-bottom: 8px;
-  /* force icons to visually align vertically */
   align-self: center;
   flex-shrink: 0;
 }
 
-/* 👇 make text sit at same baseline */
 .tool-box div {
   margin-top: auto;
   text-align: center;
@@ -92,11 +127,10 @@
 .box-group {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* spacing between label and boxes */
+  gap: 10px; 
   margin-top: 30px;
 }
 
-/* Shared style for both links */
 a:not(.topnav a) {
   display: inline-block;
   font-weight: bold;
@@ -110,10 +144,10 @@ a:not(.topnav a) {
 h4 {
   width: 90%;
   max-width: 800px;
-  margin: 30px auto 10px;   /* space above & below */
-  font-size: 22px;          /* slightly bigger than p */
+  margin: 30px auto 10px; 
+  font-size: 22px;          
   line-height: 1.4;
-  color: #5A2A00;          
+  color: #7B3F00;         
   font-family: 'Nunito';
   font-weight: 800;      
   text-align: left;
@@ -124,21 +158,20 @@ h4 {
 p {
   width: 90%;
   max-width: 800px;
-  margin: 0 auto 14px;   /* center + add spacing between paragraphs */
+  margin: 0 auto 14px;  
   font-size: 20px;
   line-height: 1.5;
-  color: #5A2A00;
+  color: #7B3F00;
   font-family: 'Nunito';
   font-weight: 500;
   text-align: left;
   padding: 0 10px;
 }
 
-
 /* === Default link style (used for Google Docs, GitHub, etc.) === */
 a:not(.back-link):not(.topnav a) {
-  color: #5A2A00;
-  border-color: #5A2A00;
+  color: #7B3F00;
+  border-color: #7B3F00;
   font-family: 'Nunito';
   text-decoration: none;
   display: inline-flex;
