@@ -106,7 +106,7 @@ h1 {
   text-align: center; 
   margin: 0; 
   margin-bottom: 20px;
-  color: #7F2B0A;
+  color: #D4E8FF;
 }
 
 .center-h1 {
@@ -134,7 +134,7 @@ h2 {
 
 .topnav a,
 .dropdown-content a {
-  color: #7F2B0A; 
+  color: #D4E8FF; 
   text-shadow:
     0 0 1px rgba(215,30,135,0.86),  /* richer magenta-ish hint (not the same as core) */
     0 0 14px rgba(0,200,255,0.50);  /* strong cyan outer glow for maximum separation */
@@ -169,7 +169,7 @@ h2 {
 }
 
 .topnav a.active {
-  color: #e65a2e; /* deeper burnt coral — still warm, but reduced brightness */
+  color: #40e6ff;
   background-color: rgba(20, 90, 160, 0.12); /* cool transparent blue — clear contrast */
   text-shadow:
     0 0 4px rgba(255, 160, 120, 0.55),  /* gentle warm halo */
@@ -178,7 +178,7 @@ h2 {
 
 .topnav a:hover,
 .dropdown-content a:hover {
-  color: #40e6ff; /* bright cyan — energetic but still balanced */
+  color: #F5D0FF; 
   background-color: rgba(200, 70, 40, 0.20); /* warm translucent ember tone */
   text-shadow:
     0 0 6px rgba(120, 240, 255, 0.7),  /* full soft halo — main luminous glow */

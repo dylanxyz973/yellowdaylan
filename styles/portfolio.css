@@ -5,7 +5,7 @@
 /* === Portfolio Section === */
 .portfolio-section {
   text-align: center;
-  padding: 60px 40px; 
+  padding: 100px 40px 60px; 
   background-image: url(../backgrounds/2.webp);
 }
 
@@ -16,7 +16,7 @@
   gap: 40px 40px; 
   padding: 20px 40px; 
   margin-top: 40px;
-  max-width: 2560px;   
+  max-width: 1800px;   
   margin-left: auto;   
   margin-right: auto;
   justify-items: center;
@@ -26,9 +26,9 @@
 .portfolio-box {
   background: rgba(255,255,255,0.3);
   border-radius: 20px;
-  padding: 20px 25px 25px;
+  padding: 15px 18px 18px;
   text-align: center;
-  width: 100%;
+  max-width: 420px;
   transform-origin: center;
 }
 
@@ -52,7 +52,7 @@
 /* === Images === */
 .portfolio-box img {
   width: 100%;
-  height: 220px; 
+  height: 200px; 
   object-fit: cover;
   border-radius: 20px;
 }
@@ -66,7 +66,7 @@
 }
 .portfolio-box:hover h2,
 .portfolio-box:hover p {
-  color: #9E7506;
+  color: #F5D0FF; 
 }
 
 /* === Column spans remain the same === */
@@ -92,7 +92,7 @@
   margin: 10px;  /* Space between buttons */
   background: rgba(255,255,255,0.2);
   border: 2px solid transparent;
-  color: #7F2B0A;
+  color: #D4E8FF;
   border-radius: 16px;
   cursor: pointer;
   font-family: 'Nunito';
@@ -102,13 +102,13 @@
 /* Hover only for non-active buttons */
 .filter-buttons button:hover:not(.active) {
   background: linear-gradient(to right, #FFD700, #FFC107); 
-  color: #7F2B0A;
-  border: 2px solid #33CCCC;
+  color: purple;
+  border: 2px solid white;
 }
 
 .filter-buttons button.active {  
   background: rgba(255,255,255,0.2);
-  color: #9E7506;
-  border: 2px solid #7F2B0A;
+  color: #D4E8FF;
+  border: 2px solid ;
 };
 
