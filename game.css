@@ -1,0 +1,52 @@
+.pipe-puzzle {
+  width: 300px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  background: #0f1a22;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.pipe {
+  width: 48px;
+  height: 48px;
+  background: #16232e;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* pipe shape */
+.pipe::before {
+  content: "";
+  width: 70%;
+  height: 70%;
+  border: 6px solid currentColor;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* rotations */
+.r0 { transform: rotate(0deg); }
+.r90 { transform: rotate(90deg); }
+.r180 { transform: rotate(180deg); }
+.r270 { transform: rotate(270deg); }
+
+/* colors (from image) */
+.blue   { color: #58c4ff; }
+.red    { color: #ff5a3c; }
+.yellow { color: #ffcc4d; }
+.purple { color: #b86bff; }
+.green  { color: #4cd964; }
+
+#result {
+  text-align: center;
+  margin-top: 10px;
+}

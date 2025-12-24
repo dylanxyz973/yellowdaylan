@@ -56,14 +56,18 @@
   background-attachment: fixed;
 }
 
+h2{
+  color:#008584;
+}
+
 .label-box{
   display: inline-block; 
   background: rgba(255, 255, 255, 0.2);  
-  color: #5A2A00;               
+  color: #008584;              
   font-weight: bold;
   padding: 6px 14px;         
   border-radius: 20px;         
-  border: 2px solid #5A2A00;     
+  border: 2px solid #008584; 
   font-family: 'nunito';
   margin-bottom: 8px; 
   font-weight: 800;
@@ -86,14 +90,14 @@
 }
 
 .tool-box {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   border: 1.75px solid transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #5A2A00;
-  border: 2px solid #5A2A00;
+  color: #008584;
+  border: 2px solid #008584;
   border-radius: 20px;
   padding: 15px 20px;
   width: 85px;
@@ -142,12 +146,12 @@ a:not(.topnav a) {
 }
 
 h4 {
-  width: 90%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1200px;
   margin: 30px auto 10px; 
   font-size: 22px;          
   line-height: 1.4;
-  color: #7B3F00;         
+  color: #570861;         
   font-family: 'Nunito';
   font-weight: 800;      
   text-align: left;
@@ -156,41 +160,45 @@ h4 {
 }
 
 p {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto 14px;  
+  width: 100%;
+  max-width: 1200px;
+  text-align: left;
   font-size: 20px;
   line-height: 1.5;
-  color: #7B3F00;
+  color: #570861;
   font-family: 'Nunito';
-  font-weight: 500;
-  text-align: left;
-  padding: 0 10px;
+  font-weight: 600;
 }
 
 /* === Default link style (used for Google Docs, GitHub, etc.) === */
+.link-row {
+  display: flex;
+  gap: 30px; /* space between links */
+}
+
 a:not(.back-link):not(.topnav a) {
-  color: #7B3F00;
-  border-color: #7B3F00;
+  margin-top: 20px;
+  color: #570861;
+  border-color: #570861;
   font-family: 'Nunito';
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 a:not(.topnav a):hover {
-  background: linear-gradient(to right, #FFD700, #FFC107);
+  background: rgba(255, 255, 255, 0.55);
 }
 
 /* Back link */
 .back-link {
-  margin-top: 20px;
+  margin-top: 50px;
   color: #008584;
-  border-color: white;
+  border: 2px solid #008584;
   font-family: 'Nunito';
+  font-size: 22px !important;
 }
-
 
 /* === Pictures === */
 .gallery {
@@ -207,7 +215,7 @@ a:not(.topnav a):hover {
   cursor: pointer;
   margin: 5px;
   border-radius: 8px; /* still keeps slight rounding */
-  padding: 3px; /* spacing for border effect */
+  border: 2px solid #570861;  
 }
 
 img {
@@ -243,7 +251,7 @@ body.modal-open {
   flex-direction: column;
   box-sizing: border-box;
   overflow: hidden;
-  padding: 0;               /* ⬅ remove extra spacing */
+  padding: 0;           
 }
 
 /* Wrapper enforces the curve */
@@ -279,15 +287,6 @@ body.modal-open {
   justify-content: center;
 }
 
-/* Gradient border wrapper */
-.modal-label-wrapper {
-  padding: 2px; /* border thickness */
-  border-radius: 16px;
-  display: inline-block;
-  margin-top: 16px;
-  z-index: 11;
-}
-
 /* Frosted label */
 .modal-label {
   background: rgba(255, 255, 255, 0.25);
@@ -297,7 +296,7 @@ body.modal-open {
   padding: 10px 20px;
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
-  color: #5A2A00;
+  color: #570861;
   text-align: center;
   display: inline-block;
 }
@@ -337,7 +336,7 @@ body.modal-open {
 
 .video {
   max-width: 700px;     
-  margin: 0 auto;
+  margin: 20px auto 0px auto;
 }
 
 .video video {
@@ -346,5 +345,5 @@ body.modal-open {
   aspect-ratio: auto;     /* allows natural portrait or landscape */
   object-fit: contain;    /* prevents stretching for portrait */
   border-radius: 16px;
-  border: 2px solid white
+  border: 2px solid #7B3F00;
 }

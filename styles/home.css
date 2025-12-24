@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
 
 .home-section {
@@ -13,31 +9,25 @@
   text-align: center;      /* centers inline text */
   padding: 90px 20px 20px;
   background-image: url(../backgrounds/1.webp);
- 
 }
 
-.hero-bubble {
+.hero-content {
   width: 100%;
   display: flex;
-  justify-content: flex-start;  /* stick to left */
   align-items: center;
-  padding: 20px 20px 20px 40px; /* top/right/bottom/left */
-  box-sizing: border-box;       /* include padding in width */
+  justify-content: flex-start; /* stick to left */
+  gap: 20px;
+  padding: 20px 20px 20px 40px;
+  box-sizing: border-box;
+  text-align: left;
+  flex-wrap: wrap;
+  min-width: 0;
 }
 
-/* Hero content — side by side logo + text */
-.hero-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  text-align: left;
-  max-width: 100%;  /* never exceed viewport */
-  flex-wrap: wrap;  /* allow wrapping on small screens */
-  min-width: 0;     /* allow flex items to shrink instead of overflowing */
-}
 
 /* Logo */
 .hero-logo {
+  padding: 20px 20px 20px 40px;
   width: 90px;
   height: 90px;
   object-fit: contain;
@@ -49,7 +39,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 0;     /* allow text to shrink */
 }
 
 /* Title */
@@ -79,24 +68,17 @@
     2.5px 2.5px 0 #311b92; /* cool purple offset for depth */
 }
 
-/* Decorative quotation mark */
-.hero-quote-box::before {
-  content: open-quote;
-  font-size: 80px;
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  color: rgba(124, 27, 124, 0.2); /* subtle background quote */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  border-radius: inherit;
-  pointer-events: none;
+/* Asymmetrical quote placement */
+.hero-quote{
+  margin-left: auto;        
+  padding: 20px 30px;
+  position: relative;
+  text-align: left;
+  border-radius: 12px;
 }
 
 /* Quote text */
-.hero-quote-box .quote-text {
+.quote-text {
   font-family: 'Nunito';
   font-size: 40px;
   font-weight: bold;
@@ -104,60 +86,129 @@
   color: beige;
 }
 
-/* Emphasis span inside quote */
-.hero-quote-box .quote-text span {
-  display: block;
-  margin-top: 12px;
-  font-size: 22px;
-  font-style: italic;
-  color: #fefae0; 
+.about-row {
+  display: flex;
+  align-items: flex-start; 
+  padding: 0px 40px;
 }
 
-/* Note box intro */
-.warm-code-block {
-  display: block;
-  text-align: left !important;
-  width: min(880px, 95%);
-  border-radius: 12px;
-  font-family: 'JetBrains Mono';
-  white-space: pre; /* preserves spacing and indentation */
-  overflow-x: auto;
-  font-size: 14px;               /* ~ equivalent to 10pt in IDLE */
-  line-height: 1.6;              /* same vertical rhythm as IDLE */
-  letter-spacing: 0.2px;         /* subtle text separation */
-  padding: 6px 18px;             /* matches the margins around IDLE’s text area */
-  border-radius: 10px;
-  background: rgba(255,255,255,0.2);
-  box-shadow:
-    inset 0 3px 0 rgba(255, 255, 255, 0.15),  /* strong top light edge */
-    inset 3px 0 0 rgba(255, 255, 255, 0.05),  /* left bevel light */
+.about-title {
+  font-family: 'Nunito';
+  font-size: 3rem;
 }
 
-
-.warm-code-block code {
+.about-text {
+  font-family: 'Nunito';
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: beige;
   display: block;
-  padding-bottom: 12px; /* subtle balance for bottom */
-}
-
-/* syntax highlighting */
-.warm-code-block .comment  { color: #6a9955; font-style: italic; }
-.warm-code-block .keyword  { color: #569cd6; font-weight: 600; }
-.warm-code-block .string   { color: #d69d85; }
-.warm-code-block .function { color: #dcdcaa; }
-.warm-code-block .var      { color: #9cdcfe; }
-.warm-code-block .value    { color: #b5cea8; }
-.warm-code-block .operator { color: #d4d4d4; }
-
-/* link styling */
-.warm-code-block a {
-  color: #c586c0;
   font-weight: 600;
-  text-decoration: none;
-  display: inline;      /* ensures it stays on same line */
-  white-space: normal;  /* allows natural wrapping if needed */
 }
 
-.warm-code-block a:hover { color: #9a4d9a; }
+.about-title,
+.about-text {
+  margin: 0;
+}
+
+.work-section {
+  padding-top: 36px;
+  max-width: 900px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.work-title {
+  font-family: 'Nunito';
+  font-size: 3rem;
+  margin-bottom: 1.6rem;
+}
+
+.work-carousel {
+  display: flex;
+  flex-direction: row;   
+  flex-wrap: nowrap; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  gap: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* Card styles */
+.work-card {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 15px 18px 18px;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  backdrop-filter: blur(6px);
+  display: none; /* hide by default */
+}
+
+.work-card.active {
+  display: block; /* show only the active card */
+}
+
+/* Image inside card */
+.work-card img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0;
+}
+
+/* Text styling */
+.work-card h2 {
+  line-height: 1.15;
+  margin: 14px 0px 10px;
+  font-size: 28px;
+  color: beige;
+  font-family: 'Nunito';
+  font-weight: 900;
+}
+
+.work-card p {
+  line-height: 1.2;
+  margin: 0px 0 8px;
+  font-size: 20px;
+  color: beige;
+  font-family: 'Nunito';
+  font-weight: 700;
+}
+
+.arrow {
+  flex: 0 0 auto; 
+  background: transparent;
+  border: none;
+  color: beige;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+.python {
+  margin: 0;
+  font-family: 'Nunito';
+  font-size: 26px;
+  color: beige;
+  text-align: left;
+  white-space: normal;
+}
+
+.python a {
+  font-family: 'Nunito'; 
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.python a:hover {
+  color: darkblue; 
+}
 
 
 

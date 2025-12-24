@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <title>Home Page</title>
@@ -28,7 +28,6 @@
 
     <h1>WARM GREETINGS !</h1>
 
-    <div class="hero-bubble">
         <div class="hero-content">
             <img src="pictures/coder.webp" alt="My Logo" class="hero-logo">
             <div class="hero-text">
@@ -36,34 +35,81 @@
                 <h2 class="hero-subtitle">Developer - Designer - Student - Creator</h2>
             </div>
         </div>
-    </div>
 
-    <blockquote class="hero-quote-box">
+    <blockquote class="hero-quote">
         <p class="quote-text">
-            each <strong>code</strong>, each <strong>design</strong>, <br>
+            each <strong>code</strong>, each <strong>design</strong><br>
             crafted to <strong>impact</strong>, created to <strong>improve</strong>
         </p>
     </blockquote>
 
-    <pre class="warm-code-block"><code>
-<span class="comment"># What's up! My name is Ding Rui, also known as Dylan.</span>
-<span class="comment"># As of 2025, a year 2 student at Republic Polytechnic.</span>
-<span class="comment"># Pursuing a course in Digital Design and Development.</span>
+    <div class="about-row">
+        <h2 class="about-title">About Me</h2>
 
-<span class="var">creator</span> <span class="operator">=</span> <span class="string">"dylan :D"</span>
+        <p class="about-text">
+            # What's up! My name is Ding Rui, better known as Dylan :D<br>
+            # As of 2025, I'm a Year 2 student at Republic Polytechnic<br>
+            # Pursuing a diploma in Digital Design and Development<br>
+            I enjoy creating interactive experiences, building creative web projects,<br>
+            and designing things that leave a meaningful impact.<br><br>
+        </p>
 
-<span class="keyword">if</span> <span class="var">work</span> <span class="operator">==</span> <span class="value">True</span><span class="operator">:</span>
-    <a href="portfolio.html">click here to view my works</a>
+    </div>
 
-<span class="keyword">elif</span> <span class="var">me</span> <span class="operator">==</span> <span class="value">True</span><span class="operator">:</span>
-    <a href="about.html">click here to know more about me</a>
+    <p class="python">
+        <span class="code">if me == True:</span>
+        <br>
+        <span class="code">&nbsp;&nbsp;&nbsp;print("</span><a class="python" href="about.html">Know more about
+            me!</a><span class="code">")</span>
+    </p>
 
-<span class="keyword">else</span><span class="operator">:</span>
-    <span class="function">print</span><span class="string">("Thank you for visiting!😊")</span>
-    <a href="https://www.google.com" target="_self"
-       onclick="window.open('https://www.google.com', '_self'); window.close(); return false;">click here to exit (Have a great day!)</a>
-</code></pre>
 
+    <section class="work-section">
+        <h2 class="work-title">Featured Works</h2>
+
+        <div class="work-carousel">
+            <button class="arrow prev" aria-label="Previous">◀</button>
+
+            <div class="work-card active" data-link="development6.html">
+                <img src="pictures/task.png" alt="MyTaskApp screenshot" style="width:100%; border-radius:20px;">
+                <h2>MyTaskApp</h2>
+                <p>Mobile Development</p>
+            </div>
+
+            <div class="work-card" data-link="development2.html">
+                <img src="pictures/fruits.jpg" alt="supermarket" style="width:100%; border-radius:20px;">
+                <h2>Supermarket Site</h2>
+                <p>Web Development</p>
+            </div>
+
+            <div class="work-card" data-link="design2.html">
+                <img src="pictures/layout.png" alt="Another App screenshot" style="width:100%; border-radius:20px;">
+                <h2>HealthBro</h2>
+                <p>UI/UX Design</p>
+            </div>
+
+            <button class="arrow next" aria-label="Next">▶</button>
+        </div>
+
+    </section>
+
+    <p class="python">
+        <span>elif works == True:</span>
+        <br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("</span><a class="python" href="portfolio.html">View more of my
+            works!</a><span class="code">")</span>
+    </p>
+
+    <br><br><br>
+
+    <p class="python">
+        <span>else:</span><br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Thank you for visiting! 😊")</span><br>
+        <a href="https://www.google.com" target="_self"
+            onclick="window.open('https://www.google.com','_self'); window.close(); return false;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;click here to exit (Have a great day!)
+        </a>
+    </p>
 
 </section>
 
@@ -72,6 +118,7 @@
 </div>
 
 <script src="js/cursor.js"></script>
+<script src="js/arrow.js"></script>
 
 </body>
 

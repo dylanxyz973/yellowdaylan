@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Travel Agency Website</title>
+    <title>MyTaskApp</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/d3d.css">
 </head>
@@ -28,15 +28,15 @@
     <section class="display">
 
         <div class="tool-section">
-            <div class="label-box">Languages Used:</div>
+            <div class="label-box">Languages/Frameworks Used:</div>
             <div class="tool-box-container">
                 <div class="tool-box">
-                    <img src="pictures/js.webp" alt="EJS">
-                    <div>EJS</div>
+                    <img src="pictures/react.png" alt="React Native">
+                    <div>React Native</div>
                 </div>
                 <div class="tool-box">
-                    <img src="pictures/css.svg" alt="CSS">
-                    <div>CSS</div>
+                    <img src="pictures/expo.svg" alt="Expo Go">
+                    <div>Expo Go</div>
                 </div>
             </div>
         </div>
@@ -44,64 +44,77 @@
         <h4>Objectives:</h4>
 
         <p>
-            Application of React Native skills to buiild a list task management protoype mobile app , 
-            MyTaskApp which is a list task management app built using React Native based on a Expo GO ecosystem.
-            This will need to utilise the creation of task screens with Create, Read, Update and Delete (CRUD) operations.
+            Application of React Native skills to buiild a list task management protoype mobile app.<br>
+            MyTaskApp which is a list task management app built using React Native based on a Expo GO ecosystem.<br>
+            This app need to utilise the creation of task screens with Create, Read, Update and Delete (CRUD)
+            operations.
         </p>
 
         <h4>Functionalites:</h4>
 
         <p>
-          1. Task List Screen
-        When no tasks are available, it will display a message on the screen.
-        Each task card shows the task title, description, due date, and its completion status.
-        Tapping on the card toggles its completion state—turning the title to a strike-through with a status completed
-        The card also has a:
-        •	Edit button
-        •	Delete icon with a confirmation alert
-        At the bottom of the screen, there are two main buttons:
-        •	Add Task
-        •	Overall Summary which shows a popup summarising total number of tasks , how many completed and incompleted tasks with the result in percentage form.
+            <strong>1. Task List Screen</strong><br>
+            When no tasks are available, it will display a message on the screen.<br>
+            Each task card shows its:<br>
+            • Title<br>
+            • Description<br>
+            • Due date<br>
+            • Completion status<br>
+            • Edit button<br>
+            • Delete icon with a confirmation alert<br><br>
+            Tapping on the card toggles its completion state to completed turning the title to a strike-through.
+            Details are not shown on Task Cards.
+            A more details which users can click on it to view details of the tasks which users are directed to a screen
+            called TaskDetails.<br>
+            <br>
+            At the bottom of the task list screen, there are two main buttons:<br>
+            • Add Task<br>
+            • Overall Summary which shows a popup summarising total number of tasks, how many completed and incompleted
+            tasks with the result in percentage form.
+            <br>
+            <br>
+            <strong>2. Add Task Screen</strong><br>
+            This screen allows users to create new tasks with these fields:<br>
+            • Title<br>
+            • Description<br>
+            • Due date<br>
+            • Additional details which are optional
+            <br>
+            <br>
+            <strong>3. Edit Task Screen</strong><br>
+            Upon clicking the edit button in the card, user can update any existing task. The fields are pre-filled with
+            the current information retrieved from any existing information written in the card.<br><br>
 
-        2. Add Task Screen
-        This screen allows users to create new tasks with these fields:
-        •	Title
-        •	Description
-        •  	Due date
-        •	Additional details which are optional
+            <strong>4. Task Details Screen</strong><br>
+            This screen displays all information about the selected task in a clean layout:<br>
+            • Title<br>
+            • Description<br>
+            • Due date<br>
+            • Details<br>
+            • Completion status<br><br>
 
-        3. Edit Task Screen
-        Upon clicking the edit button in the card, user can update any existing task. The fields are pre-filled with the current information retrieved from any existing information written in the card .
-        Behind the Scenes: Data Handling
-        All tasks are stored in a central context called TaskContext.
-        This ensures that adding, editing, deleting, and toggling tasks works from across all screens in the app.
+            <strong>5. Search function</strong><br>
+            There is a search bar, which filters tasks instantly based on title or description.<br><br>
 
-        4.
-        This screen displays all information about the selected task in a clean layout:
-        title, description, due date, details, and completion status.
-        
-        5.
-        There is a search bar, which filters tasks instantly based on title or description.
-        A more details which users can click on it to view details of the tasks which users are directed to a screen called TaskDetails. Details are not shown on Task Cards.
-        
-        4.
-        This screen displays all information about the selected task in a clean layout:
-        title, description, due date, details, and completion status.
-
+            <strong>6. Data Handling</strong><br>
+            All tasks data are stored in a called TaskContext which ensures that adding, editing, deleting, and toggling
+            tasks works on their respective screens in the app.
         </p>
 
         <h4>Building process:</h4>
 
         <p>
-            Completed within a timeline of 2 days, Style
-            Throughout the app, I use:
-            •	Light Pastel Rainbow Gradient backgrounds and Vibrant Pastel Rainbow Gradient Cards to help energise users.
-            •	Golden and bronze tones for text and borders
-            •	Silver Rose Navigation header 
-            •	Transparent input bars and rounded corners for a refreshing look.
-            This design aims to make the task app both functional and visually appealing giving a sense of vibrancy and elegance with a touch of premium app feel
+            This project given a timeline of 2 weeks to apply skills of list, picker styling, navigation.<br>
+            Throughout the app, I use:<br>
+            • Light Pastel Rainbow Gradient backgrounds and Vibrant Pastel Rainbow Gradient Cards to help energise
+            users<br>
+            • Golden and bronze tones for text and borders<br>
+            • Silver Rose Navigation header<br>
+            • Transparent input bars and rounded corners for a refreshing look<br><br>
 
-            Watch the video to see how the app works! 
+            This design aims to make the task app both functional and visually appealing giving a sense of vibrancy and
+            elegance with a touch of premium app feel.<br><br>
+            Watch the video to see how the app works!
         </p>
 
         <div class="video">

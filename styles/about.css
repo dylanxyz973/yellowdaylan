@@ -1,5 +1,5 @@
 .about-section {
-  padding: 90px 20px 20px;
+  padding: 90px 40px 40px;
   background-image: url(../backgrounds/4.webp);
 }
 
@@ -22,6 +22,17 @@
 .answer-box {
   color: beige;
 }
+
+.intro-box {
+  color: white; 
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
 
 .detail-box {
   display: table;             /* wraps tightly around text */
@@ -49,7 +60,7 @@ h3 {
 }
 
 .answer-box {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.3);
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.2px; 
@@ -57,7 +68,7 @@ h3 {
 
 /* === Link styles for about page === */
 .intro-box a {
-  color: black; 
+  color: white; 
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Travel Agency Website</title>
+    <title>Supermarket Site</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/d3d.css">
 </head>
@@ -27,6 +27,8 @@
 
     <section class="display">
 
+        <h2 class="h2">Embedded JavaScript website</h2>
+
         <div class="tool-section">
             <div class="label-box">Languages Used:</div>
             <div class="tool-box-container">
@@ -48,33 +50,100 @@
         <h4>Objectives:</h4>
 
         <p>
-            Application of node.js and Express.js with EJS templating engine for rendering. CRUD for main resource.
-            dynamic content designing part of mini supermarket website with role-based authorisation for both users and admins.
-            Retrieve and display product information using SQL.
+            Application of node.js and Express.js with EJS templating engine for rendering Dynamic content. Usage of SQL
+            to store data.
+            Main app.js hosting middleware and routes to perform CRUD operations, retrieve and display product
+            information.
+            Role-based authorisation for both users and admins.
         </p>
 
-        <h4>Functionalites:</h4>
+        <h4>Functionalites/Features:</h4>
 
         <p>
-            User authentication:
-            Registration for all new users.
-            Log-in and log-out functionality for both users and admins.
-            Users:
-            Add products to cart by clicking buy products. They have the option to select number of quantity of products they want and view the product details.
-            Admins:
-            Update (edit) the product details, add new products to inventory, delete products from inventory with a confirmation prompt.
-            Features:
-            Product page display username and role.
-            Product on Hover will turn colour to enhance attention.
+            <strong>Navbar:</strong><br>
+            Toggle to logout which redirects user back to onboarding page (index.ejs)<br><br>
+
+            <strong>Onboarding:</strong><br><br>
+            <strong>index.ejs</strong><br>
+            Welcome and prompt to register or log-in<br>
+            <br>
+
+            <strong>Role-based User authentication:</strong><br><br>
+            <strong>register.ejs</strong><br>
+            Compulsory registration for all new admins and new users with required fields:<br>
+            • Username<br>
+            • Email<br>
+            • Password<br>
+            • Address<br>
+            • Contact Number<br>
+            • Role (dropdown choose user or admin)<br><br>
+            If password is shorter than 6 characters, a message appears to inform users that password should be at least
+            6 or more characters in length.
+            <br>
+
+            <strong>login.ejs</strong><br>
+            Log-in page for both admins and users requiring these two fields:<br>
+            • Email<br>
+            • Password<br><br>
+            Log-in and log-out functionality for both users and admins<br>
+            <br>
+
+            <strong>User-end:</strong><br><br>
+
+            <strong>shopping.ejs</strong><br>
+            View available products with its name, price, quantity available, quantity selection (dropdown of up to 5)
+            and the option to buy them.<br>
+            Clicking the product name allow them to view the product details<br>
+            Add products to cart by clicking buy products<br><br>
+            <strong>product.ejs</strong><br>
+            View product details for the product<br><br>
+
+            <strong>cart.ejs</strong><br>
+            See the products that are in the cart with its quantity, total cost and image<br>
+            Final total is displayed with a back to shopping link to redirect to shopping.ejs<br><br>
+            <br>
+
+            <strong>Admin-end:</strong><br><br>
+
+            <strong>inventory.ejs</strong><br>
+            Similar to shopping.ejs but with option to either edit products or delete products with a confirmation
+            prompt.<br><br>
+            <strong>editProduct.ejs</strong><br>
+            Update (edit) the product details with pre-populated fields from existing product information:<br>
+            • Product Name<br>
+            • Quantity<br>
+            • Price ($)<br>
+            • Current Image<br>
+            • Upload New Image<br><br>
+            Admins would be redirected to the inventory.ejs upon clicking update product button<br>
+            Otherwise, if no changes needed to be made admins can click return to inventory button to return to
+            inventory page<br><br>
+
+            <strong>addProduct.ejs</strong><br>
+            Add new products to inventory with the following fields:<br>
+            • Product Name<br>
+            • Quantity<br>
+            • Price ($)<br>
+            • Product Image<br><br>
+            Upon clicking Add product button, a new product would be added to bottom which can be viewed on
+            the inventory.ejs (admins) or shopping.ejs (users)<br><br>
+
+            <strong>Features:<br></strong>
+            shopping.ejs page and inventory.ejs page display Welcome, username (role).<br>
+            Buttons and Product on Hover will change colour to enhance attention.
         </p>
 
         <h4>Building process:</h4>
 
         <p>
-            Completed within a timeline of 2 days, this is my first ever functional website I created incoporates an simple CSS yet user-friendly design and layout.
-            Given more time, I would have make it look more realistic and added tiny feautres such prompt when items sold out, search/filter functionality.
-            There is a feature I incoporated which admins will need a seperate user account to access the user functionalities which means admin access admin functionalities only and cannot access user functionalites unless they create user account.
-            Watch the video to see how the website works! 
+            Completed within a timeline of 2 days, this is my first ever functional website I created incoporating an
+            simple CSS yet simple user-friendly design and layout.
+            Given more time, I would have upgraded the styling to look more realistic to an actual supermarket website
+            and added more feautres and functionalites.
+            Something to note: Admins will need a seperate user account to access the user functionalities which means
+            admin access admin functionalities only and cannot access user functionalites unless they create user
+            account.
+            Watch the video to see how the website works!
         </p>
 
         <!-- Simple link with GitHub logo -->
@@ -110,7 +179,6 @@
     </div>
 
     <script src="js/cursor.js"></script>
-    <script src="gallery.js"></script>
 
 </body>
 

@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
 /* top-left: soft sky-blue + hint of blush */
   radial-gradient(circle at 12% 18%, #bae6fd 0%, #fbcfe8 40%, transparent 72%),
   /* top-right: mint-aqua with gentle lemon warmth */
@@ -346,3 +353,74 @@ color: #b8faff; /* bright aqua-mint — readable on warm zones */
   background: linear-gradient(135deg, #FFEF00, #FFD93D); /* subtle yellow gradient */
   border: 2px solid #FFA000; /* darker yellow border */
 }
+
+/* Decorative quotation mark */
+.hero-quote-box::before {
+  content: open-quote;
+  font-size: 80px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: rgba(124, 27, 124, 0.2); /* subtle background quote */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Emphasis span inside quote */
+.hero-quote-box .quote-text span {
+  display: block;
+  margin-top: 12px;
+  font-size: 22px;
+  font-style: italic;
+  color: #fefae0; 
+}
+
+/* Note box intro */
+.warm-code-block {
+  display: block;
+  text-align: left !important;
+  width: min(880px, 95%);
+  border-radius: 12px;
+  font-family: 'JetBrains Mono';
+  white-space: pre; /* preserves spacing and indentation */
+  overflow-x: auto;
+  font-size: 14px;               /* ~ equivalent to 10pt in IDLE */
+  line-height: 1.6;              /* same vertical rhythm as IDLE */
+  letter-spacing: 0.2px;         /* subtle text separation */
+  padding: 6px 18px;             /* matches the margins around IDLE’s text area */
+  border-radius: 10px;
+  background: rgba(255,255,255,0.2);
+  box-shadow:
+    inset 0 3px 0 rgba(255, 255, 255, 0.15),  /* strong top light edge */
+    inset 3px 0 0 rgba(255, 255, 255, 0.05),  /* left bevel light */
+}
+
+
+.warm-code-block code {
+  display: block;
+  padding-bottom: 12px; /* subtle balance for bottom */
+}
+
+/* syntax highlighting */
+.warm-code-block .comment  { color: #6a9955; font-style: italic; }
+.warm-code-block .keyword  { color: #569cd6; font-weight: 600; }
+.warm-code-block .string   { color: #d69d85; }
+.warm-code-block .function { color: #dcdcaa; }
+.warm-code-block .var      { color: #9cdcfe; }
+.warm-code-block .value    { color: #b5cea8; }
+.warm-code-block .operator { color: #d4d4d4; }
+
+/* link styling */
+.warm-code-block a {
+  color: #c586c0;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline;      /* ensures it stays on same line */
+  white-space: normal;  /* allows natural wrapping if needed */
+}
+
+.warm-code-block a:hover { color: #9a4d9a; }

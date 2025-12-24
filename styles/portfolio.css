@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap');
-
 /* === Portfolio Section === */
 .portfolio-section {
   text-align: center;
@@ -59,14 +55,13 @@
 
 /* === Hover === */
 .portfolio-box:hover {
-  transform: scale(1.03);
-  border: 2px solid #7F2B0A;
   z-index: 10;
   position: relative;
+  background: rgba(255,255,255,0.55);
 }
 .portfolio-box:hover h2,
 .portfolio-box:hover p {
-  color: #F5D0FF; 
+  color: beige;
 }
 
 /* === Column spans remain the same === */
@@ -107,7 +102,7 @@
 }
 
 .filter-buttons button.active {  
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.4);
   color: #D4E8FF;
   border: 2px solid ;
 };

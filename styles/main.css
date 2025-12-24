@@ -13,7 +13,6 @@ html {
   overflow: auto; 
   cursor: none;
   overflow-x: hidden; /* prevent horizontal scroll */
-  color: #5A2A00; /* dark brown text color */
 }
 
 
@@ -72,6 +71,7 @@ html {
   font-weight: 700;
 }
 
+
 /* === Used by about, portfolio, display work pages  === */ 
 .intro-box {
   display: inline-block !important;
@@ -121,7 +121,7 @@ h2 {
   font-family: 'Nunito';
   text-align: center;
   margin: 0.5em 0 1em 0; /* top right bottom left */
-  color: #5A2A00;
+  color: #D4E8FF;
 }
 
 /* === Nav Bar === */

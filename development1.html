@@ -29,7 +29,7 @@
     <h2 class="h2">JavaScript hobby website</h2>
 
     <div class="tool-section">
-      <div class="label-box">Languages Used:</div>
+      <div class="label-box">Languages/Frameworks Used:</div>
       <div class="tool-box">
         <img src="pictures/js.webp" alt="JavaScript">
         <div>JavaScript</div>
@@ -49,9 +49,35 @@
 
     <h4>Functionalites:</h4>
 
-    <p>- Adding, editing, and deleting the drawings.</p>
-    <p>- Separate detail page to view context description of drawings.</p>
-    <p>- Browser warning delete prompt pop up to confirm deletion. </p>
+    <p>  
+        <strong>Navigation Bar</strong><br>
+        <br>
+        <strong>/ (home) route</strong><br>
+        Display Greeting text<br>
+        <br>
+        <strong>/lists route</strong><br>
+        Display of drawings with each drawing wrapped with a thin light grey border.<br>
+        Each drawing consists:<br>
+        • Detail button for viewing of separate detail page to view drawing context.<br>
+        • Buttons for editing and deleting the drawings<br>
+        • Its title, description, image, completeion date.<br>
+        <br>
+        <strong>/addItem get route</strong><br>
+        Retrieve the fields (data) for adding drawings:<br>
+        • Title<br>
+        • Description<br>
+        • <br>
+        <br>
+        <strong>/addItem post route</strong><br>
+        Sumbit the require fields (data) and redirect users to /lists route.
+        <br>
+        <strong>/details/:id get route</strong><br>
+        <br>
+
+        <strong>/deleteItem/:id post route </strong><br>
+        Upon Clicking delete button, a pop up browser warning delete prompt to confirm deletion.<br>
+    </p>
+      
 
     <h4>Building process:</h4>
 
@@ -61,9 +87,11 @@
       website.
       Bootstrap must be applied which CSS cannot be applied resulting in constraints of the webpage design.
       Instead of the standard black navbar, I chose navbar to be yellow because it is my favourite colour. It consists
-      of 5 pages which each page serving
+      of 5 main routes which each page serving its
       different functionalities, its built using GET and POST methods with in-memory data.
     </p>
+
+     <p>View the pictures to see the different routes</p>
 
     <div class="gallery">
       <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
