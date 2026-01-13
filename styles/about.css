@@ -1,6 +1,6 @@
 .about-section {
   padding: 90px 40px 40px;
-  background-image: url(../backgrounds/4.webp);
+  background-image: url(../backgrounds/4.jpg);
 }
 
 .question-box ~ .detail-box,
@@ -14,7 +14,7 @@
   border: 2.5px solid transparent;
   border-radius: 20px;
   padding: 12px;
-  margin: 17.5px 0px;
+  margin: 17px 0px;
 }
 
 .label-left,
@@ -24,12 +24,9 @@
 }
 
 .intro-box {
-  color: white; 
+  color: beige; 
   font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 12px;
   display: inline-block;
 }
 
@@ -37,22 +34,21 @@
 .detail-box {
   display: table;             /* wraps tightly around text */
   align-self: flex-start;     /* stops flex from stretching */
-  padding: 12px;                    
-  border: 2px solid #5A2A00;
-
+  padding: 14px 14px 14px 14px;;                    
+  border: 2px solid beige;
   font-size: 18px;
   font-weight: 700;
-  color: #5A2A00;
+  color: beige;
   font-weight: bold;
-  white-space: nowrap;    /* prevents line breaks if you want single-line box */
 }
 
 /* h3 only apply in question box */
 h3 {
+  margin: 0px;
   font-size: 20px;
   font-family: 'Nunito';
   font-weight: 900;
-  color: #5A2A00;
+  color: beige;
 }
 
 .question-box {
@@ -64,46 +60,18 @@ h3 {
   font-size: 20px;
   line-height: 1.6;
   letter-spacing: 0.2px; 
+  padding: 14px;
 }
 
 /* === Link styles for about page === */
 .intro-box a {
-  color: white; 
+  color: beige; 
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 12px;
   display: inline-block;
-}
-
-.label-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto 10px auto;
-}
-
-.bar {
-  width: 90%;
-  max-width: 900px;
-  height: 50px;
-
-  border-radius: 40px;
-  margin: 0 auto 30px auto;
-  border: 3px solid transparent;
-}
-
-.label-left,
-.label-right {
-  font-size: 2em;
-};
-
-.left-note,
-.right-note {
-  text-align: left;
 }
 
 .img-toggle {

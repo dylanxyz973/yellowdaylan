@@ -9,7 +9,7 @@ document.addEventListener('mousemove', (e) => {
 
 // hover effect
 const hoverables = document.querySelectorAll(
-  'a, button, input, textarea, select, [contenteditable="true"], .portfolio-box'
+  'a, input, textarea, select, [contenteditable="true"], .portfolio-box, .work-card'
 );
 
 hoverables.forEach(el => {

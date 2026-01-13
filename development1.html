@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Hobby Website</title>
+  <title>Made By Dylan</title>
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/d3d.css">
 </head>
@@ -38,46 +38,68 @@
         <img src="pictures/bo.png" alt="Bootstrap">
         <div>Bootstrap</div>
       </div>
+      <div class="tool-box">
+        <img src="pictures/node.png" alt="JavaScript">
+        <div>Node + Express</div>
+      </div>
     </div>
 
     <h4>Objectives:</h4>
 
     <p>To create an simple hobby website as part of mini project by applying knowledge of web
       development by building a fully functional Node.js Express web application. This project requires the ability
-      to handle routing, form submission, and display of information using only GET and POST
+      to handle routing, form submission and display of information using only GET and POST
       methods with in-memory data</p>
+
+    <h4>Technical Competencies:</h4>
 
     <h4>Functionalites:</h4>
 
-    <p>  
-        <strong>Navigation Bar</strong><br>
-        <br>
-        <strong>/ (home) route</strong><br>
-        Display Greeting text<br>
-        <br>
-        <strong>/lists route</strong><br>
-        Display of drawings with each drawing wrapped with a thin light grey border.<br>
-        Each drawing consists:<br>
-        • Detail button for viewing of separate detail page to view drawing context.<br>
-        • Buttons for editing and deleting the drawings<br>
-        • Its title, description, image, completeion date.<br>
-        <br>
-        <strong>/addItem get route</strong><br>
-        Retrieve the fields (data) for adding drawings:<br>
-        • Title<br>
-        • Description<br>
-        • <br>
-        <br>
-        <strong>/addItem post route</strong><br>
-        Sumbit the require fields (data) and redirect users to /lists route.
-        <br>
-        <strong>/details/:id get route</strong><br>
-        <br>
-
-        <strong>/deleteItem/:id post route </strong><br>
-        Upon Clicking delete button, a pop up browser warning delete prompt to confirm deletion.<br>
+    <p>
+      <strong>Navigation Bar</strong><br>
+      Toggle between home, drawing list, add drawing<br>
+      <br>
+      <strong>/ route (home page)</strong><br>
+      Display Greeting text<br>
+      <br>
+      <strong>/lists route</strong><br>
+      Display of completed drawings with each drawing wrapped with a thin light grey border.<br><br>
+      Each drawing consists:<br>
+      • Details button to direct to separate detail page (/details/:id get route)
+      to view drawing details.<br>
+      • Edit Button and Delete Button<br>
+      • Its title, description, image, completion date.<br>
+      <br>
+      <strong>/addItem get route</strong><br>
+      Retrieve the fields (data) for adding drawings:<br>
+      • Title<br>
+      • Description<br>
+      • Completed Date<br>
+      • Image<br>
+      • Details<br>
+      <br>
+      <strong>/addItem post route</strong><br>
+      Sumbit the require fields (data) and redirect users to /lists route.<br>
+      <br>
+      <strong>/updateItem get route</strong><br>
+      Retrieve the pre-populated fields (data) from drawings:<br>
+      • Title<br>
+      • Description<br>
+      • Completed Date<br>
+      • Image<br>
+      • Details<br>
+      <br>
+      <strong>/updateItem post route</strong><br>
+      Sumbit the updated fields (data) and redirect users to /lists route.<br>
+      <br>
+      <strong>/details/:id get route</strong><br>
+      Upon Clicking details button, users are directed to each drawing with details shown.<br>
+      Upon Clicking back to drawings button, users are directed back to lists drawing (/lists route).<br>
+      <br>
+      <strong>/deleteItem/:id post route </strong><br>
+      Upon Clicking delete button, a pop up browser warning delete prompt to confirm deletion.<br>
     </p>
-      
+
 
     <h4>Building process:</h4>
 
@@ -91,7 +113,7 @@
       different functionalities, its built using GET and POST methods with in-memory data.
     </p>
 
-     <p>View the pictures to see the different routes</p>
+    <p>View the pictures to see the different routes</p>
 
     <div class="gallery">
       <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
@@ -108,7 +130,14 @@
     </div>
 
     <div class="modal" id="modal">
-      <span class="close" id="modalClose">&times;</span>
+
+      <!-- Close cross -->
+      <span class="close" id="modalClose">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="6" y1="6" x2="18" y2="18" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+        </svg>
+      </span>
 
       <!-- Modal Image -->
       <div class="modal-img-wrapper">
@@ -121,10 +150,41 @@
       </div>
 
       <!-- Navigation Arrows -->
-      <div class="nav left" id="prev">&#10094;</div>
-      <div class="nav right" id="next">&#10095;</div>
+      <div id="prev" class="nav left">
+        <svg viewBox="0 0 24 24">
+          <polyline points="15 4 7 12 15 20" />
+        </svg>
+      </div>
+
+      <div id="next" class="nav right">
+        <svg viewBox="0 0 24 24">
+          <polyline points="9 4 17 12 9 20" />
+        </svg>
+      </div>
     </div>
 
+    <!-- Simple link with GitHub logo -->
+    <a href="https://github.com/dylanxyz973/HobbySite" target="_blank" rel="noopener" class="external-link">
+      <!-- GitHub logo SVG -->
+      <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" class="github-logo">
+        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
+    2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49
+    -2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+    -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 
+    1.87.87 2.33.66.07-.52.28-.87.51-1.07
+    -1.78-.2-3.64-.89-3.64-3.95 
+    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+    0 0 .67-.21 2.2.82a7.68 7.68 0 0 1 2-.27
+    c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 
+    2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
+    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+      </svg>
+      View on GitHub
+    </a>
 
     <a href="portfolio.html" class="back-link">← Go back to Portfolio</a>
 

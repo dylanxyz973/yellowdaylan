@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
@@ -16,7 +15,6 @@ html {
 }
 
 
-/* Chrome, Edge, Safari, Opera */
 ::-webkit-scrollbar {
   width: 10px; /* width of vertical scrollbar */
 }
@@ -134,10 +132,10 @@ h2 {
 
 .topnav a,
 .dropdown-content a {
-  color: #D4E8FF; 
+  color: #F2F8FF; 
   text-shadow:
-    0 0 1px rgba(215,30,135,0.86),  /* richer magenta-ish hint (not the same as core) */
-    0 0 14px rgba(0,200,255,0.50);  /* strong cyan outer glow for maximum separation */
+  0 1px 2px rgba(18, 28, 72, 0.75),
+  0 0 1px rgba(18, 28, 72, 0.9);
   font-size: 19px;
   text-decoration: none;
   font-family: 'Nunito'; 
@@ -169,20 +167,20 @@ h2 {
 }
 
 .topnav a.active {
-  color: #40e6ff;
-  background-color: rgba(20, 90, 160, 0.12); /* cool transparent blue — clear contrast */
+  color: #FFD166;
+  background-color: rgba(255, 180, 90, 0.18);
   text-shadow:
-    0 0 4px rgba(255, 160, 120, 0.55),  /* gentle warm halo */
-    0 0 10px rgba(255, 220, 180, 0.35); /* diffuse soft glow */
+    0 1px 2px rgba(120, 60, 20, 0.75),
+    0 0 6px rgba(255, 200, 120, 0.45);
 }
 
 .topnav a:hover,
 .dropdown-content a:hover {
   color: #F5D0FF; 
-  background-color: rgba(200, 70, 40, 0.20); /* warm translucent ember tone */
+  background-color: rgba(60, 90, 140, 0.22);
   text-shadow:
-    0 0 6px rgba(120, 240, 255, 0.7),  /* full soft halo — main luminous glow */
-    0 0 14px rgba(180, 250, 255, 0.45); /* outer diffusion — smooth radiance */
+    0 1px 2px rgba(40, 60, 110, 0.85),
+    0 0 3px rgba(120, 160, 220, 0.35);
 }
 
 /* Dropdown container */
@@ -211,3 +209,67 @@ h2 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Navigation Arrows */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.nav svg {
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+.nav polyline {
+  fill: none;
+  stroke: white;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nav:hover polyline {
+  stroke: #61dafb;
+}
+
+/* Placement for work page */
+.nav.left { left: 20px; }
+.nav.right { right: 20px; }
+
+/* Placement for featured work */
+.nav--work.left  { left: 8px; }
+.nav--work.right { right: 8px; }
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+.close svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.close:hover svg {
+  stroke: orangered;
+}
+
+

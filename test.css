@@ -343,6 +343,27 @@ color: #b8faff; /* bright aqua-mint — readable on warm zones */
   -webkit-user-drag: none;
 }
 
+.img-toggle {
+  position: relative;   /* 👈 THIS makes .arrow-text stick to the container */
+  display: inline-block;  
+  width: 330px; 
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid white;
+  background: transparent;
+  padding: 0; 
+}
+
+.img-toggle img {
+  width: 100%;
+  height: auto;
+  display: block; 
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
 /* Arrow + text beside the image */
 .arrow-text {
   font-size: 18px;
@@ -424,3 +445,32 @@ color: #b8faff; /* bright aqua-mint — readable on warm zones */
 }
 
 .warm-code-block a:hover { color: #9a4d9a; }
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 10px auto;
+}
+
+.bar {
+  width: 90%;
+  max-width: 900px;
+  height: 50px;
+
+  border-radius: 40px;
+  margin: 0 auto 30px auto;
+  border: 3px solid transparent;
+}
+
+.label-left,
+.label-right {
+  font-size: 2em;
+};
+
+.left-note,
+.right-note {
+  text-align: left;
+}

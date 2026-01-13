@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Home Page</title>
+    <title>Made By Dylan</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home.css">
 </head>
@@ -28,13 +28,13 @@
 
     <h1>WARM GREETINGS !</h1>
 
-        <div class="hero-content">
-            <img src="pictures/coder.webp" alt="My Logo" class="hero-logo">
-            <div class="hero-text">
-                <h1 class="hero-title">TheGradianttDaylan</h1>
-                <h2 class="hero-subtitle">Developer - Designer - Student - Creator</h2>
-            </div>
+    <div class="hero-content">
+        <img src="pictures/logo.png" alt="My Logo" class="hero-logo">
+        <div class="hero-text">
+            <h1 class="hero-title">TheGradianttDaylan</h1>
+            <h2 class="hero-subtitle">Developer - Designer - Student - Creator</h2>
         </div>
+    </div>
 
     <blockquote class="hero-quote">
         <p class="quote-text">
@@ -43,16 +43,19 @@
         </p>
     </blockquote>
 
+
     <div class="about-row">
         <h2 class="about-title">About Me</h2>
-
         <p class="about-text">
             # What's up! My name is Ding Rui, better known as Dylan :D<br>
             # As of 2025, I'm a Year 2 student at Republic Polytechnic<br>
             # Pursuing a diploma in Digital Design and Development<br>
-            I enjoy creating interactive experiences, building creative web projects,<br>
-            and designing things that leave a meaningful impact.<br><br>
+            """ I enjoy creating interactive experiences, building creative web projects
+            and designing things that leave a meaningful impact """
         </p>
+    </div>
+
+
 
     </div>
 
@@ -68,7 +71,6 @@
         <h2 class="work-title">Featured Works</h2>
 
         <div class="work-carousel">
-            <button class="arrow prev" aria-label="Previous">◀</button>
 
             <div class="work-card active" data-link="development6.html">
                 <img src="pictures/task.png" alt="MyTaskApp screenshot" style="width:100%; border-radius:20px;">
@@ -88,7 +90,19 @@
                 <p>UI/UX Design</p>
             </div>
 
-            <button class="arrow next" aria-label="Next">▶</button>
+            <!-- Navigation Arrows -->
+            <div id="prev" class="nav left nav--work">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="15 4 7 12 15 20" />
+                </svg>
+            </div>
+
+            <div id="next" class="nav right nav--work">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="9 4 17 12 9 20" />
+                </svg>
+            </div>
+
         </div>
 
     </section>
