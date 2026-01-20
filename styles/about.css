@@ -30,12 +30,15 @@
 }
 
 .question-box {
-  background: none;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 .intro-box {
   color: beige; 
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
 
 }
@@ -96,6 +99,7 @@ h3 {
 }
 
 .python-c {
+  padding-top: 26px;
   align-self: center;
   font-family: 'JetBrains Mono';
   margin: 0;
