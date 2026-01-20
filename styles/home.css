@@ -45,10 +45,10 @@
   font-weight: bold;
   margin: 10px 0;
   font-style: italic;
-  color: #ffeb3b; /* title yellow */
+  color: #ffd84d; 
   text-shadow:
-    2px 2px 0 #000,    /* black outline for depth */
-    4px 4px 0 #fff;  /* neon cyan offset for punch */
+  2px 2px 0 #000,
+  4px 4px 0 rgba(255,255,255,0.85);
 }
 
 /* Subtitle */
@@ -58,10 +58,10 @@
   font-weight: 400;
   margin: 0;
   letter-spacing: 1px; /* slight spacing for clarity */
-  color: #b8faff; /* bright aqua-mint — readable on warm zones */
+  color: #e6fcff;
   text-shadow:
-    1.5px 1.5px 0 #bf360c, /* burnt orange inner outline for warmth contrast */
-    2.5px 2.5px 0 #311b92; /* cool purple offset for depth */
+    1.5px 1.5px 0 #d84315, /* burnt orange inner outline for warmth contrast */
+    2.5px 2.5px 0 #1a237e; /* cool purple offset for depth */
 }
 
 /* Asymmetrical quote placement */
@@ -85,15 +85,15 @@
 .about-row {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-inline-start: var(--baseline);
-  padding-inline-end: 40px;             
-  margin: 0;                            
+  align-items: flex-start;      
+  padding-block: 20px;    
+  padding-bottom: 36px;                     
   text-align: left;
 }
 
 .about-title {
   font-family: 'Nunito', sans-serif;
+  padding-bottom: 10px;         
   font-size: 3rem;
   color: beige;
   margin: 0 0 .5rem 0;     
@@ -104,7 +104,7 @@
 .about-text {
   font-family: 'Nunito', sans-serif;
   font-size: 1.3rem;
-  line-height: 1.7;
+  line-height: 1.9;
   color: beige;
   font-weight: 600;
   margin: 0;             
@@ -202,15 +202,18 @@
   white-space: normal;
 }
 
-.python a {
-  font-family: 'JetBrains Mono'; 
-  color: #61dafb;
-  text-decoration: none;
-}
-
 .python a:hover {
   color: darkblue; 
 }
+
+.hash {
+  color: #6A9955;                           
+}
+
+.comment {
+  color: #991B1B;
+}
+                
 
 
 

@@ -87,7 +87,7 @@
   margin: 10px;  /* Space between buttons */
   background: rgba(255,255,255,0.2);
   border: 2px solid transparent;
-  color: #D4E8FF;
+  color: beige;
   border-radius: 16px;
   cursor: pointer;
   font-family: 'Nunito';
@@ -98,12 +98,11 @@
 .filter-buttons button:hover:not(.active) {
   background: linear-gradient(to right, #FFD700, #FFC107); 
   color: purple;
-  border: 2px solid white;
 }
 
 .filter-buttons button.active {  
-  background: rgba(255,255,255,0.4);
-  color: #D4E8FF;
-  border: 2px solid ;
+  background: rgba(255,255,255,0.2);
+  color: beige;
+  border: 2px solid white ;
 };
 

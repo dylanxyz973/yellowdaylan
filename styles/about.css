@@ -1,5 +1,5 @@
 .about-section {
-  padding: 90px 40px 40px;
+  padding: 90px 40px 40px 70px;
   background-image: url(../backgrounds/4.jpg);
 }
 
@@ -13,26 +13,34 @@
 .detail-box {
   border: 2.5px solid transparent;
   border-radius: 20px;
-  padding: 12px;
+  padding: 14px clamp(18px, 2.5vw, 28px);
   margin: 17px 0px;
+  display: inline-block;  /* wraps tightly around text */
+  width: fit-content;
+  max-width: 75%;
 }
-
-.label-left,
-.label-right,
+ 
 .answer-box {
   color: beige;
+  background: rgba(255,255,255,0.3);
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.2px; 
+  padding: 14px;
+}
+
+.question-box {
+  background: none;
 }
 
 .intro-box {
   color: beige; 
   font-size: 20px;
   font-weight: bold;
-  display: inline-block;
+
 }
 
-
-.detail-box {
-  display: table;             /* wraps tightly around text */
+.detail-box {     
   align-self: flex-start;     /* stops flex from stretching */
   padding: 14px 14px 14px 14px;;                    
   border: 2px solid beige;
@@ -49,18 +57,6 @@ h3 {
   font-family: 'Nunito';
   font-weight: 900;
   color: beige;
-}
-
-.question-box {
-  background: none;
-}
-
-.answer-box {
-  background: rgba(255,255,255,0.3);
-  font-size: 20px;
-  line-height: 1.6;
-  letter-spacing: 0.2px; 
-  padding: 14px;
 }
 
 /* === Link styles for about page === */
@@ -97,4 +93,18 @@ h3 {
 .image-container {
   display: inline-block; /* keeps image only */
   vertical-align: middle; /* align with arrow */
+}
+
+.python-c {
+  align-self: center;
+  font-family: 'JetBrains Mono';
+  margin: 0;
+  font-size: 26px;
+  color: beige;
+  text-align: left;
+  white-space: normal;
+}
+
+a.python:hover { 
+  color: darkblue; 
 }

@@ -104,7 +104,7 @@ h1 {
   text-align: center; 
   margin: 0; 
   margin-bottom: 20px;
-  color: #D4E8FF;
+  color: beige;
 }
 
 .center-h1 {
@@ -119,7 +119,7 @@ h2 {
   font-family: 'Nunito';
   text-align: center;
   margin: 0.5em 0 1em 0; /* top right bottom left */
-  color: #D4E8FF;
+  color: beige;
 }
 
 /* === Nav Bar === */
@@ -132,7 +132,7 @@ h2 {
 
 .topnav a,
 .dropdown-content a {
-  color: #F2F8FF; 
+  color: beige; 
   text-shadow:
   0 1px 2px rgba(18, 28, 72, 0.75),
   0 0 1px rgba(18, 28, 72, 0.9);
@@ -151,9 +151,10 @@ h2 {
 .topnav {
   position: fixed;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
+  left: auto;
+  right: 30px;
+  transform: none;
+  width: 34%;
   padding: 4px 8px;
   border-radius: 50px;
   display: flex;
@@ -272,4 +273,19 @@ h2 {
   stroke: orangered;
 }
 
+.python a {
+  font-family: 'JetBrains Mono'; 
+  color: #61dafb;
+  text-decoration: none;
+}
+
+a.python {
+  font-family: 'JetBrains Mono';
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.python a:hover {
+  color: darkblue; 
+}
 

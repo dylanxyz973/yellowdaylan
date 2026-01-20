@@ -1,13 +1,21 @@
 document.querySelectorAll('.question-box').forEach(question => {
+  // store original text
+  const text = question.textContent.trim();
+
+  // set default +
+  question.textContent = `+ ${text}`;
+
   question.addEventListener('click', () => {
-    // check if this question's content is already visible
     let isOpen = false;
     let next = question.nextElementSibling;
+
+    // check if already open
     while (next && !next.classList.contains('question-box')) {
+      const isVisible = window.getComputedStyle(next).display !== 'none';
       if (
         !next.classList.contains('always-show') &&
         !next.classList.contains('intro-box') &&
-        next.style.display === 'block'
+        isVisible
       ) {
         isOpen = true;
         break;
@@ -15,14 +23,20 @@ document.querySelectorAll('.question-box').forEach(question => {
       next = next.nextElementSibling;
     }
 
-    // hide everything except always-show and intro-box
-    document.querySelectorAll('.answer-box, .detail-box').forEach(box => {
+    // hide all answers
+    document.querySelectorAll('.answer-box, .detail-box, .intro-box').forEach(box => {
       if (!box.classList.contains('always-show')) {
         box.style.display = 'none';
       }
     });
 
-    // if it wasn't open, then open it
+    // reset all questions to +
+    document.querySelectorAll('.question-box').forEach(q => {
+      const t = q.textContent.replace(/^[-+]\s*/, '');
+      q.textContent = `+ ${t}`;
+    });
+
+    // open if not already open
     if (!isOpen) {
       let reveal = question.nextElementSibling;
       while (reveal && !reveal.classList.contains('question-box')) {
@@ -30,14 +44,15 @@ document.querySelectorAll('.question-box').forEach(question => {
           !reveal.classList.contains('always-show') &&
           !reveal.classList.contains('intro-box')
         ) {
-          if (reveal.classList.contains('detail-box')) {
-            reveal.style.display = 'table'; // keep detail-box behavior
-          } else {
-            reveal.style.display = 'block';
-          }
+          reveal.style.display = reveal.classList.contains('detail-box')
+            ? 'table'
+            : 'block';
         }
         reveal = reveal.nextElementSibling;
       }
+
+      // change + to -
+      question.textContent = `- ${text}`;
     }
   });
 });
