@@ -100,7 +100,7 @@ html {
 h1 {
   font-family: 'Nunito';
   font-weight: 900;
-  font-size: 4rem; 
+  font-size: clamp(40px, 6vw, 120px);
   text-align: center; 
   margin: 0; 
   margin-bottom: 20px;
@@ -115,7 +115,7 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: clamp(24px, 3vw, 60px);
   font-family: 'Nunito';
   text-align: center;
   margin: 0.5em 0 1em 0; /* top right bottom left */
@@ -155,11 +155,53 @@ h2 {
   right: 30px;
   transform: none;
   width: 34%;
+  max-width: 95vw;  
   padding: 4px 8px;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;  
+}
+
+
+/* === TABLET LAYOUT === */
+@media (max-width: 1024px) {
+  .topnav {
+    width: 55%;
+    right: 20px;
+    gap: 14px;
+  }
+
+  .hero-title {
+    font-size: 70px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 24px !important;
+  }
+
+}
+
+/* === MOBILE LAYOUT === */
+@media (max-width: 600px) {
+  .topnav {
+    width: 90%;         /* fills most of the screen */
+    top: 10px;
+    gap: 10px;
+
+    flex-wrap: wrap;    
+    justify-content: center;
+    padding: 6px 10px;
+  }
+
+  .hero-title {
+    font-size: 54px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 18.5px !important;
+  }
 }
 
 .topnav a {
@@ -277,6 +319,10 @@ h2 {
   font-family: 'JetBrains Mono'; 
   color: #61dafb;
   text-decoration: none;
+}
+
+.space {
+  letter-spacing: 1px;
 }
 
 a.python {

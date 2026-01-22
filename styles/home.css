@@ -9,6 +9,8 @@
   text-align: center;      /* centers inline text */
   padding: 90px 20px 20px;
   background-image: url(../backgrounds/1.webp);
+  background-size: 1440px auto; 
+  background-attachment: fixed;
 }
 
 .hero-content {
@@ -18,30 +20,32 @@
   justify-content: flex-start; /* stick to left */
   box-sizing: border-box;
   text-align: left;
-  flex-wrap: wrap;
-  min-width: 0;
+  flex-wrap: wrap;      
+  margin-inline: auto; 
+  padding: clamp(16px, 3vw, 48px);
+  box-sizing: border-box;
+  gap: 36px; 
 }
 
 /* Logo */
 .hero-logo {
-  width: 300px;
+  width: 400px;
   height: auto; 
   object-fit: contain;
-  flex-shrink: 0;   /* don’t shrink too much */
 }
 
 /* Text Section */
 .hero-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;   
 }
 
 /* Title */
 .hero-title {
   font-family: 'Bangers';
   letter-spacing: 2px;
-  font-size: 6rem;
+  font-size: 115px;
   font-weight: bold;
   margin: 10px 0;
   font-style: italic;
@@ -54,7 +58,7 @@
 /* Subtitle */
 .hero-subtitle {
   font-family: 'Luckiest Guy';
-  font-size: 2rem;
+  font-size: 39.5px;
   font-weight: 400;
   margin: 0;
   letter-spacing: 1px; /* slight spacing for clarity */

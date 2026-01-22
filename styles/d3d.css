@@ -4,70 +4,17 @@
   align-items: center;     /* centers horizontally */
   text-align: center;      /* centers inline text */
   padding: 90px 20px;
-  background-image:
-    /* magenta coral — center-left */
-    radial-gradient(circle at 22% 45%,
-      rgba(255, 40, 120, 0.95) 0%,
-      rgba(255, 40, 120, 0.60) 18%,
-      rgba(255, 40, 120, 0.12) 40%,
-      transparent 65%),
-
-    /* electric sky blue — top-right */
-    radial-gradient(circle at 82% 12%,
-      rgba(45, 200, 255, 0.95) 0%,
-      rgba(45, 200, 255, 0.55) 20%,
-      rgba(45, 200, 255, 0.10) 42%,
-      transparent 68%),
-
-    /* neon lemon — bottom-left */
-    radial-gradient(circle at 12% 88%,
-      rgba(255, 240, 50, 0.94) 0%,
-      rgba(255, 240, 50, 0.46) 16%,
-      rgba(255, 240, 50, 0.08) 36%,
-      transparent 60%),
-
-    /* mint teal — mid-right */
-    radial-gradient(circle at 68% 72%,
-      rgba(40, 255, 200, 0.90) 0%,
-      rgba(40, 255, 200, 0.40) 18%,
-      transparent 46%),
-
-    /* orange-punch — top-center */
-    radial-gradient(circle at 50% 8%,
-      rgba(255, 120, 30, 0.88) 0%,
-      rgba(255, 120, 30, 0.35) 18%,
-      transparent 42%),
-
-    /* luminous violet — bottom-right accent */
-    radial-gradient(circle at 88% 82%,
-      rgba(165, 95, 255, 0.92) 0%,
-      rgba(165, 95, 255, 0.38) 22%,
-      transparent 48%),
-
-    /* soft vertical shimmer to unify and add depth */
-    linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));
-
-  /* preserve the vividness and make overlays luminous */
-  background-blend-mode: screen, screen, screen, screen, screen, screen, overlay;
-
-  /* large sizes so gradients are soft and not tightly cut off */
-  background-size: 160% 140%, 140% 120%, 150% 140%, 140% 130%, 120% 110%, 120% 120%, cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-h2{
-  color:#008584;
+  background: black;
 }
 
 .label-box{
   display: inline-block; 
   background: rgba(255, 255, 255, 0.2);  
-  color: #008584;              
+  color: beige;              
   font-weight: bold;
   padding: 6px 14px;         
   border-radius: 20px;         
-  border: 2px solid #008584; 
+  border: 2px solid beige; 
   font-family: 'nunito';
   margin-bottom: 8px; 
   font-weight: 800;
@@ -96,8 +43,8 @@ h2{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #008584;
-  border: 2px solid #008584;
+  color: beige;
+  border: 2px solid beige;
   border-radius: 20px;
   padding: 15px 20px;
   width: 85px;
@@ -151,7 +98,7 @@ h4 {
   margin: 30px auto 10px; 
   font-size: 22px;          
   line-height: 1.4;
-  color: #570861;         
+  color: beige;     
   font-family: 'Nunito';
   font-weight: 800;      
   text-align: left;
@@ -166,7 +113,7 @@ p {
   text-align: left;
   font-size: 20px;
   line-height: 1.5;
-  color: #570861;
+  color: beige;
   font-family: 'Nunito';
   font-weight: 600;
   margin-top: 0;
@@ -180,8 +127,8 @@ p {
 
 a:not(.back-link):not(.topnav a) {
   margin-top: 25px;
-  color: #570861;
-  border-color: #570861;
+  color: beige;
+  border-color: beige;
   font-family: 'Nunito';
   text-decoration: none;
   display: inline-flex;
@@ -200,8 +147,8 @@ a:not(.topnav a):hover {
 /* Back link to portfolio */
 .back-link {
   margin-top: 50px;
-  color: #008584;
-  border: 2px solid #008584;
+  color: beige;
+  border: 2px solid beige;
   font-family: 'Nunito';
   font-size: 22px !important;
 }

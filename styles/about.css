@@ -1,6 +1,8 @@
 .about-section {
   padding: 90px 40px 40px 70px;
   background-image: url(../backgrounds/4.jpg);
+  background-size: 1440px auto; 
+  background-attachment: fixed;
 }
 
 .question-box ~ .detail-box,
