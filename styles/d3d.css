@@ -4,7 +4,9 @@
   align-items: center;     /* centers horizontally */
   text-align: center;      /* centers inline text */
   padding: 90px 20px;
-  background: black;
+  background-image: url(../backgrounds/2.webp);
+  background-size: 1440px auto; 
+  background-attachment: fixed;
 }
 
 .label-box{
@@ -155,21 +157,22 @@ a:not(.topnav a):hover {
 
 /* === Pictures === */
 .gallery {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
-  padding: 40px 30px 20px 30px;
+  align-items: center;
 }
 
+/* Hide all images by default */
 .gallery-item {
-  width: auto;
-  max-height: 200px;
-  object-fit: cover;
+  display: none;
+  max-height: 320px;
+  border-radius: 8px;
+  border: 2px solid beige;
   cursor: pointer;
-  margin: 5px;
-  border-radius: 8px; /* still keeps slight rounding */
-  border: 2px solid #570861;  
 }
 
 img {
@@ -178,11 +181,11 @@ img {
   object-fit: contain;
 }
 
-.gallery-item:hover {
-  transform: scale(1.05);
+.gallery-item.active {
+  display: block;
 }
 
-/* === Gallery slideshow === */
+/* === Gallery expanded view=== */
 body.modal-open {
   overflow: hidden;
   height: 100vh;  /* ensures body doesn’t expand */
@@ -203,6 +206,14 @@ body.modal-open {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.detail-item {
+  display: none;
+}
+
+.detail-item.active {
+  display: block;
 }
 
 
@@ -255,4 +266,15 @@ body.modal-open {
   object-fit: contain;    /* prevents stretching for portrait */
   border-radius: 16px;
   border: 2px solid #570861;
+}
+
+/* Navigation Arrows for work page */
+.nav {
+  position: absolute;
+  top: 70vh;       
+  transform: translateY(0);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 11;
 }

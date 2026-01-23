@@ -44,77 +44,6 @@
       </div>
     </div>
 
-    <h4>Objectives:</h4>
-
-    <p>To create an simple hobby website as part of mini project by applying knowledge of web
-      development by building a fully functional Node.js Express web application. This project requires the ability
-      to handle routing, form submission and display of information using only GET and POST
-      methods with in-memory data</p>
-
-    <h4>Technical Competencies:</h4>
-
-    <h4>Functionalites:</h4>
-
-    <p>
-      <strong>Navigation Bar</strong><br>
-      Toggle between home, drawing list, add drawing<br>
-      <br>
-      <strong>/ route (home page)</strong><br>
-      Display Greeting text<br>
-      <br>
-      <strong>/lists route</strong><br>
-      Display of completed drawings with each drawing wrapped with a thin light grey border.<br><br>
-      Each drawing consists:<br>
-      • Details button to direct to separate detail page (/details/:id get route)
-      to view drawing details.<br>
-      • Edit Button and Delete Button<br>
-      • Its title, description, image, completion date.<br>
-      <br>
-      <strong>/addItem get route</strong><br>
-      Retrieve the fields (data) for adding drawings:<br>
-      • Title<br>
-      • Description<br>
-      • Completed Date<br>
-      • Image<br>
-      • Details<br>
-      <br>
-      <strong>/addItem post route</strong><br>
-      Sumbit the require fields (data) and redirect users to /lists route.<br>
-      <br>
-      <strong>/updateItem get route</strong><br>
-      Retrieve the pre-populated fields (data) from drawings:<br>
-      • Title<br>
-      • Description<br>
-      • Completed Date<br>
-      • Image<br>
-      • Details<br>
-      <br>
-      <strong>/updateItem post route</strong><br>
-      Sumbit the updated fields (data) and redirect users to /lists route.<br>
-      <br>
-      <strong>/details/:id get route</strong><br>
-      Upon Clicking details button, users are directed to each drawing with details shown.<br>
-      Upon Clicking back to drawings button, users are directed back to lists drawing (/lists route).<br>
-      <br>
-      <strong>/deleteItem/:id post route </strong><br>
-      Upon Clicking delete button, a pop up browser warning delete prompt to confirm deletion.<br>
-    </p>
-
-
-    <h4>Building process:</h4>
-
-    <p>
-      Based on technical rules, only node.js and express.js can be used. Databases, REST APIs, or templates (E.g. EJS,
-      Pug, etc) and view engines like EJS cannot be used. Only GET and POST methods can be used for this particular
-      website.
-      Bootstrap must be applied which CSS cannot be applied resulting in constraints of the webpage design.
-      Instead of the standard black navbar, I chose navbar to be yellow because it is my favourite colour. It consists
-      of 5 main routes which each page serving its
-      different functionalities, its built using GET and POST methods with in-memory data.
-    </p>
-
-    <p>View the pictures to see the different routes</p>
-
     <div class="gallery">
       <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
         data-label="Home Page">
@@ -128,6 +57,85 @@
         data-label="Edit Page">
       <img src="pictures/add.png" class="gallery-item" alt="Add Page" data-src="pictures/add.png" data-label="Add Page">
     </div>
+
+    <!-- Navigation Arrows -->
+    <div id="prev" class="nav left">
+      <svg viewBox="0 0 24 24">
+        <polyline points="15 4 7 12 15 20" />
+      </svg>
+    </div>
+
+    <div id="next" class="nav right">
+      <svg viewBox="0 0 24 24">
+        <polyline points="9 4 17 12 9 20" />
+      </svg>
+    </div>
+
+    <div class="details">
+      <p class="detail-item"><strong>/ route (home page)</strong><br>
+        Display Greeting text<br></p>
+      <p class="detail-item"><strong>/lists route</strong><br>
+        Display of completed drawings with each drawing wrapped with a thin light grey border.<br><br>
+        Each drawing consists:<br>
+        • Details button to direct to separate detail page (/details/:id get route)
+        to view drawing details.<br>
+        • Edit Button and Delete Button<br>
+        • Its title, description, image, completion date.<br>
+        <br><br>
+      </p>
+      <p class="detail-item"><strong>/details/:id get route</strong><br>
+        Upon Clicking details button, users are directed to each drawing with details shown.<br>
+        Upon Clicking back to drawings button, users are directed back to lists drawing (/lists route).<br>
+      <p class="detail-item"><strong>/deleteItem/:id post route </strong><br>
+        Upon Clicking delete button, a pop up browser warning delete prompt to confirm deletion.<br></p>
+      <p class="detail-item"><strong>/updateItem get route</strong><br>
+      Retrieve the pre-populated fields (data) from drawings:<br>
+      • Title<br>
+      • Description<br>
+      • Completed Date<br>
+      • Image<br>
+      • Details<br>
+      <br></p>
+      <p class="detail-item"><strong>/addItem get route</strong><br>
+      Retrieve the fields (data) for adding drawings:<br>
+      • Title<br>
+      • Description<br>
+      • Completed Date<br>
+      • Image<br>
+      • Details<br>
+      <br>
+      <strong>/addItem post route</strong><br>
+      Sumbit the require fields (data) and redirect users to /lists route.<br></p>
+      <p class="detail-item">Detail for Photo 4</p>
+    </div>
+
+    <h4>Objectives:</h4>
+
+    <p>To create an simple hobby website as part of mini project by applying knowledge of web
+      development by building a fully functional Node.js Express web application. This project requires the ability
+      to handle routing, form submission and display of information using only GET and POST
+      methods with in-memory data</p>
+
+    <h4>Technical Competencies:</h4>
+
+    <h4>Functionalites:</h4>
+    <p>
+      <strong>Navigation Bar</strong><br>
+      Toggle between home, drawing list, add drawing<br>
+    </p>
+     
+    <h4>Building process:</h4>
+
+    <p>
+      Based on technical rules, only node.js and express.js can be used. Databases, REST APIs, or templates (E.g. EJS,
+      Pug, etc) and view engines like EJS cannot be used. Only GET and POST methods can be used for this particular
+      website.
+      Bootstrap must be applied which CSS cannot be applied resulting in constraints of the webpage design.
+      Instead of the standard black navbar, I chose navbar to be yellow because it is my favourite colour. It consists
+      of 5 main routes which each page serving its
+      different functionalities, its built using GET and POST methods with in-memory data.
+    </p>
+
 
     <div class="modal" id="modal">
 
@@ -144,23 +152,6 @@
         <img class="modal-content" id="modal-img" alt="Expanded view">
       </div>
 
-      <!-- Label with gradient border + frosted background -->
-      <div class="modal-label-wrapper">
-        <div class="modal-label" id="modal-label">Home Page</div>
-      </div>
-
-      <!-- Navigation Arrows -->
-      <div id="prev" class="nav left">
-        <svg viewBox="0 0 24 24">
-          <polyline points="15 4 7 12 15 20" />
-        </svg>
-      </div>
-
-      <div id="next" class="nav right">
-        <svg viewBox="0 0 24 24">
-          <polyline points="9 4 17 12 9 20" />
-        </svg>
-      </div>
     </div>
 
     <!-- Simple link with GitHub logo -->
@@ -196,6 +187,7 @@
 
   <script src="js/cursor.js"></script>
   <script src="js/gallery.js"></script>
+  <script src="js/carousel.js"></script>
 
 </body>
 

@@ -1,34 +1,25 @@
 .about-section {
   padding: 90px 40px 40px 70px;
-  background-image: url(../backgrounds/4.jpg);
+  background-image: url(../backgrounds/6.jpg);
   background-size: 1440px auto; 
   background-attachment: fixed;
 }
 
-.question-box ~ .detail-box,
-.question-box ~ .answer-box {
+.detail-box,
+.answer-box,
+.reveal-img,
+.reveal-row {
   display: none;
 }
 
 .answer-box,
-.question-box,
 .detail-box {
   border: 2.5px solid transparent;
   border-radius: 20px;
   padding: 14px clamp(18px, 2.5vw, 28px);
-  margin: 17px 0px;
-  display: inline-block;  /* wraps tightly around text */
+  margin: 17px 0;
   width: fit-content;
   max-width: 75%;
-}
- 
-.answer-box {
-  color: beige;
-  background: rgba(255,255,255,0.3);
-  font-size: 20px;
-  line-height: 1.6;
-  letter-spacing: 0.2px; 
-  padding: 14px;
 }
 
 .question-box {
@@ -36,23 +27,44 @@
   cursor: pointer;
   position: relative;
   z-index: 2;
+  border: 2.5px solid transparent;
+  border-radius: 20px;
+  padding: 14px clamp(18px, 2.5vw, 28px);
+  margin: 17px 0;
 }
 
-.intro-box {
-  color: beige; 
-  font-size: 22px;
-  font-weight: bold;
-
+.answer-box {
+  color: beige;
+  background: rgba(255,255,255,0.3);
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  padding: 14px;
 }
 
-.detail-box {     
-  align-self: flex-start;     /* stops flex from stretching */
-  padding: 14px 14px 14px 14px;;                    
+.detail-box {
+  align-self: flex-start;
   border: 2px solid beige;
   font-size: 18px;
   font-weight: 700;
   color: beige;
+}
+
+.intro-box {
+  color: beige;
+  font-size: 22px;
   font-weight: bold;
+}
+
+.reveal-img {
+  max-width: 100%;
+  margin: 15px auto;
+  border-radius: 15px;
+}
+
+.reveal-row {
+  gap: 20px;
+  align-items: flex-start;
 }
 
 /* h3 only apply in question box */
