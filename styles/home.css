@@ -89,10 +89,9 @@
 .about-row {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;      
-  padding-block: 20px;    
-  padding-bottom: 36px;                     
+  align-items: flex-start;                       
   text-align: left;
+  padding-bottom: 30px;
 }
 
 .about-title {
@@ -107,15 +106,48 @@
 
 .about-text {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.3rem;
+  font-size: 20px;
   line-height: 1.9;
   color: beige;
   font-weight: 600;
-  margin: 0;             
-  text-align: left;
-  text-indent: 0;
-  white-space: normal;   
-  max-width: 70ch;         
+  margin: 0;
+  max-width: 70ch;
+}
+
+.about-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-list li {
+  color: beige;
+  display: grid;
+  grid-template-columns: 1.3ch 1fr;
+  column-gap: 0.6ch;
+  margin: 10px 0;
+}
+
+.about-list li::before {
+  font-weight: 700;
+  justify-self: start;
+}
+
+.about-list li.hash::before {
+  content: "#";
+  color: #2ea043;
+}
+
+.about-list li.quote::before {
+  content: "'''";
+  color: #b33;
+}
+
+.about-list li.quote span::after {
+  content: " '''";
+  color: #b33;
+  font-weight: 700;
+  white-space: nowrap !important; 
 }
 
 .about-section, .about-row, .about-title, .about-text {

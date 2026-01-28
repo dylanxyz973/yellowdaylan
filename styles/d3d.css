@@ -11,7 +11,7 @@
 
 .label-box{
   display: inline-block; 
-  background: rgba(255, 255, 255, 0.2);  
+  background: rgba(255, 255, 255, 0.3);  
   color: beige;              
   font-weight: bold;
   padding: 6px 14px;         
@@ -39,7 +39,7 @@
 }
 
 .tool-box {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   border: 1.75px solid transparent;
   display: flex;
   flex-direction: column;
@@ -98,7 +98,7 @@ h4 {
   width: 100%;
   max-width: 1200px;
   margin: 30px auto 10px; 
-  font-size: 22px;          
+  font-size: 24px;          
   line-height: 1.4;
   color: beige;     
   font-family: 'Nunito';
@@ -106,7 +106,6 @@ h4 {
   text-align: left;
   padding: 5px 10px;
   border-radius: 16px;
-  font-weight: 800;
 }
 
 p {
@@ -117,7 +116,7 @@ p {
   line-height: 1.5;
   color: beige;
   font-family: 'Nunito';
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 0;
 }
 
@@ -139,7 +138,7 @@ a:not(.back-link):not(.topnav a) {
 }
 
 a:not(.topnav a):hover {
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .github-logo {

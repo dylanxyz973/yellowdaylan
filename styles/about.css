@@ -16,10 +16,9 @@
 .detail-box {
   border: 2.5px solid transparent;
   border-radius: 20px;
-  padding: 14px clamp(18px, 2.5vw, 28px);
+  padding: 12px 20px;
   margin: 17px 0;
   width: fit-content;
-  max-width: 75%;
 }
 
 .question-box {
@@ -28,10 +27,10 @@
   position: relative;
   z-index: 2;
   border: 2.5px solid transparent;
-  border-radius: 20px;
-  padding: 14px clamp(18px, 2.5vw, 28px);
-  margin: 17px 0;
+  padding: 12px 18px 12px 8px;  
+  margin: 10px 0;               
 }
+
 
 .answer-box {
   color: beige;
@@ -54,15 +53,26 @@
   color: beige;
   font-size: 22px;
   font-weight: bold;
+  margin: 20px 0 6px 0;
+}
+
+.text-col {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  max-width: 60%;
 }
 
 .reveal-img {
-  max-width: 100%;
-  margin: 15px auto;
-  border-radius: 15px;
+  max-width: 40%;
+  max-height: 360px; 
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
 .reveal-row {
+  display: none;       
+  display: flex;
   gap: 20px;
   align-items: flex-start;
 }
@@ -70,7 +80,7 @@
 /* h3 only apply in question box */
 h3 {
   margin: 0px;
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'Nunito';
   font-weight: 900;
   color: beige;
@@ -113,10 +123,9 @@ h3 {
 }
 
 .python-c {
-  padding-top: 26px;
+  margin-top: 40px;
   align-self: center;
   font-family: 'JetBrains Mono';
-  margin: 0;
   font-size: 26px;
   color: beige;
   text-align: left;
