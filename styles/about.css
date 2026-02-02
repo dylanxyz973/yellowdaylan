@@ -5,10 +5,7 @@
   background-attachment: fixed;
 }
 
-.detail-box,
-.answer-box,
-.reveal-img,
-.reveal-row {
+.question-box + * {
   display: none;
 }
 
@@ -97,29 +94,37 @@ h3 {
   display: inline-block;
 }
 
-.img-toggle {
-  position: relative;   /* 👈 THIS makes .arrow-text stick to the container */
-  display: inline-block;  
-  width: 330px; 
-  border-radius: 20px;
-  overflow: hidden;
+.image-wrapper {
+  position: relative;
+  display: inline-block; 
+}
+
+.reveal-img {
+  display: block;
   cursor: pointer;
-  border: 3px solid white;
-  background: transparent;
-  padding: 0; 
 }
 
-.img-toggle img {
-  width: 100%;
-  height: auto;
-  display: block; 
-  user-select: none;
-  -webkit-user-drag: none;
+.clickable-image {
+  position: relative;
+  width: fit-content;
 }
 
-.image-container {
-  display: inline-block; /* keeps image only */
-  vertical-align: middle; /* align with arrow */
+.clickable-image img {
+  display: block;
+  max-width: none;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.click-indicator {
+  position: absolute;
+  left: -80px;   
+  bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: beige;
+  font-family: 'Nunito';
+  pointer-events: none;
 }
 
 .python-c {
@@ -130,8 +135,4 @@ h3 {
   color: beige;
   text-align: left;
   white-space: normal;
-}
-
-a.python:hover { 
-  color: darkblue; 
 }

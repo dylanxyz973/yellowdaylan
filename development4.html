@@ -27,47 +27,141 @@
 
     <section class="display">
 
+        <h2 class="h2">Campus Engagament Website</h2>
+
         <div class="tool-section">
             <div class="label-box">Languages Used:</div>
             <div class="tool-box-container">
                 <div class="tool-box">
-                    <img src="pictures/react.png" alt="React">
+                    <img src="logos/react.png" alt="React">
                     <div>React JS</div>
                 </div>
                 <div class="tool-box">
-                    <img src="pictures/css.svg" alt="CSS">
+                    <img src="logos/css.svg" alt="CSS">
                     <div>CSS</div>
                 </div>
+                <div class="tool-box">
+                    <img src="logos/node.png" alt="JavaScript">
+                    <div>Node + Express</div>
+                </div>
+                <div class="tool-box">
+                    <img src="logos/SQL.png" alt="sql">
+                    <div>MySQL</div>
+                </div>
             </div>
+        </div>
+
+        <div class="gallery">
+            <img src="pictures/event.png" class="gallery-item" alt="Home Page" data-src="pictures/event.png"
+                data-label="Home Page">
+            <img src="pictures/eventList.png" class="gallery-item" alt="Event Page" data-src="pictures/eventList.png"
+                data-label="List Page">
+            <img src="pictures/addEvent.png" class="gallery-item" alt="Add Page" data-src="pictures/addEvent.png"
+                data-label="Add Event Page">
+            <img src="pictures/editEvent.png" class="gallery-item" alt="Edit Page" data-src="pictures/editEvent.png"
+                data-label="Edit Page">
+            <img src="pictures/delete.png" class="gallery-item" alt="Prompt appearing" data-src="pictures/delete.png"
+                data-label="Delete Prompt">
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div id="prev" class="nav left">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15 4 7 12 15 20" />
+            </svg>
+        </div>
+
+        <div id="next" class="nav right">
+            <svg viewBox="0 0 24 24">
+                <polyline points="9 4 17 12 9 20" />
+            </svg>
         </div>
 
         <h4>Objectives:</h4>
 
         <p>
-            Application of React JS knowledge such as
+            To apply React JS concepts in conceptualising and building a full-stack web application that addresses a
+            real-world problem.<br><br>
+            This proposed application should:<br>
+            • Allow users to view and manage information<br>
+            • Support data creation, modification and deletion handling<br>
+            • Provide a clear and usable interface<br>
+            • Handle client–server communication through APIs and managing application state effectively<br>
+            • Demonstrate meaningful interaction between frontend and backend<br><br>
         </p>
 
-        <h4>Technical Competencies:</h4>
+        <h4>Technical Competencies:</h4><br>
+
+        <p>
+            <strong>Frontend Development</strong><br><br>
+            • Utilise React JS to create webpage functional components<br>
+            • Apply React Hooks (useState, useEffect) for state<br>
+            • Client-side routing using React Router (dynamic routes and navigation)<br>
+            • Form handling and toggle button<br>
+            • Conditional rendering for loading and error states<br><br>
+
+            <strong>Backend Development</strong><br><br>
+            • Server-side development using Node.js and Express<br>
+            • RESTful API design and implementation (GET, POST, PUT, DELETE)<br>
+            • Request and response handling using Express middleware<br>
+            • JSON data handling and API error management<br><br>
+
+            <strong>Database & Data Management</strong><br><br>
+            • Design a MySQL database with appropriate fields<br>
+            • Writing SQL queries for CRUD operations<br>
+            • Connecting backend services to a MySQL database<br>
+            • Ensure data is proper between frontend and backend<br><br>
+
+            <strong>API & Integration</strong><br><br>
+            • Frontend–backend communication using Fetch API<br>
+            • Handling asynchronous requests and responses<br>
+            • Environment variable usage for secure configuration<br><br>
+
+            <strong>UI & Styling</strong><br><br>
+            • Styling user interface using CSS<br>
+            • Layout design using Flexbox and Grid<br><br>
+
+            <strong>Development Practices</strong><br><br>
+            • Debugging and resolving frontend and backend issues<br>
+            • Code organisation and project structure management<br>
+            • Iterative development and feature refinement
+        </p>
+
 
         <h4>Functionalites/Features:</h4>
 
         <p>
-            1.
+            • View a list of events retrieved from a remote MySQL database<br>
+            • Add new events through a forms<br>
+            • Edit existing event details<br>
+            • Delete events with a confirmation prompt to prevent accidental deletion<br>
+            • Dynamic routing for individual event editing pages<br>
+            • Loading and error handling for better user experience
         </p>
 
         <h4>Building process:</h4>
 
         <p>
-            A simple travel list website built using React JS with upgraded styling.
+            Span over a short two week duration, this campus engagement website was developed by first setting up a
+            MySQL database and backend API using Node.js and Express.
+            Then, the frontend was then built using React JS, where reusable components were created for event display
+            and forms.
+            API endpoints were integrated to enable data fetching and manipulation followed by creating the routes.
+            Lastly,
+            styling and usability improvements were implemented. Testing and debugging were done iteratively to ensure
+            smooth data flow between the frontend and backend. I choose green for as my main background theme
+            A built using React JS with styling.<br><br>
             Watch the video to see how the website works!
         </p>
 
         <!-- Simple link with GitHub logo -->
-        <a href="https://github.com/dylanxyz973/SupermarketWebsite" target="_blank" rel="noopener"
-            class="external-link">
-            <!-- GitHub logo SVG -->
-            <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" class="github-logo">
-                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
+
+        <div class="link-row">
+            <a href="https://github.com/dylanxyz973/campus-engagement-c219ca2" target="_blank" rel="noopener"
+                class="external-link">
+                <!-- GitHub logo SVG -->
+                <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" class="github-logo">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
     2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
     0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49
     -2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
@@ -82,9 +176,35 @@
     3.95.29.25.54.73.54 1.48 0 1.07-.01 
     1.93-.01 2.2 0 .21.15.46.55.38A8.013 
     8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-            </svg>
-            View on GitHub
-        </a>
+                </svg>
+                View GitHub (Front-End Code)
+            </a>
+
+            <a href="https://github.com/dylanxyz973/backend-ca2" target="_blank" rel="noopener" class="external-link">
+                <!-- GitHub logo SVG -->
+                <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" class="github-logo">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
+    2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49
+    -2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+    -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 
+    1.87.87 2.33.66.07-.52.28-.87.51-1.07
+    -1.78-.2-3.64-.89-3.64-3.95 
+    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+    0 0 .67-.21 2.2.82a7.68 7.68 0 0 1 2-.27
+    c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 
+    2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
+    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+                View GitHub (Back-End Code)
+            </a>
+
+            <a href="https://campus-engagement-c219ca2.vercel.app/">Explore the website !</a>
+        </div>
+
 
         <a href="portfolio.html" class="back-link">← Back to Works</a>
 
@@ -95,6 +215,8 @@
     </div>
 
     <script src="js/cursor.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/carousel.js"></script>
 
 </body>
 

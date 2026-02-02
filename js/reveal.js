@@ -5,30 +5,22 @@ questions.forEach(question => {
   question.textContent = `+ ${text}`;
 
   question.addEventListener('click', () => {
-    let reveal = question.nextElementSibling;
+    let el = question.nextElementSibling;
     let isOpen = false;
 
     // check if already open
-    while (reveal && !reveal.classList.contains('question-box')) {
-      if (
-        reveal.classList.contains('detail-box') ||
-        reveal.classList.contains('answer-box') ||
-        reveal.classList.contains('reveal-img') ||
-        reveal.classList.contains('reveal-row')
-      ) {
-        if (reveal.style.display !== 'none') {
-          isOpen = true;
-        }
+    while (el && !el.classList.contains('question-box')) {
+      if (el.style.display !== 'none') {
+        isOpen = true;
+        break;
       }
-      reveal = reveal.nextElementSibling;
+      el = el.nextElementSibling;
     }
 
-    // close all revealable elements
-    document
-      .querySelectorAll('.detail-box, .answer-box, .reveal-img, .reveal-row')
-      .forEach(el => {
-        el.style.display = 'none';
-      });
+    // close everything
+    document.querySelectorAll('.question-box + *').forEach(item => {
+      item.style.display = 'none';
+    });
 
     // reset all questions
     questions.forEach(q => {
@@ -36,36 +28,15 @@ questions.forEach(question => {
       q.textContent = `+ ${t}`;
     });
 
-    // open clicked question
+    // open clicked section
     if (!isOpen) {
-      reveal = question.nextElementSibling;
-      while (reveal && !reveal.classList.contains('question-box')) {
+      el = question.nextElementSibling;
 
-        // CASE 1: reveal-row (image + detail layout)
-        if (reveal.classList.contains('reveal-row')) {
-          reveal.style.display = 'flex';
-
-          // show children inside reveal-row
-          reveal.querySelectorAll('.detail-box, .answer-box, .reveal-img')
-            .forEach(child => {
-              child.style.display = 'block';
-            });
-        }
-        
-        // CASE 2: normal standalone boxes
-        if (
-          reveal.classList.contains('detail-box') ||
-          reveal.classList.contains('answer-box') ||
-          reveal.classList.contains('reveal-img')
-        ) {
-          reveal.style.display = 'block';
-        }
-
-        if (reveal.classList.contains('reveal-row')) {
-          reveal.style.display = 'flex';
-        }
-
-        reveal = reveal.nextElementSibling;
+      while (el && !el.classList.contains('question-box')) {
+        el.style.display = el.classList.contains('reveal-row')
+          ? 'flex'
+          : 'block';
+        el = el.nextElementSibling;
       }
 
       question.textContent = `- ${text}`;

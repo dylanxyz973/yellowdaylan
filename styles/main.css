@@ -100,7 +100,7 @@ html {
 h1 {
   font-family: 'Nunito';
   font-weight: 900;
-  font-size: 60px;
+  font-size: 65px;
   text-align: center; 
   margin: 0; 
   margin-bottom: 20px;
@@ -268,7 +268,7 @@ h2 {
 }
 
 .nav:hover polyline {
-  stroke: #61dafb;
+  stroke: #B6FF00;
 }
 
 /* Placement for work page */
@@ -306,7 +306,11 @@ h2 {
 
 .python a {
   font-family: 'JetBrains Mono'; 
-  color: #61dafb;
+  color: #B6FF00;
+  padding: 2px 6px;
+  border-radius: 8px;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 2px;
   text-decoration: none;
 }
 
@@ -316,11 +320,14 @@ h2 {
 
 a.python {
   font-family: 'JetBrains Mono';
-  color: #61dafb;
+  color: #B6FF00;
   text-decoration: none;
 }
 
-.python a:hover {
-  color: darkblue; 
+a.python:hover { 
+  color: #00F5FF;
 }
 
+.python a:hover {
+  color: #00F5FF;
+}

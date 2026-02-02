@@ -27,35 +27,70 @@
 
     <section class="display">
 
-        <h2 class="h2">Embedded JavaScript website</h2>
+        <h2 class="h2">Grocery ShopFood Website</h2>
 
         <div class="tool-section">
             <div class="label-box">Languages Used:</div>
             <div class="tool-box-container">
                 <div class="tool-box">
-                    <img src="pictures/ejs.png" alt="EJS">
+                    <img src="logos/ejs.png" alt="EJS">
                     <div>EJS</div>
                 </div>
                 <div class="tool-box">
-                    <img src="pictures/js.webp" alt="EJS">
+                    <img src="logos/js.webp" alt="EJS">
                     <div>JS</div>
                 </div>
                 <div class="tool-box">
-                    <img src="pictures/css.svg" alt="CSS">
+                    <img src="logos/css.svg" alt="CSS">
                     <div>CSS</div>
                 </div>
                 <div class="tool-box">
-                    <img src="pictures/node.png" alt="JavaScript">
+                    <img src="logos/node.png" alt="JavaScript">
                     <div>Node + Express</div>
+                </div>
+                <div class="tool-box">
+                    <img src="logos/SQL.png" alt="sql">
+                    <div>MySQL</div>
                 </div>
             </div>
         </div>
+
+        <div class="gallery">
+            <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
+                data-label="Home Page">
+            <img src="pictures/list.png" class="gallery-item" alt="Very cute" data-src="pictures/list.png"
+                data-label="List Page">
+            <img src="pictures/det.png" class="gallery-item" alt="description" data-src="pictures/det.png"
+                data-label="Details Page">
+            <img src="pictures/del.png" class="gallery-item" alt="Prompt appearing" data-src="pictures/del.png"
+                data-label="Delete Prompt">
+            <img src="pictures/edit.png" class="gallery-item" alt="Edit Page" data-src="pictures/edit.png"
+                data-label="Edit Page">
+            <img src="pictures/add.png" class="gallery-item" alt="Add Page" data-src="pictures/add.png"
+                data-label="Add Page">
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div id="prev" class="nav left">
+            <svg viewBox="0 0 24 24">
+                <polyline points="15 4 7 12 15 20" />
+            </svg>
+        </div>
+
+        <div id="next" class="nav right">
+            <svg viewBox="0 0 24 24">
+                <polyline points="9 4 17 12 9 20" />
+            </svg>
+        </div>
+
+
 
         <h4>Objectives:</h4>
 
         <p>
             To design and develop a functional web-based shopping system that allows users to view products and manage a
-            cart. The project aims to support dynamic content rendering, persistent data storage, and full CRUD operations for
+            cart. The project aims to support dynamic content rendering, persistent data storage, and full CRUD
+            operations for
             product management.
             Additionally, the system is designed to implement role-based access control to clearly separate user and
             admin functionalities.
@@ -68,12 +103,12 @@
             • Designed and managed server-side routing and middleware in app.js<br>
             • Implemented CRUD operations for products and user data<br>
             • Built role-based authorisation to sort access between users and admins<br>
-            • Used SQL to store and retrieve user, product, and cart data<br>
+            • Used MySQL to store and retrieve user, product, and cart data<br>
             • Image upload and update functionality for adding new products<br>
             • Displayed product images dynamically in shopping and inventory pages<br>
             • Structured database tables to support users, admins, products, and inventory<br><br>
 
-            <strong> Authentication & Security</strong><br><br>
+            <strong>Authentication & Security</strong><br><br>
             • Implemented user registration and login system<br>
             • Enforced password length validation<br>
             • Register roles by either users and admins<br>
@@ -183,7 +218,8 @@
             I focused on implementing core functionalities with a simple and user-friendly design using basic CSS.<br>
             Given more time, I would have enhance the visual styling to better resemble a real-world supermarket website
             and implement additional features.<br>
-            Something to note: A design consideration is that admin accounts are restricted to admin functionalities only which requires a
+            Something to note: A design consideration is that admin accounts are restricted to admin functionalities
+            only which requires a
             separate user account to access user features.<br><br>
             Watch the video to see how the website works!
         </p>
@@ -221,6 +257,8 @@
     </div>
 
     <script src="js/cursor.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/carousel.js"></script>
 
 </body>
 

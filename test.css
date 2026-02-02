@@ -368,11 +368,9 @@ color: #b8faff; /* bright aqua-mint — readable on warm zones */
 .arrow-text {
   font-size: 18px;
   font-weight: bold;
-  color: dodgerblue;
+  color: beige;
   white-space: nowrap;
   font-family: 'Nunito';
-  background: linear-gradient(135deg, #FFEF00, #FFD93D); /* subtle yellow gradient */
-  border: 2px solid #FFA000; /* darker yellow border */
 }
 
 /* Decorative quotation mark */

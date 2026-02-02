@@ -30,8 +30,18 @@
 /* Logo */
 .hero-logo {
   width: 400px;
-  height: auto; 
+  height: auto;
   object-fit: contain;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Text Section */
@@ -70,17 +80,34 @@
 
 /* Asymmetrical quote placement */
 .hero-quote {
-  margin-left: auto;        
-  padding: 20px 30px;
+  margin-top: 35px;
+  margin-left: auto;
+  padding: 60px 30px 20px 30px; /* extra top space for overlap */
   position: relative;
   text-align: left;
   border-radius: 12px;
 }
 
+/* Big quotation mark */
+.hero-quote::before {
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: -50px;
+  font-size: 220px;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.5;      /* 50% opacity */
+  color: beige;
+  z-index: 1;        /* behind text */
+}
+
 /* Quote text */
 .quote-text {
+  position: relative;
+  z-index: 2;        /* overlaps quote */
   font-family: 'Nunito';
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 1.4;
   color: beige;
@@ -236,10 +263,6 @@
   color: beige;
   text-align: left;
   white-space: normal;
-}
-
-.python a:hover {
-  color: darkblue; 
 }
 
 .hash {

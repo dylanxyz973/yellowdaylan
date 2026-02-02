@@ -170,7 +170,6 @@ a:not(.topnav a):hover {
   display: none;
   max-height: 320px;
   border-radius: 8px;
-  border: 2px solid beige;
   cursor: pointer;
 }
 
