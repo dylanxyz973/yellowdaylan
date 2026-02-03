@@ -44,71 +44,75 @@
       </div>
     </div>
 
-    <div class="gallery">
-      <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
-        data-label="Home Page">
-      <img src="pictures/list.png" class="gallery-item" alt="Very cute" data-src="pictures/list.png"
-        data-label="List Page">
-      <img src="pictures/det.png" class="gallery-item" alt="description" data-src="pictures/det.png"
-        data-label="Details Page">
-      <img src="pictures/del.png" class="gallery-item" alt="Prompt appearing" data-src="pictures/del.png"
-        data-label="Delete Prompt">
-      <img src="pictures/edit.png" class="gallery-item" alt="Edit Page" data-src="pictures/edit.png"
-        data-label="Edit Page">
-      <img src="pictures/add.png" class="gallery-item" alt="Add Page" data-src="pictures/add.png" data-label="Add Page">
-    </div>
+    <div class="gallery-section">
 
-    <!-- Navigation Arrows -->
-    <div id="prev" class="nav left">
-      <svg viewBox="0 0 24 24">
-        <polyline points="15 4 7 12 15 20" />
-      </svg>
-    </div>
+      <div class="gallery">
+        <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
+          data-label="Home Page">
+        <img src="pictures/list.png" class="gallery-item" alt="Very cute" data-src="pictures/list.png"
+          data-label="List Page">
+        <img src="pictures/det.png" class="gallery-item" alt="description" data-src="pictures/det.png"
+          data-label="Details Page">
+        <img src="pictures/del.png" class="gallery-item" alt="Prompt appearing" data-src="pictures/del.png"
+          data-label="Delete Prompt">
+        <img src="pictures/edit.png" class="gallery-item" alt="Edit Page" data-src="pictures/edit.png"
+          data-label="Edit Page">
+        <img src="pictures/add.png" class="gallery-item" alt="Add Page" data-src="pictures/add.png"
+          data-label="Add Page">
+      </div>
 
-    <div id="next" class="nav right">
-      <svg viewBox="0 0 24 24">
-        <polyline points="9 4 17 12 9 20" />
-      </svg>
-    </div>
+      <!-- Navigation Arrows -->
+      <div id="prev" class="nav left">
+        <svg viewBox="0 0 24 24">
+          <polyline points="15 4 7 12 15 20" />
+        </svg>
+      </div>
 
-    <div class="details">
-      <p class="detail-item"><strong>/ route (home page)</strong><br>
-        Display Greeting text<br></p>
-      <p class="detail-item"><strong>/lists route</strong><br>
-        Display of completed drawings with each drawing wrapped with a thin light grey border.<br><br>
-        Each drawing consists:<br>
-        • Details button to direct to separate detail page (/details/:id get route)
-        to view drawing details.<br>
-        • Edit Button and Delete Button<br>
-        • Its title, description, image, completion date.<br>
-        <br><br>
-      </p>
-      <p class="detail-item"><strong>/details/:id get route</strong><br>
-        Upon Clicking details button, users are directed to each drawing with details shown.<br>
-        Upon Clicking back to drawings button, users are directed back to lists drawing (/lists route).<br>
-      <p class="detail-item"><strong>/deleteItem/:id post route </strong><br>
-        Upon Clicking delete button, a pop up browser warning delete prompt to confirm deletion.<br></p>
-      <p class="detail-item"><strong>/updateItem get route</strong><br>
-      Retrieve the pre-populated fields (data) from drawings:<br>
-      • Title<br>
-      • Description<br>
-      • Completed Date<br>
-      • Image<br>
-      • Details<br>
-      <br></p>
-      <p class="detail-item"><strong>/addItem get route</strong><br>
-      Retrieve the fields (data) for adding drawings:<br>
-      • Title<br>
-      • Description<br>
-      • Completed Date<br>
-      • Image<br>
-      • Details<br>
-      <br>
-      <strong>/addItem post route</strong><br>
-      Sumbit the require fields (data) and redirect users to /lists route.<br></p>
-      <p class="detail-item">Detail for Photo 4</p>
-    </div>
+      <div id="next" class="nav right">
+        <svg viewBox="0 0 24 24">
+          <polyline points="9 4 17 12 9 20" />
+        </svg>
+      </div>
 
+      <div class="details">
+        <p class="detail-item"><strong>/ route (home page)</strong><br>
+          Display Greeting text<br></p>
+        <p class="detail-item"><strong>/lists route</strong><br>
+          Display of completed drawings with each drawing wrapped with a thin light grey border.<br><br>
+          Each drawing consists:<br>
+          • Details button to direct to separate detail page (/details/:id get route)
+          to view drawing details.<br>
+          • Edit Button and Delete Button<br>
+          • Its title, description, image, completion date.<br>
+          <br><br>
+        </p>
+        <p class="detail-item"><strong>/details/:id get route</strong><br>
+          Upon Clicking details button, users are directed to each drawing with details shown.<br>
+          Upon Clicking back to drawings button, users are directed back to lists drawing (/lists route).<br>
+        <p class="detail-item"><strong>/deleteItem/:id post route </strong><br>
+          Upon Clicking delete button, a pop up browser warning delete prompt to confirm deletion.<br></p>
+        <p class="detail-item"><strong>/updateItem get route</strong><br>
+          Retrieve the pre-populated fields (data) from drawings:<br>
+          • Title<br>
+          • Description<br>
+          • Completed Date<br>
+          • Image<br>
+          • Details<br>
+          <br>
+        </p>
+        <p class="detail-item"><strong>/addItem get route</strong><br>
+          Retrieve the fields (data) for adding drawings:<br>
+          • Title<br>
+          • Description<br>
+          • Completed Date<br>
+          • Image<br>
+          • Details<br>
+          <br>
+          <strong>/addItem post route</strong><br>
+          Sumbit the require fields (data) and redirect users to /lists route.<br>
+        </p>
+      </div>
+    </div>
     <h4>Objectives:</h4>
 
     <p>To create an simple hobby website as part of mini project by applying knowledge of web
@@ -123,7 +127,7 @@
       <strong>Navigation Bar</strong><br>
       Toggle between home, drawing list, add drawing<br>
     </p>
-     
+
     <h4>Building process:</h4>
 
     <p>

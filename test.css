@@ -472,3 +472,17 @@ color: #b8faff; /* bright aqua-mint — readable on warm zones */
 .right-note {
   text-align: left;
 }
+
+/* Frosted label */
+.modal-label {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color: #570861;
+  text-align: center;
+  display: inline-block;
+}

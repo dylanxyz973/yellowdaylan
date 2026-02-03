@@ -51,30 +51,66 @@
             </div>
         </div>
 
-        <div class="gallery">
-            <img src="pictures/event.png" class="gallery-item" alt="Home Page" data-src="pictures/event.png"
-                data-label="Home Page">
-            <img src="pictures/eventList.png" class="gallery-item" alt="Event Page" data-src="pictures/eventList.png"
-                data-label="List Page">
-            <img src="pictures/addEvent.png" class="gallery-item" alt="Add Page" data-src="pictures/addEvent.png"
-                data-label="Add Event Page">
-            <img src="pictures/editEvent.png" class="gallery-item" alt="Edit Page" data-src="pictures/editEvent.png"
-                data-label="Edit Page">
-            <img src="pictures/delete.png" class="gallery-item" alt="Prompt appearing" data-src="pictures/delete.png"
-                data-label="Delete Prompt">
-        </div>
+        <div class="gallery-section">
 
-        <!-- Navigation Arrows -->
-        <div id="prev" class="nav left">
-            <svg viewBox="0 0 24 24">
-                <polyline points="15 4 7 12 15 20" />
-            </svg>
-        </div>
+            <div class="gallery">
+                <img src="pictures/event.png" class="gallery-item" alt="Home Page" data-src="pictures/event.png"
+                    data-label="Home Page">
+                <img src="pictures/eventList.png" class="gallery-item" alt="Event Page"
+                    data-src="pictures/eventList.png" data-label="List Page">
+                <img src="pictures/addEvent.png" class="gallery-item" alt="Add Page" data-src="pictures/addEvent.png"
+                    data-label="Add Event Page">
+                <img src="pictures/editEvent.png" class="gallery-item" alt="Edit Page" data-src="pictures/editEvent.png"
+                    data-label="Edit Page">
+                <img src="pictures/delete.png" class="gallery-item" alt="Prompt appearing"
+                    data-src="pictures/delete.png" data-label="Delete Prompt">
+            </div>
 
-        <div id="next" class="nav right">
-            <svg viewBox="0 0 24 24">
-                <polyline points="9 4 17 12 9 20" />
-            </svg>
+            <!-- Navigation Arrows -->
+            <div id="prev" class="nav left">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="15 4 7 12 15 20" />
+                </svg>
+            </div>
+
+            <div id="next" class="nav right">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="9 4 17 12 9 20" />
+                </svg>
+            </div>
+
+            <div class="details">
+                <p class="detail-item"><strong>/ route (home page)</strong><br>
+                    Display title and website text with a button "go to events"<br></p>
+
+                <p class="detail-item"><strong>/events route</strong><br>
+                    Display each event in a green background with dark purple title.<br><br>
+                    Each drawing consists:<br>
+                    • Its title and image<br>
+                    • Edit Button and Delete Button<br><br>
+                    Clicking the card or clicking edit button will direct sers to
+                    Clicking delete button will result in a delete browser prompt warning to confirm deletion.
+                    <br><br>
+                </p>
+
+                <p class="detail-item"><strong>/events/new route</strong><br>
+                    the fields (data) for adding drawings:<br>
+                    • Event name<br>
+                    • Event Image URL<br>
+                    <br>
+                </p>
+
+                <p class="detail-item"><strong>/events/:id/edit route</strong><br>
+                    Retrieve the pre-populated fields (data) from drawings:<br>
+                    • Title<br>
+                    • Description<br>
+                    • Completed Date<br>
+                    • Image<br>
+                    • Details<br>
+                    <br>
+                </p>
+                <p class="detail-item"><strong>Delete prompt</strong></p>
+            </div>
         </div>
 
         <h4>Objectives:</h4>

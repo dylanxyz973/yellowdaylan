@@ -1,25 +1,27 @@
 const questions = document.querySelectorAll('.question-box');
 
+document
+  .querySelectorAll('.reveal-row, .reveal-img, .clickable-image, .answer-box, .detail-box')
+  .forEach(el => {
+    el.style.display = 'none';
+  });
+
 questions.forEach(question => {
   const text = question.textContent.trim();
   question.textContent = `+ ${text}`;
 
   question.addEventListener('click', () => {
-    let el = question.nextElementSibling;
-    let isOpen = false;
+    const row = question.nextElementSibling;
+    if (!row || !row.classList.contains('reveal-row')) return;
 
-    // check if already open
-    while (el && !el.classList.contains('question-box')) {
-      if (el.style.display !== 'none') {
-        isOpen = true;
-        break;
-      }
-      el = el.nextElementSibling;
-    }
+    const isOpen = row.style.display === 'flex';
 
     // close everything
-    document.querySelectorAll('.question-box + *').forEach(item => {
-      item.style.display = 'none';
+    document.querySelectorAll('.reveal-row').forEach(r => {
+      r.style.display = 'none';
+      r.querySelectorAll('*').forEach(child => {
+        child.style.display = 'none';
+      });
     });
 
     // reset all questions
@@ -28,16 +30,13 @@ questions.forEach(question => {
       q.textContent = `+ ${t}`;
     });
 
-    // open clicked section
+    // open clicked one
     if (!isOpen) {
-      el = question.nextElementSibling;
+      row.style.display = 'flex';
 
-      while (el && !el.classList.contains('question-box')) {
-        el.style.display = el.classList.contains('reveal-row')
-          ? 'flex'
-          : 'block';
-        el = el.nextElementSibling;
-      }
+      row.querySelectorAll('*').forEach(child => {
+        child.style.display = 'block';
+      });
 
       question.textContent = `- ${text}`;
     }

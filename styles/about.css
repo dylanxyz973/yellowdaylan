@@ -5,9 +5,14 @@
   background-attachment: fixed;
 }
 
-.question-box + * {
+.reveal-row,
+.reveal-img,
+.clickable-image,
+.answer-box,
+.detail-box {
   display: none;
 }
+
 
 .answer-box,
 .detail-box {
