@@ -29,16 +29,26 @@ section.mobile-bg::before {
 
 /* Background for responsive screens */
 @media (max-width: 768px) {
-  section.mobile-bg::before {
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
+  section.mobile-bg {
+    position: relative;
+    min-height: 100svh; /* fills viewport on mobile */
+    width: 100%;
+    overflow: hidden; /* ensures pseudo-element stays inside */
   }
 
-  section.mobile-bg {
-    min-height: 100svh;
+  section.mobile-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    background-image: inherit; /* optional if you want per-section background */
+    background-size: cover; /* scales image to fill */
+    background-position: center; /* crop from center */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* safe for mobile */
+    z-index: -1; /* behind content */
   }
 }
+
 
 ::-webkit-scrollbar {
   width: 10px; /* width of vertical scrollbar */
