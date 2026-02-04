@@ -5,11 +5,12 @@
   align-items: center;     /* centers horizontally */
   text-align: center;      /* centers inline text */
   padding: 20px;
-  background-image: url(../backgrounds/4.jpg);
-  background-size: 1440px auto; 
-  background-attachment: fixed;
   font-family: 'Nunito';
   font-weight: bold;
+}
+
+.certificate-section::before {
+  background-image: url(../backgrounds/4.jpg);
 }
 
 .cert-list {
