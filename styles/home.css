@@ -3,15 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap');
 
 .home-section {
+  position: relative;
   display: flex;
-  justify-content: flex-start;
-  justify-content: center; /* centers vertically */
-  align-items: center;     /* centers horizontally */
-  text-align: center;      /* centers inline text */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 90px 20px 20px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: url(../backgrounds/1.webp);
-  background-size: 1440px auto; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1440px auto;
   background-attachment: fixed;
+  z-index: -1;
 }
 
 .hero-content {

@@ -16,21 +16,15 @@ html {
 
 /* Background for responsive screens */
 @media (max-width: 768px) {
-  html,
-  body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+  .home-section::before {
+    background-size: cover;
+    background-attachment: scroll;
   }
-  section.mobile-bg {
+
+  .home-section {
     min-height: 100svh;
-    width: 100%;
-    background-size: cover!important;
-    background-position: center!important;
-    background-attachment: scroll!important;
   }
 }
-
 
 ::-webkit-scrollbar {
   width: 10px; /* width of vertical scrollbar */
