@@ -23,13 +23,11 @@ html {
     margin: 0;
   }
   section.mobile-bg {
-    min-height: 100vh;
     min-height: 100svh;
     width: 100%;
-
     background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
+    background-position: center!important;
+    background-attachment: scroll!important;
   }
 }
 
