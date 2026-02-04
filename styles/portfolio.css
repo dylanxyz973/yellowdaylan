@@ -22,7 +22,7 @@
 
 /* === Portfolio Box Base === */
 .portfolio-box {
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.25);
   border-radius: 20px;
   padding: 15px 18px 18px;
   text-align: center;
@@ -34,7 +34,7 @@
 .portfolio-box h2 {
   margin: 10px 0 5px;
   font-size: 24px;
-  color: beige;
+  color: #F4EAD0;
   font-family: 'Nunito';
   font-weight: 900;
 }
@@ -42,7 +42,7 @@
 .portfolio-box p {
   margin: 0 0 8px;
   font-size: 17px;
-  color: beige;
+  color: #F4EAD0;
   font-family: 'Nunito';
   font-weight: 700;
 }
@@ -59,11 +59,11 @@
 .portfolio-box:hover {
   z-index: 10;
   position: relative;
-  background: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.45);
 }
 .portfolio-box:hover h2,
 .portfolio-box:hover p {
-  color: beige;
+  color: #F4EAD0;
 }
 
 
@@ -79,7 +79,7 @@
   margin: 10px;  /* Space between buttons */
   background: rgba(255,255,255,0.2);
   border: 2px solid transparent;
-  color: beige;
+  color: #F4EAD0;
   border-radius: 16px;
   cursor: pointer;
   font-family: 'Nunito';
@@ -94,7 +94,7 @@
 
 .filter-buttons button.active {  
   background: rgba(255,255,255,0.2);
-  color: beige;
+  color: #F4EAD0;
   border: 2px solid white ;
 };
 

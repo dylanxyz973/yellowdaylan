@@ -15,17 +15,24 @@ html {
 }
 
 /* Background for responsive screens */
-@media (min-width: 1024px) {
-  .hero-section {
-    background-attachment: fixed;
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
-}
+  .mobile-bg {
+    min-height: 100vh;
+    min-height: 100svh;
+    width: 100%;
 
-@media (max-width: 1023px) {
-  .hero-section {
+    background-size: cover;
+    background-position: center;
     background-attachment: scroll;
   }
 }
+
 
 ::-webkit-scrollbar {
   width: 10px; /* width of vertical scrollbar */
@@ -116,7 +123,7 @@ h1 {
   text-align: center; 
   margin: 0; 
   margin-bottom: 20px;
-  color: beige;
+  color: #F4EAD0;
 }
 
 .center-h1 {
@@ -131,7 +138,7 @@ h2 {
   font-family: 'Nunito';
   text-align: center;
   margin: 0.5em 0 1em 0; /* top right bottom left */
-  color: beige;
+  color: #F4EAD0;
 }
 
 /* === Nav Bar === */
@@ -144,7 +151,7 @@ h2 {
 
 .topnav a,
 .dropdown-content a {
-  color: beige; 
+  color: #F4EAD0; 
   text-shadow:
   0 1px 2px rgba(18, 28, 72, 0.75),
   0 0 1px rgba(18, 28, 72, 0.9);
@@ -273,7 +280,7 @@ h2 {
 
 .nav polyline {
   fill: none;
-  stroke: white;
+  stroke: #F4EAD0;
   stroke-width: 5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -305,7 +312,7 @@ h2 {
   width: 100%;
   height: 100%;
   fill: none;
-  stroke: white;
+  stroke: #F4EAD0;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;

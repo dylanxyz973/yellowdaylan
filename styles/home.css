@@ -98,7 +98,7 @@
   font-weight: 800;
   line-height: 1;
   opacity: 0.5;      /* 50% opacity */
-  color: beige;
+  color: #F4EAD0;
   z-index: 1;        /* behind text */
 }
 
@@ -110,7 +110,7 @@
   font-size: 50px;
   font-weight: bold;
   line-height: 1.4;
-  color: beige;
+  color: #F4EAD0;
 }
 
 .about-row {
@@ -125,7 +125,7 @@
   font-family: 'Nunito', sans-serif;
   padding-bottom: 10px;         
   font-size: 3rem;
-  color: beige;
+  color: #F4EAD0;
   margin: 0 0 .5rem 0;     
   white-space: nowrap;     
   text-align: left;
@@ -135,7 +135,7 @@
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   line-height: 1.9;
-  color: beige;
+  color: #F4EAD0;
   font-weight: 600;
   margin: 0;
   max-width: 70ch;
@@ -148,7 +148,7 @@
 }
 
 .about-list li {
-  color: beige;
+  color: #F4EAD0;
   display: grid;
   grid-template-columns: 1.3ch 1fr;
   column-gap: 0.6ch;
@@ -242,7 +242,7 @@
   line-height: 1.15;
   margin: 14px 0px 10px;
   font-size: 28px;
-  color: beige;
+  color: #F4EAD0;
   font-family: 'Nunito';
   font-weight: 900;
 }
@@ -251,7 +251,7 @@
   line-height: 1.2;
   margin: 0px 0 8px;
   font-size: 20px;
-  color: beige;
+  color: #F4EAD0;
   font-family: 'Nunito';
   font-weight: 700;
 }
@@ -260,7 +260,7 @@
   margin: 0;
   font-family: 'JetBrains Mono';
   font-size: 26px;
-  color: beige;
+  color: #F4EAD0;
   text-align: left;
   white-space: normal;
 }

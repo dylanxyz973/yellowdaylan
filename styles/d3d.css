@@ -12,11 +12,11 @@
 .label-box{
   display: inline-block; 
   background: rgba(255, 255, 255, 0.3);  
-  color: beige;              
+  color: #F4EAD0;              
   font-weight: bold;
   padding: 6px 14px;         
   border-radius: 20px;         
-  border: 2px solid beige; 
+  border: 2px solid #F4EAD0; 
   font-family: 'nunito';
   margin-bottom: 8px; 
   font-weight: 800;
@@ -39,14 +39,14 @@
 }
 
 .tool-box {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   border: 1.75px solid transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: beige;
-  border: 2px solid beige;
+  color: #F4EAD0;
+  border: 2px solid #F4EAD0;
   border-radius: 20px;
   padding: 15px 20px;
   width: 85px;
@@ -100,7 +100,7 @@ h4 {
   margin: 30px auto 10px; 
   font-size: 24px;          
   line-height: 1.4;
-  color: beige;     
+  color: #F4EAD0; 
   font-family: 'Nunito';
   font-weight: 800;      
   text-align: left;
@@ -114,7 +114,7 @@ p {
   text-align: left;
   font-size: 20px;
   line-height: 1.5;
-  color: beige;
+  color: #F4EAD0; 
   font-family: 'Nunito';
   font-weight: 700;
   margin-top: 0;
@@ -128,13 +128,14 @@ p {
 
 a:not(.back-link):not(.topnav a) {
   margin-top: 25px;
-  color: beige;
-  border-color: beige;
+  color: #F4EAD0;
+  border-color: #F4EAD0;
   font-family: 'Nunito';
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   font-size: 20px;
+  border-radius: 20px;  
 }
 
 a:not(.topnav a):hover {
@@ -148,10 +149,11 @@ a:not(.topnav a):hover {
 /* Back link to portfolio */
 .back-link {
   margin-top: 50px;
-  color: beige;
-  border: 2px solid beige;
+  color: #F4EAD0;
+  border: 2px solid #F4EAD0;
   font-family: 'Nunito';
   font-size: 22px !important;
+  border-radius: 20px;  
 }
 
 /* === Pictures === */
