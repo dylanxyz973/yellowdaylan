@@ -1,4 +1,9 @@
 .certificate-section {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center; /* centers vertically */
+  align-items: center;     /* centers horizontally */
+  text-align: center;      /* centers inline text */
   padding: 20px;
   background-image: url(../backgrounds/4.jpg);
   background-size: 1440px auto; 

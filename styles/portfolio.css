@@ -1,5 +1,10 @@
 /* === Portfolio Section === */
 .portfolio-section {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center; /* centers vertically */
+  align-items: center;     /* centers horizontally */
+  text-align: center;      /* centers inline text */
   text-align: center;
   padding: 100px 40px 60px; 
   background-image: url(../backgrounds/7.jpg);
