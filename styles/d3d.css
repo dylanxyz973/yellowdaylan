@@ -8,7 +8,7 @@
 }
 
 .display::before {
-  background-image: url(../backgrounds/2.webp);
+  background-image: url(../backgrounds/2.jpg);
 }
 
 .label-box{
@@ -41,7 +41,7 @@
 }
 
 .tool-box {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.45);
   border: 1.75px solid transparent;
   display: flex;
   flex-direction: column;
@@ -122,6 +122,10 @@ p {
   margin-top: 0;
 }
 
+.p-center {
+    text-align: center;
+}
+
 /* === link style for github and other links === */
 .link-row {
   display: flex;
@@ -160,7 +164,7 @@ a:not(.topnav a):hover {
 
 /* === Pictures === */
 .gallery-section {
-  max-width: 800px;       /* SAME as gallery */
+  max-width: 800px;      
   margin: 40px auto;
 }
 
@@ -193,20 +197,41 @@ img {
 /* === Gallery expanded view=== */
 body.modal-open {
   overflow: hidden;
-  height: 100vh;  /* ensures body doesn’t expand */
+  height: 100vh; 
+}
+
+.modal-img-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000; 
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: 90vh;
+  width: auto;      /* Keeps aspect ratio */
+  height: auto;     /* Keeps aspect ratio */
+  object-fit: contain; 
+  display: block;
 }
 
 .modal {
-  display: none;           
+  display: none; /* Switch to 'flex' via JS when opening */
   position: fixed;
   inset: 0;
   z-index: 999;
-  isolation: isolate;
-  width: 100%;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay usually helps images pop */
   backdrop-filter: blur(8px);
   justify-content: center;
+  align-items: center; /* Centers the wrapper vertically */
 }
 
 .detail-item {
@@ -214,30 +239,6 @@ body.modal-open {
 }
 
 .detail-item.active {
-  display: block;
-}
-
-
-/* Wrapper enforces the curve */
-.modal-img-wrapper {
-  border-radius: 20px;
-  overflow: hidden;          /* forces the clipping */
-  max-width: 70vw;    /* ✅ limit width to 90% of viewport */
-  max-height: 70vh;   /* ✅ limit height */
-  max-width: 90vw;
-  max-height: 80vh;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Image inside stays responsive */
-.modal-content {
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  object-fit: contain;
   display: block;
 }
 
@@ -257,7 +258,7 @@ body.modal-open {
 /* Navigation Arrows for work page */
 .nav {
   position: absolute;
-  top: 70vh;       
+  top: 80vh;       
   transform: translateY(0);
   width: 50px;
   height: 50px;

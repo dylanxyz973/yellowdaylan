@@ -14,14 +14,14 @@ const hoverables = document.querySelectorAll(
 
 hoverables.forEach(el => {
   el.addEventListener('mouseenter', () => {
-    cursorShape.style.transform = 'scale(1.5)';
-    cursorShape.style.borderColor = '#ffb20f'; // golden
-    cursorShape.style.boxShadow = '0 0 0 2px rgba(255, 178, 15, 0.6)'; // square glow
+    cursorShape.style.transform = 'scale(1.4)';
+    cursorShape.style.borderColor = '#FF4D00'; 
+    cursorShape.style.boxShadow = '0 0 0 2.5px #00F5FF'; 
   });
   el.addEventListener('mouseleave', () => {
     cursorShape.style.transform = 'scale(1)';
-    cursorShape.style.borderColor = '#ffffff';
-    cursorShape.style.boxShadow = '0 0 0 2px rgba(0, 255, 255, 0.6)'; // back to cyan glow
+    cursorShape.style.borderColor = '#F4EAD0';
+    cursorShape.style.boxShadow = '0 0 0 2.5px #B6FF00'; 
   });
 });
 

@@ -82,7 +82,8 @@
 
             <div class="details">
                 <p class="detail-item"><strong>/ route (home page)</strong><br>
-                    Display title and website text with a button "go to events"<br></p>
+                    • Display title and website text<br>
+                    • A button "go to events" which directs users to /events route <br></p>
 
                 <p class="detail-item"><strong>/events route</strong><br>
                     Display each event in a green background with dark purple title.<br><br>
@@ -114,7 +115,7 @@
             </div>
         </div>
 
-        <h4>Objectives:</h4>
+        <h4>Objectives</h4>
 
         <p>
             To apply React JS concepts in conceptualising and building a full-stack web application that addresses a
@@ -124,10 +125,10 @@
             • Support data creation, modification and deletion handling<br>
             • Provide a clear and usable interface<br>
             • Handle client–server communication through APIs and managing application state effectively<br>
-            • Demonstrate meaningful interaction between frontend and backend<br><br>
+            • Demonstrate meaningful interaction between frontend and backend<br>
         </p>
 
-        <h4>Technical Competencies:</h4><br>
+        <h4>Technical Competencies</h4><br>
 
         <p>
             <strong>Frontend Development</strong><br><br>
@@ -165,31 +166,53 @@
         </p>
 
 
-        <h4>Functionalites/Features:</h4>
+        <h4>Functionalites/Features</h4>
 
         <p>
             • View a list of events retrieved from a remote MySQL database<br>
-            • Add new events through a forms<br>
+            • Add new events through a form<br>
             • Edit existing event details<br>
             • Delete events with a confirmation prompt to prevent accidental deletion<br>
-            • Dynamic routing for individual event editing pages<br>
+            • Dynamic edit page consisting of a pre-filled form for editing individual event details<br>
             • Loading and error handling for better user experience
         </p>
 
-        <h4>Building process:</h4>
+        <h4>Building process</h4>
 
         <p>
             Span over a short two week duration, this campus engagement website was developed by first setting up a
             MySQL database and backend API using Node.js and Express.
-            Then, the frontend was then built using React JS, where reusable components were created for event display
-            and forms.
+            Then, the frontend was then built using React JS, where reusable components were created for event display and forms.
             API endpoints were integrated to enable data fetching and manipulation followed by creating the routes.
-            Lastly,
-            styling and usability improvements were implemented. Testing and debugging were done iteratively to ensure
-            smooth data flow between the frontend and backend. I choose green for as my main background theme
-            A built using React JS with styling.<br><br>
+            Lastly, styling and usability improvements were implemented. Testing and debugging were done iteratively to ensure
+            smooth data flow between the frontend and backend. I choose green as my main background theme as part of my diploma
+            institution colours and purple-red text to complement it which also ensure text is legible and clear.<br><br>
             Watch the video to see how the website works!
         </p>
+
+        <div class="modal" id="modal">
+
+            <!-- Close cross -->
+            <span class="close" id="modalClose">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                </svg>
+            </span>
+
+            <!-- Modal Image -->
+            <div class="modal-img-wrapper">
+                <img class="modal-content" id="modal-img" alt="Expanded view">
+            </div>
+
+        </div>
+
+             <div class="video">
+                <video controls width="100%">
+                    <source src="videos/dev4.mp4" type="video/mp4">
+                </video>
+            </div>
+
 
         <!-- Simple link with GitHub logo -->
 
@@ -243,7 +266,7 @@
         </div>
 
 
-        <a href="portfolio.html" class="back-link">← Back to Works</a>
+        <a href="portfolio.html" class="back-link">⬅️ Back to Works</a>
 
     </section>
 

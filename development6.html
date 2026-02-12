@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <h4>Objectives:</h4>
+        <h4>Objectives</h4>
 
         <p>
             Application of React Native skills to buiild a list task management protoype mobile app.<br>
@@ -51,14 +51,58 @@
             operations.
         </p>
 
-        <h4>Technical Competencies:</h4>
+        <h4>Technical Competencies</h4>
 
-        <h4>Functionalites:</h4>
+        <p>
+
+            <strong>Mobile Application Development (React Native)</strong><br><br>
+            • Developed a mobile application using React Native within the Expo Go ecosystem<br>
+            • Structured application using functional components<br><br>
+
+            <strong>State Management & Application Logic</strong><br><br>
+            • Managed application state using React Hooks (useState and useContext)<br>
+            • Handled task completion toggling logic to update task status dynamically<br>
+            • Calculated overall task completion statistics including completed and incomplete tasks with percentage
+            results<br><br>
+
+            <strong>Context API & Data Flow</strong><br><br>
+            • Centralised task data management using TaskContext for global state sharing<br>
+            • Passed task data and handler functions between screens using props and context<br>
+            • Ensured consistent data updates across TaskList.js, AddTask.js, EditTask.js and TaskDetails.js
+            screens<br><br>
+
+            <strong>Navigation & Screen Management</strong><br><br>
+            • Implemented multi-screen navigation using React Navigation<br>
+            • Enabled navigation between Task List, Add Task, Edit Task, and Task Details screens<br>
+            • Pre-filled edit form inputs by initialising component state with existing task data passed through
+            navigation parameters<br><br>
+
+            <strong>User Interface & Styling</strong><br><br>
+            • Designed responsive layouts using React Native StyleSheet<br>
+            • Applied appropriate margin and padding, font size for improved readability<br>
+            • Styled task cards with visual indicators for completion status<br>
+            • Integrated icons for actions such as edit and delete to improve usability<br>
+            • Styled interactive elements such as buttons, input fields and cards for better user experience<br><br>
+
+            <strong>User Interaction & Feedback</strong><br><br>
+            • Implemented Alert dialogs to confirm task deletion and display summary information<br>
+            • Provided visual feedback when tasks are marked as completed or updated<br>
+            • Enabled real-time search filtering based on task title and description<br><br>
+
+            <strong>Application Structure & Project Management Skills</strong><br><br>
+            • Organised project files into appropriate folders for components, screens, context and styles<br>
+            • Applied proper coding naming conventions to components, variables, and styles<br>
+            • Maintained clear and beginner-friendly code structure with modular logic separation<br>
+            • Ensured code readability and maintainability throughout the development process<br>
+
+        </p>
+
+        <h4>Functionalites/Features</h4>
 
         <p>
             <strong>1. Task List Screen</strong><br>
             When no tasks are available, it will display a message on the screen.<br>
-            Each task card shows its:<br>
+            Otherwise, each task card shows its:<br>
             • Title<br>
             • Description<br>
             • Due date<br>
@@ -68,22 +112,19 @@
             Tapping on the card toggles its completion state to completed turning the title to a strike-through.
             Details are not shown on Task Cards.
             A more details which users can click on it to view details of the tasks which users are directed to a screen
-            called TaskDetails.<br>
-            <br>
+            called TaskDetails.<br><br>
             At the bottom of the task list screen, there are two main buttons:<br>
             • Add Task<br>
             • Overall Summary which shows a popup summarising total number of tasks, how many completed and incompleted
-            tasks with the result in percentage form.
-            <br>
-            <br>
+            tasks with the result in percentage form.<br><br>
+
             <strong>2. Add Task Screen</strong><br>
             This screen allows users to create new tasks with these fields:<br>
             • Title<br>
             • Description<br>
             • Due date<br>
-            • Additional details which are optional
-            <br>
-            <br>
+            • Additional details which are optional<br><br>
+
             <strong>3. Edit Task Screen</strong><br>
             Upon clicking the edit button in the card, user can update any existing task. The fields are pre-filled with
             the current information retrieved from any existing information written in the card.<br><br>
@@ -104,20 +145,37 @@
             tasks works on their respective screens in the app.
         </p>
 
-        <h4>Building process:</h4>
+        <h4>Building process</h4>
 
         <p>
-            This project given a timeline of 2 weeks to apply skills of list, picker styling, navigation.<br>
+            This project given a timeline of 2 weeks to apply to apply key React Native concepts such as list rendering,
+            navigation and state management.<br><br>
+            
+            A key learning experience was implementing CRUD functionality in a structured manner. Managing
+            task creation, editing, deletion, and completion toggling required careful handling of state updates to
+            ensure that changes were reflected immediately across the application. Through this process, I improved my
+            understanding of how React Hooks and context work together to maintain synchronised data.<br><br>
+
             Throughout the app, I use:<br>
-            • Light Pastel Rainbow Gradient backgrounds and Vibrant Pastel Rainbow Gradient Cards to help energise
-            users<br>
+            • Light Pastel Rainbow Gradient backgrounds and Vibrant Pastel Rainbow Gradient Cards to help spark some
+            energy in
+            users when they use the app<br>
             • Golden and bronze tones for text and borders<br>
             • Silver Rose Navigation header<br>
             • Transparent input bars and rounded corners for a refreshing look<br><br>
 
-            This design aims to make the task app both functional and visually appealing giving a sense of vibrancy and
-            elegance with a touch of premium app feel.<br><br>
-            Watch the video to see how the app works!
+            This design approach aims to make the task app both functional and visually appealing giving a sense of
+            vibrancy and elegance with a touch of premium app feel.<br><br>
+
+            Overall, this project strengthened my technical skills in React Native while also improving my
+            problem-solving abilities and code organisation practices.<br><br>
+
+            A major limitation of the current implementation is the lack of persistent storage. Tasks are not retained
+            after the application restarts, which reduces real-world practicality. If I had more time, I would further
+            enhance the app by implementing persistent storage (such as AsyncStorage or a database) to retain tasks
+            even after the app is restarted.<br><br>
+
+            Watch the video to see how the application functions in real time.
         </p>
 
         <div class="video">
@@ -127,8 +185,7 @@
         </div>
 
         <!-- Simple link with GitHub logo -->
-        <a href="https://github.com/dylanxyz973/MyTaskApp" target="_blank" rel="noopener"
-            class="external-link">
+        <a href="https://github.com/dylanxyz973/MyTaskApp" target="_blank" rel="noopener" class="external-link">
             <!-- GitHub logo SVG -->
             <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" class="github-logo">
                 <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 
@@ -150,7 +207,7 @@
             View on GitHub
         </a>
 
-        <a href="portfolio.html" class="back-link">← Back to Works</a>
+        <a href="portfolio.html" class="back-link">⬅️ Back to Works</a>
 
     </section>
 

@@ -8,58 +8,85 @@
   background-image: url(../backgrounds/6.jpg);
 }
 
+.main-heading {
+  font-size: 56px;         /* Larger than your body text */
+  margin-bottom: 45px;     /* Adds space between the title and your image/text */
+  text-transform: uppercase; /* Optional: Makes it feel more like a "header" */
+  letter-spacing: 1px;     /* Adds a bit of breathing room between letters */
+}
+
+.container {
+  display: flex;    
+  align-items: center; 
+  gap: 30px;      
+  margin-bottom: 30px;    
+}
+
+.me-img {
+  border-radius: 20px;
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  display: block;   
+  border: 3.3px solid #FFFF33;
+}
+
+.box {
+  font-size: 26px;
+  color: #F4EAD0;
+  font-family: 'Nunito';
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
 
 .reveal-row,
 .reveal-img,
 .clickable-image,
 .answer-box,
-.detail-box {
+.detail-box,
+.image-row {
   display: none;
 }
-
 
 .answer-box,
 .detail-box {
   border: 2.5px solid transparent;
   border-radius: 20px;
-  padding: 12px 20px;
+  padding: 10px 15px 10px 15px;
   margin: 17px 0;
   width: fit-content;
+  font-size: 20px;
+  font-weight: 700;
+  color: #F4EAD0;
+  line-height: 1.6;
+  letter-spacing: 0.2px;    
+  align-self: flex-start;    
 }
 
 .question-box {
   display: inline-block;
   cursor: pointer;
-  position: relative;
   z-index: 2;
   border: 2.5px solid transparent;
-  padding: 12px 18px 12px 8px;  
-  margin: 10px 0;               
+  margin: 16px 0px;    
 }
-
 
 .answer-box {
   color: #F4EAD0;
   background: rgba(255,255,255,0.3);
-  font-size: 20px;
-  line-height: 1.6;
-  letter-spacing: 0.2px;
-  padding: 14px;
+
 }
 
 .detail-box {
-  align-self: flex-start;
   border: 2px solid #F4EAD0;
-  font-size: 18px;
-  font-weight: 700;
-  color: #F4EAD0;
 }
 
 .intro-box {
   color: #F4EAD0;
   font-size: 22px;
   font-weight: bold;
-  margin: 20px 0 6px 0;
+  margin: 20px 0px 12px 0px;
 }
 
 .text-col {
@@ -70,10 +97,11 @@
 }
 
 .reveal-img {
-  max-width: 40%;
   max-height: 360px; 
   margin-top: 20px;
   border-radius: 20px;
+  display: block;
+  cursor: pointer;
 }
 
 .reveal-row {
@@ -82,6 +110,30 @@
   gap: 20px;
   align-items: flex-start;
 }
+
+/* stack text above images for this section only */
+.special-layout {
+  display: flex !important;     /* force flex in case parent overrides */
+  flex-direction: column !important;  /* stack text above images */
+  gap: 20px;
+}
+
+/* images side by side */
+.special-layout .image-row {
+  display: flex !important;
+  gap: 20px;
+  width: 100%; /* ensures the row fills the container */
+}
+
+/* make images equal width, limit height */
+.special-layout .image-row .reveal-img {
+  flex: 1;               /* equal space */
+  max-width: 100%;       /* prevents overflow */
+  height: 360px;         /* fixed height */
+  object-fit: cover;     /* crops without stretching */
+  border-radius: 20px;
+}
+
 
 /* h3 only apply in question box */
 h3 {
@@ -103,16 +155,7 @@ h3 {
   display: inline-block;
 }
 
-.image-wrapper {
-  position: relative;
-  display: inline-block; 
-}
-
-.reveal-img {
-  display: block;
-  cursor: pointer;
-}
-
+/* === Speaking turtle boy === */
 .clickable-image {
   position: relative;
   width: fit-content;
@@ -127,7 +170,7 @@ h3 {
 
 .click-indicator {
   position: absolute;
-  left: -80px;   
+  left: -180px;   
   bottom: 20px;
   font-size: 18px;
   font-weight: bold;
@@ -136,12 +179,3 @@ h3 {
   pointer-events: none;
 }
 
-.python-c {
-  margin-top: 40px;
-  align-self: center;
-  font-family: 'JetBrains Mono';
-  font-size: 26px;
-  color: #F4EAD0;
-  text-align: left;
-  white-space: normal;
-}

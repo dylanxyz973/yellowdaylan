@@ -23,7 +23,7 @@
   max-width: 1800px;   
   margin-left: auto;   
   margin-right: auto;
-  justify-items: center;
+  justify-content: center;
 }
 
 /* === Portfolio Box Base === */
@@ -72,8 +72,6 @@
   color: #F4EAD0;
 }
 
-
-
 /* === Filter Buttons === */
 .filter-buttons {
   text-align: center;
@@ -94,13 +92,13 @@
 
 /* Hover only for non-active buttons */
 .filter-buttons button:hover:not(.active) {
-  background: linear-gradient(to right, #FFD700, #FFC107); 
-  color: purple;
+  background: rgba(255,255,255,0.45);
+  color: #00F5FF;
 }
 
 .filter-buttons button.active {  
   background: rgba(255,255,255,0.2);
   color: #F4EAD0;
-  border: 2px solid white ;
+  border: 2px solid #F4EAD0;
 };
 

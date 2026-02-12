@@ -55,20 +55,26 @@
                 </div>
             </div>
         </div>
+
         <div class="gallery-section">
+
             <div class="gallery">
-                <img src="pictures/home.png" class="gallery-item" alt="Home Page" data-src="pictures/home.png"
+                <img src="pictures/d2home.png" class="gallery-item" alt="Home Page" data-src="pictures/d2home.png"
                     data-label="Home Page">
-                <img src="pictures/list.png" class="gallery-item" alt="Very cute" data-src="pictures/list.png"
-                    data-label="List Page">
-                <img src="pictures/det.png" class="gallery-item" alt="description" data-src="pictures/det.png"
-                    data-label="Details Page">
-                <img src="pictures/del.png" class="gallery-item" alt="Prompt appearing" data-src="pictures/del.png"
-                    data-label="Delete Prompt">
-                <img src="pictures/edit.png" class="gallery-item" alt="Edit Page" data-src="pictures/edit.png"
-                    data-label="Edit Page">
-                <img src="pictures/add.png" class="gallery-item" alt="Add Page" data-src="pictures/add.png"
-                    data-label="Add Page">
+                <img src="pictures/d2reg.png" class="gallery-item" alt="NaN" data-src="pictures/d2reg.png"
+                    data-label="Register">
+                <img src="pictures/d2login.png" class="gallery-item" alt="NaN" data-src="pictures/d2login.png"
+                    data-label="Login Page">
+                <img src="pictures/d2shop.png" class="gallery-item" alt="Edit Page" data-src="pictures/d2shop.png"
+                    data-label="Shop Page">
+                <img src="pictures/d2cart.png" class="gallery-item" alt="Cart Page" data-src="pictures/d2cart.png"
+                    data-label="Cart Page">
+                <img src="pictures/d2inv.png" class="gallery-item" alt="NaN" data-src="pictures/d2inv.png"
+                    data-label="Inventory Page">
+                <img src="pictures/d2addinv.png" class="gallery-item" alt="NaN" data-src="pictures/d2addinv.png"
+                    data-label="Add Product Page">
+                <img src="pictures/d2upinv.png" class="gallery-item" alt="NaN" data-src="pictures/d2upinv.png"
+                    data-label="Update Product Page">
             </div>
 
             <!-- Navigation Arrows -->
@@ -85,7 +91,78 @@
             </div>
         </div>
 
-        <h4>Objectives:</h4>
+
+        <div class="details">
+            <p class="detail-item"><strong>/ route (home page) (index.ejs)</strong><br>
+                Display Welcome greetings and links to register or log-in<br></p>
+
+            <p class="detail-item"><strong>/register route (register.ejs)</strong><br>
+                Compulsory registration for all new admins and new users with required fields:<br>
+                • Username<br>
+                • Email<br>
+                • Password<br>
+                • Address<br>
+                • Contact Number<br>
+                • Role (dropdown choose user or admin)<br><br>
+                If password is shorter than 6 characters, a message appears to inform users that password should be at
+                least 6 or more characters in length.
+                <br><br>
+            </p>
+
+            <p class="detail-item"><strong>/login route (login.ejs)</strong><br>
+                Log-in page for both admins and users requiring these two fields:<br>
+                • Email<br>
+                • Password<br><br>
+                Log-in and log-out functionality for both users and admins<br>
+            </p>
+
+            <p class="detail-item"><strong>/shopping route (shopping.ejs) [User]</strong><br>
+                View available products with its name, price, quantity available, quantity selection (dropdown of up to
+                5)
+                and the option to buy them.<br>
+                Clicking the product name allow them to view the product details<br>
+                Add products to cart by clicking buy products<br><br>
+            </p>
+
+            <p class="detail-item"><strong>/cart route (cart.ejs) [User]</strong><br>
+                See the products that are in the cart with its quantity, total cost and image<br>
+                Final total is displayed with a back to shopping link to redirect to shopping.ejs<br><br>
+            </p>
+
+            <p class="detail-item"><strong>/inventory route (inventory.ejs) [Admin]</strong><br>
+                Similar to shopping.ejs but with option to either edit products or delete products with a confirmation
+                prompt.<br><br>
+                <br>
+            </p>
+            </p>
+
+            <p class="detail-item"><strong>/addProduct route (addProduct.ejs) [Admin]</strong><br>
+                Add new products to inventory with the following fields:<br>
+                • Product Name<br>
+                • Quantity<br>
+                • Price ($)<br>
+                • Product Image<br><br>
+                Upon clicking Add product button, a new product would be added to bottom which can be viewed on
+                the inventory.ejs (admins) or shopping.ejs (users)<br><br>
+            </p>
+
+            <p class="detail-item"><strong>/updateProduct/:id route (updateProduct.ejs) [Admin]</strong><br>
+                Update (edit) the product details with pre-populated fields from existing product information:<br>
+                • Product Name<br>
+                • Quantity<br>
+                • Price ($)<br>
+                • Current Image<br>
+                • Upload New Image<br><br>
+                Admins would be redirected to the inventory.ejs upon clicking update product button<br>
+                Otherwise, if no changes needed to be made admins can click return to inventory button to return to
+                inventory page<br><br>
+            </p>
+
+        </div>
+        </div>
+
+
+        <h4>Objectives</h4>
 
         <p>
             To design and develop a functional web-based shopping system that allows users to view products and manage a
@@ -96,14 +173,14 @@
             admin functionalities.
         </p>
 
-        <h4>Technical Competencies:</h4><br>
+        <h4>Technical Competencies</h4><br>
 
         <p>
             <strong>Backend Development</strong><br><br>
             • Designed and managed server-side routing and middleware in app.js<br>
             • Implemented CRUD operations for products and user data<br>
             • Built role-based authorisation to sort access between users and admins<br>
-            • Used MySQL to store and retrieve user, product, and cart data<br>
+            • Usage of MySQL to store and retrieve user, product/inventory and cart data<br>
             • Image upload and update functionality for adding new products<br>
             • Displayed product images dynamically in shopping and inventory pages<br>
             • Structured database tables to support users, admins, products, and inventory<br><br>
@@ -116,7 +193,7 @@
 
             <strong>Frontend Development</strong><br><br>
             • Developed a web application using Node.js and Express.js with css for styling<br>
-            • Used EJS templating to render dynamic content<br>
+            • Utilised EJS templating to render dynamic content<br>
             • Passed backend data to frontend views for real-time updates<br>
             • Built reusable layouts such as navigation bars<br>
             • Displayed conditional content based on user roles<br><br>
@@ -135,83 +212,30 @@
 
         </p>
 
-        <h4>Functionalites/Features:</h4>
+        <h4>Functionalites/Features</h4>
 
         <p>
-            <strong>Navbar:</strong><br>
-            Toggle to logout which redirects user back to onboarding page (index.ejs)<br><br>
+            <strong>Navbar</strong><br>
+            Role-based feature access, navigation options are displayed based on account role ensuring users and admins 
+            only access functionalities relevant to their authentication.<br><br>
+            • Click "Logout" which directs back to onboarding page [Users and Admins]<br>
+            • Click "View Cart" which directs to cart page [Users]<br>
+            • Click "Add Product" which directs to addProduct page [Admins] <br><br>
 
-            <strong>Onboarding:</strong><br><br>
-            <strong>index.ejs</strong><br>
-            Welcome and prompt to register or log-in<br>
-            <br>
+            <strong>Shopping & Cart Behaviour</strong><br>
+            The cart dynamically reflects selected products, quantities and total cost. Thus, allowing users to review
+            their selection before returning to the shopping page.<br><br>
 
-            <strong>Role-based User authentication:</strong><br><br>
-            <strong>register.ejs</strong><br>
-            Compulsory registration for all new admins and new users with required fields:<br>
-            • Username<br>
-            • Email<br>
-            • Password<br>
-            • Address<br>
-            • Contact Number<br>
-            • Role (dropdown choose user or admin)<br><br>
-            If password is shorter than 6 characters, a message appears to inform users that password should be at least
-            6 or more characters in length.
-            <br><br>
+            <strong>Dynamic Content Display</strong><br>
+            Product listings and user greetings are based on user account role providing a personalised experience.<br><br>
 
-            <strong>login.ejs</strong><br>
-            Log-in page for both admins and users requiring these two fields:<br>
-            • Email<br>
-            • Password<br><br>
-            Log-in and log-out functionality for both users and admins<br>
-            <br>
-
-            <strong>User-end:</strong><br><br>
-
-            <strong>shopping.ejs</strong><br>
-            View available products with its name, price, quantity available, quantity selection (dropdown of up to 5)
-            and the option to buy them.<br>
-            Clicking the product name allow them to view the product details<br>
-            Add products to cart by clicking buy products<br><br>
-            <strong>product.ejs</strong><br>
-            View product details for the product<br><br>
-
-            <strong>cart.ejs</strong><br>
-            See the products that are in the cart with its quantity, total cost and image<br>
-            Final total is displayed with a back to shopping link to redirect to shopping.ejs<br><br>
-            <br>
-
-            <strong>Admin-end:</strong><br><br>
-
-            <strong>inventory.ejs</strong><br>
-            Similar to shopping.ejs but with option to either edit products or delete products with a confirmation
-            prompt.<br><br>
-            <strong>editProduct.ejs</strong><br>
-            Update (edit) the product details with pre-populated fields from existing product information:<br>
-            • Product Name<br>
-            • Quantity<br>
-            • Price ($)<br>
-            • Current Image<br>
-            • Upload New Image<br><br>
-            Admins would be redirected to the inventory.ejs upon clicking update product button<br>
-            Otherwise, if no changes needed to be made admins can click return to inventory button to return to
-            inventory page<br><br>
-
-            <strong>addProduct.ejs</strong><br>
-            Add new products to inventory with the following fields:<br>
-            • Product Name<br>
-            • Quantity<br>
-            • Price ($)<br>
-            • Product Image<br><br>
-            Upon clicking Add product button, a new product would be added to bottom which can be viewed on
-            the inventory.ejs (admins) or shopping.ejs (users)<br><br>
-
-            <strong>Features:<br></strong>
-            shopping.ejs page and inventory.ejs page display Welcome, username (role).<br>
-            Buttons and Product on Hover will change colour to enhance attention.
+            <strong>Pratical Enhancements<br></strong>
+            • shopping.ejs page and inventory.ejs page display Welcome, username (role).<br>
+            • Buttons and Product on Hover will change colour to enhance attention.<br>
+            • A pop up browser warning delete prompt to confirm deletion.
         </p>
 
-        <h4>Building process:</h4>
+        <h4>Building process</h4>
 
         <p>
             This project was completed within a 2-day timeline and is my first functional website I created.<br>
@@ -223,6 +247,37 @@
             separate user account to access user features.<br><br>
             Watch the video to see how the website works!
         </p>
+
+        <div class="modal" id="modal">
+
+            <!-- Close cross -->
+            <span class="close" id="modalClose">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                </svg>
+            </span>
+
+            <!-- Modal Image -->
+            <div class="modal-img-wrapper">
+                <img class="modal-content" id="modal-img" alt="Expanded view">
+            </div>
+
+        </div>
+
+        <div class="video">
+            <video controls width="100%">
+                <source src="videos/dev2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p class="p-center">
+            Timestaps:<br>
+            0:00-1:22 Admin functionalities<br>
+            1:23-2:03 User functionalities<br>
+            2:04-3:06 Onboarding Process
+        </p>
+
 
         <!-- Simple link with GitHub logo -->
         <a href="https://github.com/dylanxyz973/SupermarketWebsite" target="_blank" rel="noopener"
@@ -248,7 +303,8 @@
             View on GitHub
         </a>
 
-        <a href="portfolio.html" class="back-link">← Back to Works</a>
+
+        <a href="portfolio.html" class="back-link">⬅️ Back to Works</a>
 
     </section>
 

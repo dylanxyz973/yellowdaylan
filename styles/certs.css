@@ -1,9 +1,6 @@
 .certificate-section {
-  display: flex;
-  justify-content: flex-start;
-  justify-content: center; /* centers vertically */
+  width: 100%;
   align-items: center;     /* centers horizontally */
-  text-align: center;      /* centers inline text */
   padding: 20px;
   font-family: 'Nunito';
   font-weight: bold;
@@ -13,14 +10,17 @@
   background-image: url(../backgrounds/4.jpg);
 }
 
+
 .cert-list {
   list-style: none;
   padding: 0;
-  max-width: 600px;
-  margin: auto;
+  width: 60%;
 }
 
-.cert-list p {
+.cert-intro {
+  text-align: center;
+  width: 60%;
+  margin-top: 70px;
   color: #F4EAD0;
   font-size: 20px;
   font-weight: bold;
@@ -35,6 +35,7 @@
   border-radius: 8px;
   padding: 12px 16px;
   margin-bottom: 12px;
+  font-weight: bold;
 }
 
 .cert-list span {
@@ -48,50 +49,97 @@
   background: transparent;
   border: none;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 800;
   font-family: 'Nunito';
+  cursor: pointer;
 }
 
 .view-btn:hover {
   color:#00F5FF;
+  font-weight: 800;
 }
 
-/* Modal styling */
-.modal {
-  display: none;
+/* --- Integrated & Fixed Modal Styling --- */
+#pdfModal {
+  display: none; /* Changed to flex via JS openModal */
+  border: none;
   position: fixed;
   z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  left: 0; 
+  top: 0;
+  width: 100%; 
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.5);
+  overflow-y: hidden;
 }
 
 .modal-content {
-  margin: 5% auto;
+  position: relative; /* Crucial: Keeps the Close button 'pinned' relative to the modal */
   border-radius: 10px;
-  width: 90%;
+  width: 100%;
   max-width: 900px;
-  height: 90vh;   /* take most of viewport height */
+  max-height: 100vh; 
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* no extra scroll */
+  overflow-y: auto;
+  background: #C99700;
+}
+
+#pdfFrame {
+  width: 100%;
+  height: 680px; /* This height stays fixed */
+  border: none;
+  box-shadow: none;
+  display: block;
+  flex-shrink: 0; /* Prevents the PDF from squishing when text grows */
+  background: none;
+}
+
+#cert-skills {
+  padding: 25px;
+  color: #F4EAD0;
+  text-align: left;
+  font-weight: bold;
+}
+
+#cert-skills h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #F4EAD0; 
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#cert-skills ul {
+  padding-left: 20px;
+}
+
+#cert-skills li {
+  margin-bottom: 10px;
+  font-weight: bold;
+  background: none; /* Resetting the li style from your main list */
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  display: list-item; /* Reverts the flex-box from the main list */
+}
+
+/* Helper class for the body when modal is open */
+.no-scroll {
+  overflow: hidden !important;
 }
 
 .close {
-  align-self: flex-end;
-  font-size: 28px;
+  position: fixed;       /* 👈 attach to viewport instead */
+  z-index: 2000;
+  font-size: 40px;
   font-weight: bold;
-  color: white;
-  padding: 10px 20px;
+  color: red;
+  cursor: pointer;
 }
 
 .close:hover {
-  color: red;
+  color: #00F5FF;
 }
 
-.modal-content iframe {
-  flex: 1;            /* fills remaining space */
-  width: 100%;
-  height: 100%;       /* makes iframe fit */
-  border: none;
-}
