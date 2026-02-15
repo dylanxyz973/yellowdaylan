@@ -19,10 +19,8 @@
 
 .cert-intro {
   text-align: center;
-  width: 60%;
-  margin-top: 70px;
-  color: #F4EAD0;
-  font-size: 20px;
+  margin-top: 80px;
+  font-size: 21px;
   font-weight: bold;
 }
 
@@ -39,24 +37,22 @@
 }
 
 .cert-list span {
-  color: #F4EAD0;
   font-weight: bold;
   font-size: 20px;
 }
 
 .view-btn {
-  color: #F4EAD0;
+  font-family: 'Nunito' !important;
+  color: #F4EAD0 !important;
   background: transparent;
   border: none;
   font-size: 20px;
   font-weight: 800;
-  font-family: 'Nunito';
   cursor: pointer;
 }
 
 .view-btn:hover {
-  color:#00F5FF;
-  font-weight: 800;
+  color: #00F5FF !important;
 }
 
 /* --- Integrated & Fixed Modal Styling --- */
@@ -98,7 +94,6 @@
 
 #cert-skills {
   padding: 25px;
-  color: #F4EAD0;
   text-align: left;
   font-weight: bold;
 }
@@ -106,7 +101,6 @@
 #cert-skills h3 {
   margin-top: 0;
   margin-bottom: 15px;
-  color: #F4EAD0; 
   font-weight: bold;
   font-size: 22px;
 }

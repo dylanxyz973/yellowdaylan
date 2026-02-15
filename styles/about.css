@@ -8,38 +8,32 @@
   background-image: url(../backgrounds/6.jpg);
 }
 
-.main-heading {
-  font-size: 56px;         /* Larger than your body text */
-  margin-bottom: 45px;     /* Adds space between the title and your image/text */
-  text-transform: uppercase; /* Optional: Makes it feel more like a "header" */
-  letter-spacing: 1px;     /* Adds a bit of breathing room between letters */
+/* === Flex Layout Groups === */
+.container,
+.text-col,
+.reveal-row,
+.special-layout {
+  display: flex;
 }
 
-.container {
-  display: flex;    
-  align-items: center; 
-  gap: 30px;      
-  margin-bottom: 30px;    
-}
-
-.me-img {
-  border-radius: 20px;
-  width: 330px;
-  height: 330px;
-  object-fit: cover;
-  display: block;   
-  border: 3.3px solid #FFFF33;
-}
-
-.box {
-  font-size: 26px;
-  color: #F4EAD0;
-  font-family: 'Nunito';
+/* === Shared Text Styling === */
+.box,
+.answer-box,
+.detail-box,
+.intro-box {
   font-weight: 700;
   line-height: 1.6;
   letter-spacing: 0.2px;
 }
 
+/* === Image Styling === */
+.me-img,
+.reveal-img,
+.special-layout .image-row .reveal-img {
+  border-radius: 20px;
+}
+
+/* === Hidden by Default === */
 .reveal-row,
 .reveal-img,
 .clickable-image,
@@ -49,31 +43,56 @@
   display: none;
 }
 
+/* === Interactive Elements === */
+.click-indicator,
+.reveal-img,
+.question-box,
+.clickable-image img {
+  cursor: pointer;
+}
+
+.main-heading {
+  font-size: 56px;         /* Larger than your body text */
+  margin-bottom: 45px;     /* Adds space between the title and your image/text */
+  text-transform: uppercase; /* Optional: Makes it feel more like a "header" */
+  letter-spacing: 1px;     /* Adds a bit of breathing room between letters */
+}
+
+.container {  
+  align-items: center; 
+  gap: 30px;      
+  margin-bottom: 30px;    
+}
+
+.me-img {
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  display: block;   
+  border: 3.3px solid #FFFF33;
+}
+
+.box {
+  font-size: 26px;
+}
+
 .answer-box,
 .detail-box {
-  border: 2.5px solid transparent;
   border-radius: 20px;
   padding: 10px 15px 10px 15px;
-  margin: 17px 0;
+  margin: 17px 0px;
   width: fit-content;
-  font-size: 20px;
-  font-weight: 700;
-  color: #F4EAD0;
-  line-height: 1.6;
-  letter-spacing: 0.2px;    
+  font-size: 20px;   
   align-self: flex-start;    
 }
 
 .question-box {
   display: inline-block;
-  cursor: pointer;
   z-index: 2;
-  border: 2.5px solid transparent;
   margin: 16px 0px;    
 }
 
 .answer-box {
-  color: #F4EAD0;
   background: rgba(255,255,255,0.3);
 
 }
@@ -83,14 +102,12 @@
 }
 
 .intro-box {
-  color: #F4EAD0;
   font-size: 22px;
   font-weight: bold;
   margin: 20px 0px 12px 0px;
 }
 
 .text-col {
-  display: flex;
   flex-direction: column; 
   gap: 10px;
   max-width: 60%;
@@ -99,21 +116,16 @@
 .reveal-img {
   max-height: 360px; 
   margin-top: 20px;
-  border-radius: 20px;
   display: block;
-  cursor: pointer;
 }
 
 .reveal-row {
-  display: none;       
-  display: flex;
   gap: 20px;
   align-items: flex-start;
 }
 
 /* stack text above images for this section only */
 .special-layout {
-  display: flex !important;     /* force flex in case parent overrides */
   flex-direction: column !important;  /* stack text above images */
   gap: 20px;
 }
@@ -131,7 +143,6 @@
   max-width: 100%;       /* prevents overflow */
   height: 360px;         /* fixed height */
   object-fit: cover;     /* crops without stretching */
-  border-radius: 20px;
 }
 
 
@@ -139,14 +150,11 @@
 h3 {
   margin: 0px;
   font-size: 22px;
-  font-family: 'Nunito';
   font-weight: 900;
-  color: #F4EAD0;
 }
 
 /* === Link styles for about page === */
 .intro-box a {
-  color: #F4EAD0;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
@@ -165,7 +173,6 @@ h3 {
   display: block;
   max-width: none;
   flex-shrink: 0;
-  cursor: pointer;
 }
 
 .click-indicator {
@@ -174,8 +181,6 @@ h3 {
   bottom: 20px;
   font-size: 18px;
   font-weight: bold;
-  color: #F4EAD0;
-  font-family: 'Nunito';
   pointer-events: none;
 }
 

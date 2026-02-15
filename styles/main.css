@@ -12,6 +12,8 @@ html {
   overflow: auto; 
   cursor: none;
   overflow-x: hidden !important; /* prevent horizontal scroll */
+  font-family: 'Nunito';
+  color: #F4EAD0;
 }
 
 section.mobile-bg::before {
@@ -388,4 +390,5 @@ a.python:hover {
   text-align: left;
   white-space: normal;
   font-weight: bold;
+  line-height: 1.6;
 }

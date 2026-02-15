@@ -40,16 +40,12 @@
 .portfolio-box h2 {
   margin: 10px 0 5px;
   font-size: 24px;
-  color: #F4EAD0;
-  font-family: 'Nunito';
   font-weight: 900;
 }
 
 .portfolio-box p {
   margin: 0 0 8px;
   font-size: 17px;
-  color: #F4EAD0;
-  font-family: 'Nunito';
   font-weight: 700;
 }
 
@@ -67,10 +63,6 @@
   position: relative;
   background: rgba(255,255,255,0.45);
 }
-.portfolio-box:hover h2,
-.portfolio-box:hover p {
-  color: #F4EAD0;
-}
 
 /* === Filter Buttons === */
 .filter-buttons {
@@ -83,7 +75,7 @@
   margin: 10px;  /* Space between buttons */
   background: rgba(255,255,255,0.2);
   border: 2px solid transparent;
-  color: #F4EAD0;
+  color: #F4EAD0 !important;
   border-radius: 16px;
   cursor: pointer;
   font-family: 'Nunito';
@@ -98,7 +90,6 @@
 
 .filter-buttons button.active {  
   background: rgba(255,255,255,0.2);
-  color: #F4EAD0;
   border: 2px solid #F4EAD0;
 };
 
