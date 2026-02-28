@@ -9,9 +9,6 @@
   padding: 100px 40px 60px; 
 }
 
-.portfolio-section::before {
-  background-image: url(../backgrounds/7.jpg);
-}
 
 /* === Grid Container === */
 .portfolio-box-container {
@@ -75,10 +72,9 @@
   margin: 10px;  /* Space between buttons */
   background: rgba(255,255,255,0.2);
   border: 2px solid transparent;
-  color: #F4EAD0 !important;
+  color: #8C6A00 !important;
   border-radius: 16px;
   cursor: pointer;
-  font-family: 'Nunito';
   font-weight: 700;
 }
 

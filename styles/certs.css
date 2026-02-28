@@ -6,10 +6,6 @@
   font-weight: bold;
 }
 
-.certificate-section::before {
-  background-image: url(../backgrounds/4.jpg);
-}
-
 
 .cert-list {
   list-style: none;

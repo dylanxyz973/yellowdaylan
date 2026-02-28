@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
@@ -12,53 +11,20 @@ html {
   overflow: auto; 
   cursor: none;
   overflow-x: hidden !important; /* prevent horizontal scroll */
-  font-family: 'Nunito';
-  color: #F4EAD0;
-}
+  font-family: 'Manrope';
+  color: #8C6A00; 
+  background: linear-gradient(135deg, #FFECA1, #FFC72C);
 
-section.mobile-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 1440px auto;
-  background-attachment: fixed;
-
-  z-index: -1;
-}
-
-/* Background for responsive screens */
-@media (max-width: 768px) {
-  section.mobile-bg {
-    position: relative;
-    min-height: 100svh; /* fills viewport on mobile */
-    width: 100%;
-    overflow: hidden; /* ensures pseudo-element stays inside */
-  }
-
-  section.mobile-bg::before {
-    content: "";
-    position: absolute;
-    inset: 0; /* top:0; right:0; bottom:0; left:0; */
-    background-image: inherit; /* optional if you want per-section background */
-    background-size: cover; /* scales image to fill */
-    background-position: center; /* crop from center */
-    background-repeat: no-repeat;
-    background-attachment: scroll; /* safe for mobile */
-    z-index: -1; /* behind content */
-  }
 }
 
 /* Define size of vertical scrollbar */
 ::-webkit-scrollbar {
   width: 10px; 
-  background: #F4EAD0;
+  background: yellow;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+  background:  yellow;
   border-radius: 10px;
 }
 
@@ -99,7 +65,6 @@ section.mobile-bg::before {
 .answer-box,
 .detail-box,
 .modal-label {
-  font-family: 'Nunito';
   font-weight: 700;
 }
 
@@ -110,7 +75,6 @@ section.mobile-bg::before {
   width: auto;                /* remove full width */
   max-width: fit-content;    /* ensures no extra space */
   text-align: left; 
-  font-family: 'Nunito';
   font-weight: 700; /* Extra Bold */
   font-weight: bold;
   font-size: 20px;
@@ -132,13 +96,11 @@ section.mobile-bg::before {
 
 /* === H1 text stylings  === */ 
 h1 {
-  font-family: 'Nunito';
   font-weight: 900;
   font-size: 65px;
   text-align: center; 
   margin: 0; 
   margin-bottom: 20px;
-  color: #F4EAD0;
 }
 
 .center-h1 {
@@ -150,10 +112,8 @@ h1 {
 
 h2 {
   font-size: 36px;
-  font-family: 'Nunito';
   text-align: center;
   margin: 0.5em 0 1em 0; /* top right bottom left */
-  color: #F4EAD0;
 }
 
 /* === Nav Bar === */
@@ -172,7 +132,6 @@ h2 {
   0 0 1px rgba(18, 28, 72, 0.9);
   font-size: 19px;
   text-decoration: none;
-  font-family: 'Nunito'; 
   font-weight: 700;
   letter-spacing: 1.4px;
 }
@@ -198,45 +157,6 @@ h2 {
   flex-wrap: wrap;  
 }
 
-
-/* === TABLET LAYOUT === */
-@media (max-width: 1024px) {
-  .topnav {
-    width: 55%;
-    right: 20px;
-    gap: 14px;
-  }
-
-  .hero-title {
-    font-size: 70px !important;
-  }
-
-  .hero-subtitle {
-    font-size: 24px !important;
-  }
-
-}
-
-/* === MOBILE LAYOUT === */
-@media (max-width: 600px) {
-  .topnav {
-    width: 90%;         /* fills most of the screen */
-    top: 10px;
-    gap: 10px;
-
-    flex-wrap: wrap;    
-    justify-content: center;
-    padding: 6px 10px;
-  }
-
-  .hero-title {
-    font-size: 54px !important;
-  }
-
-  .hero-subtitle {
-    font-size: 18.5px !important;
-  }
-}
 
 .topnav a {
   font-weight: bold;
@@ -310,7 +230,7 @@ h2 {
 
 .nav polyline {
   fill: none;
-  stroke: #F4EAD0;
+  stroke: #B8860B;
   stroke-width: 5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -342,7 +262,7 @@ h2 {
   width: 100%;
   height: 100%;
   fill: none;
-  stroke: #F4EAD0;
+  stroke: #B8860B;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -353,14 +273,11 @@ h2 {
   stroke: #FF4D00;
 }
 
-.python a {
-  font-family: 'JetBrains Mono'; 
-  color: #B6FF00;
-  padding: 2px 6px;
-  border-radius: 8px;
-  text-underline-offset: 0.18em;
-  text-decoration-thickness: 2px;
+a {
+  color: #5A5F66;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .space {
@@ -368,8 +285,6 @@ h2 {
 }
 
 a.python {
-  font-family: 'JetBrains Mono';
-  color: #B6FF00;
   text-decoration: none;
 }
 
@@ -384,9 +299,7 @@ a.python:hover {
 .python-c {
   margin-top: 40px;
   align-self: center;
-  font-family: 'JetBrains Mono';
   font-size: 26px;
-  color: #F4EAD0;
   text-align: left;
   white-space: normal;
   font-weight: bold;

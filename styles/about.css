@@ -4,10 +4,6 @@
   padding: 90px 40px 40px 70px;
 }
 
-.about-section::before {
-  background-image: url(../backgrounds/6.jpg);
-}
-
 /* === Flex Layout Groups === */
 .container,
 .text-col,

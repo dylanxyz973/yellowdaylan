@@ -7,10 +7,6 @@
   padding: 90px 20px;
 }
 
-.display::before {
-  background-image: url(../backgrounds/2.jpg);
-}
-
 /* === Flex Layout Grouping === */
 .tool-section,
 .tool-box-container,
@@ -29,7 +25,6 @@
 .label-box,
 .tool-box,
 .back-link {
-  border: 2px solid #F4EAD0;
   border-radius: 20px;      
   font-weight: 800;
 }
@@ -127,8 +122,6 @@ a:not(.topnav a) {
   padding: 6px 10px;
   border-radius: 20px;
   border: 2px solid #F4EAD0;
-  color: #F4EAD0 !important;
-  font-family: 'Nunito' !important;
   font-size: 20px;
 }
 
