@@ -48,13 +48,13 @@
 /* Title */
 .hero-title {
   letter-spacing: 2px;
-  font-size: 105.5px;
+  font-size: 105px;
   font-weight: bold;
 }
 
 /* Subtitle */
 .hero-subtitle {
-  font-size: 42.5px;
+  font-size: 40px;
   font-weight: 500;
   margin: 0;
   letter-spacing: 1px; /* slight spacing for clarity */

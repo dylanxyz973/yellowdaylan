@@ -29,24 +29,6 @@
   border-radius: 20px;
 }
 
-/* === Hidden by Default === */
-.reveal-row,
-.reveal-img,
-.clickable-image,
-.answer-box,
-.detail-box,
-.image-row {
-  display: none;
-}
-
-/* === Interactive Elements === */
-.click-indicator,
-.reveal-img,
-.question-box,
-.clickable-image img {
-  cursor: pointer;
-}
-
 .main-heading {
   font-size: 56px;         /* Larger than your body text */
   margin-bottom: 45px;     /* Adds space between the title and your image/text */
@@ -65,7 +47,6 @@
   height: 330px;
   object-fit: cover;
   display: block;   
-  border: 3.3px solid #FFFF33;
 }
 
 .box {
@@ -91,10 +72,6 @@
 .answer-box {
   background: rgba(255,255,255,0.3);
 
-}
-
-.detail-box {
-  border: 2px solid #F4EAD0;
 }
 
 .intro-box {
