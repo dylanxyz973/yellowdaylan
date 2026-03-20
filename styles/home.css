@@ -77,14 +77,6 @@
   padding-bottom: 30px;
 }
 
-.about-title {
-  padding-bottom: 10px;         
-  font-size: 3rem;
-  margin: 0 0 .5rem 0;     
-  white-space: nowrap;     
-  text-align: left;
-}
-
 .about-text {
   font-size: 20px;
   line-height: 1.9;
@@ -123,11 +115,6 @@
   text-align: center;
 }
 
-.work-title {
-  font-size: 3rem;
-  margin-bottom: 1.6rem;
-}
-
 .work-carousel {
   flex-direction: row;   
   flex-wrap: nowrap; 
@@ -141,7 +128,7 @@
 
 /* Card styles */
 .work-card {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(200, 95, 60, 0.16);
   border-radius: 20px;
   padding: 15px 18px 18px;
   text-align: center;
@@ -157,7 +144,10 @@
 }
 
 .work-card:hover {
-  background: rgba(255,255,255,0.55);
+  background: rgba(200, 95, 60, 0.22);
+  box-shadow: 
+    0 4px 14px rgba(166, 94, 46, 0.16),
+    inset 0 1px 0 rgba(255,255,255,0.28);
 }
 
 /* Image inside card */
@@ -176,6 +166,7 @@
   margin: 14px 0px 10px;
   font-size: 28px;
   font-weight: 900;
+  color: #5A5F66;
 }
 
 .work-card p {
@@ -183,6 +174,7 @@
   margin: 0px 0 8px;
   font-size: 20px;
   font-weight: 700;
+  color: #5A5F66;
 }
 
 .python {
@@ -208,12 +200,6 @@
 
 .site-footer {
   font-weight: 700;
-}
-
-.footer-heading {
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 32px;
 }
 
 .footer-row {
@@ -253,7 +239,7 @@
 }
 
 .footer-left a:hover svg {
-  fill: #00F5FF;
+  fill: #4F6D8A;
 }
 
 .footer-right p {

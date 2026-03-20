@@ -46,14 +46,14 @@
   </div>
 
 
-  <section class="portfolio-section mobile-bg">
+  <section class="portfolio-section">
 
     <h1>THE CREATIONS</h1>
 
     <div class="filter-buttons">
-      <button onclick="filterWorks('all', this)">All</button>
-      <button onclick="filterWorks('design', this)">Design</button>
-      <button onclick="filterWorks('development', this)">Coding</button>
+      <button onclick="filterItems('all', this, '.portfolio-box', '.filter-buttons')">All</button>
+      <button onclick="filterItems('design', this, '.portfolio-box', '.filter-buttons')">Design</button>
+      <button onclick="filterItems('development', this, '.portfolio-box', '.filter-buttons')">Coding</button>
     </div>
 
     <div class="portfolio-box-container">

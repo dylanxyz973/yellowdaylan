@@ -94,13 +94,60 @@ function openModal(pdfUrl) {
     `;
   }
 
+  else if (pdfUrl.includes("uxf")) {
+    skills = `
+      <h3>Skills I have learnt:</h3>
+      <ul>
+        <li>Component-based structure</li>
+        <li>Props and states</li>
+        <li>useState hook</li>
+        <li>Dynamic UI rendering</li>
+      </ul>
+    `;
+  }
+
+  else if (pdfUrl.includes("uxp")) {
+    skills = `
+      <h3>Skills I have learnt:</h3>
+      <ul>
+        <li>Component-based structure</li>
+        <li>Props and states</li>
+        <li>useState hook</li>
+        <li>Dynamic UI rendering</li>
+      </ul>
+    `;
+  }
+
+  else if (pdfUrl.includes("figma1")) {
+    skills = `
+      <h3>Skills I have learnt:</h3>
+      <ul>
+        <li>Component-based structure</li>
+        <li>Props and states</li>
+        <li>useState hook</li>
+        <li>Dynamic UI rendering</li>
+      </ul>
+    `;
+  }
+
+  else if (pdfUrl.includes("figma2")) {
+    skills = `
+      <h3>Skills I have learnt:</h3>
+      <ul>
+        <li>Component-based structure</li>
+        <li>Props and states</li>
+        <li>useState hook</li>
+        <li>Dynamic UI rendering</li>
+      </ul>
+    `;
+  }
   skillsContainer.innerHTML = skills;
 }
 
 function closeModal() {
   document.getElementById('pdfModal').style.display = "none";
-  document.getElementById('pdfFrame').src = file;
-  document.getElementById('cert-skills').innerHTML = ""; 
+  document.getElementById('pdfFrame').src = ""; 
+  document.getElementById('cert-skills').innerHTML = "";
   document.documentElement.style.overflow = '';
-  document.body.style.overflow = 'auto';
+  document.body.style.overflow = '';
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
@@ -101,6 +101,7 @@ h1 {
   text-align: center; 
   margin: 0; 
   margin-bottom: 20px;
+  letter-spacing: 1px; /* Adds a bit of breathing room between letters */
 }
 
 .center-h1 {
@@ -119,21 +120,18 @@ h2 {
 /* === Nav Bar === */
 .topnav,
 .dropdown-content {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(200, 95, 60, 0.16);
   backdrop-filter: blur(6px);
   z-index: 20;
 }
 
 .topnav a,
 .dropdown-content a {
-  color: #F4EAD0; 
-  text-shadow:
-  0 1px 2px rgba(18, 28, 72, 0.75),
-  0 0 1px rgba(18, 28, 72, 0.9);
+  color: #8C6A00; 
   font-size: 19px;
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 1.4px;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
 }
 
 .topnav a.active,
@@ -147,7 +145,7 @@ h2 {
   left: auto;
   right: 30px;
   transform: none;
-  width: 34%;
+  width: 33%;
   max-width: 95vw;  
   padding: 4px 8px;
   border-radius: 50px;
@@ -230,14 +228,14 @@ h2 {
 
 .nav polyline {
   fill: none;
-  stroke: #B8860B;
+  stroke: #5A5F66;
   stroke-width: 5;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .nav:hover polyline {
-  stroke: #B6FF00;
+  stroke: #4F6D8A;
 }
 
 /* Placement for work page */
@@ -274,26 +272,14 @@ h2 {
 }
 
 a {
-  color: #5A5F66;
+  color:#5A5F66;
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
 }
 
-.space {
-  letter-spacing: 1px;
-}
-
-a.python {
-  text-decoration: none;
-}
-
-a.python:hover { 
-  color: #00F5FF;
-}
-
-.python a:hover {
-  color: #00F5FF;
+a:hover {
+  color: #4F6D8A;
 }
 
 .python-c {
@@ -305,3 +291,36 @@ a.python:hover {
   font-weight: bold;
   line-height: 1.6;
 }
+
+/* === Filter Buttons === */
+.filter-buttons {
+  text-align: center;
+}
+
+.filter-buttons button {
+  font-size: 22px;
+  padding: 8px 12px;
+  margin: 10px;  /* Space between buttons */
+  background: rgba(200, 95, 60, 0.16);
+  border: none;
+  color: #5A5F66;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Hover only for non-active buttons */
+.filter-buttons button:hover:not(.active) {
+  background: rgba(200, 95, 60, 0.16);
+  box-shadow: 
+    0 4px 14px rgba(166, 94, 46, 0.16),
+    inset 0 1px 0 rgba(255,255,255,0.28);
+  color: #4F6D8A;
+  border: none;
+}
+
+.filter-buttons button.active {  
+  background: rgba(200, 95, 60, 0.16);
+  border: none;
+};
+

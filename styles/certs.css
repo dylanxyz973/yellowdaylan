@@ -2,7 +2,6 @@
   width: 100%;
   align-items: center;     /* centers horizontally */
   padding: 20px;
-  font-family: 'Nunito';
   font-weight: bold;
 }
 
@@ -15,7 +14,7 @@
 
 .cert-intro {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 30px;
   font-size: 21px;
   font-weight: bold;
 }
@@ -24,8 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255,255,255,0.2);
-  border: 2px solid white;
+  background: rgba(200, 95, 60, 0.16);
   border-radius: 8px;
   padding: 12px 16px;
   margin-bottom: 12px;
@@ -38,8 +36,8 @@
 }
 
 .view-btn {
-  font-family: 'Nunito' !important;
-  color: #F4EAD0 !important;
+  font-family: 'Manrope' !important;
+  color: #5A5F66 !important;
   background: transparent;
   border: none;
   font-size: 20px;
@@ -48,7 +46,7 @@
 }
 
 .view-btn:hover {
-  color: #00F5FF !important;
+  color: #4F6D8A !important;
 }
 
 /* --- Integrated & Fixed Modal Styling --- */

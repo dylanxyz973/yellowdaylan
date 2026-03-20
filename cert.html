@@ -48,40 +48,64 @@
 
   <section class="certificate-section">
 
+    <h1 style="margin-top: 70px;">CERTIFICATES</h1>
+
+    <div class="filter-buttons">
+      <button onclick="filterItems('all', this, '.cert-list li', '.filter-buttons')">All</button>
+      <button onclick="filterItems('development', this, '.cert-list li', '.filter-buttons')">Coding</button>
+      <button onclick="filterItems('design', this, '.cert-list li', '.filter-buttons')">Design</button>
+    </div>
+
     <p class="cert-intro">
-      Here are some HackerRank certifications that shows that I <br> have learnt these
+      Here are some HackerRank and Linkedln certifications that shows that I <br> have learnt these
       appplications on the basic skill level
     </p>
 
 
     <ul class="cert-list">
-      <li>
+      <li data-category="development">
         <span>Certificate 1 – Problem Solving</span>
         <button class="view-btn" onclick="openModal('certificates/problem solving.pdf')">View</button>
       </li>
-      <li>
+      <li data-category="development">
         <span>Certificate 2 - Python </span>
         <button class="view-btn" onclick="openModal('certificates/python.pdf')">View</button>
       </li>
-      <li>
+      <li data-category="development">
         <span>Certificate 3 – CSS</span>
         <button class="view-btn" onclick="openModal('certificates/css.pdf')">View</button>
       </li>
-      <li>
+      <li data-category="development">
         <span>Certificate 4 – MySQL Database</span>
         <button class="view-btn" onclick="openModal('certificates/sql.pdf')">View</button>
       </li>
-      <li>
+      <li data-category="development">
         <span>Certificate 5 – Javascript</span>
         <button class="view-btn" onclick="openModal('certificates/javascript.pdf')">View</button>
       </li>
-      <li>
+      <li data-category="development">
         <span>Certificate 6 – NodeJS</span>
         <button class="view-btn" onclick="openModal('certificates/nodejs.pdf')">View</button>
       </li>
-      <li>
+      <li data-category="development">
         <span>Certificate 7 – React</span>
         <button class="view-btn" onclick="openModal('certificates/react.pdf')">View</button>
+      </li>
+      <li data-category="design">
+        <span>Certificate 8 – UX Usability</span>
+        <button class="view-btn" onclick="openModal('certificates/uxf.pdf')">View</button>
+      </li>
+      <li data-category="design">
+        <span>Certificate 9 – UX Personas</span>
+        <button class="view-btn" onclick="openModal('certificates/uxp.pdf')">View</button>
+      </li>
+      <li data-category="design">
+        <span>Certificate 10 – Figma Basics </span>
+        <button class="view-btn" onclick="openModal('certificates/figma1.pdf')">View</button>
+      </li>
+      <li data-category="design">
+        <span>Certificate 11 – Figma Components</span>
+        <button class="view-btn" onclick="openModal('certificates/figma2.pdf')">View</button>
       </li>
     </ul>
 
@@ -94,16 +118,9 @@
       </div>
     </div>
 
-    <p class="python-c">
-      <span>if</span>&nbsp;works<span class="space">&nbsp;==</span><span>&nbsp;True</span>:
-      <br>
-      <span>&nbsp;&nbsp;&nbsp;print("</span><a class="python" href="portfolio.html">Please look at my cool
-        works!</a><span>")</span><br><br>
-      <span>else:</span>
-      <br>
-      <span>&nbsp;&nbsp;&nbsp;print("</span><a class="python" href="about.html">Return to Profile
-        Page</a><span>")</span>
-    </p>
+      <a href="portfolio.html">Please look at my cool works!</a>
+        <br>
+      <a href="about.html">Return to Profile Page</a><span>
 
     <div class="custom-cursor">
       <div class="cursor-shape"></div>
@@ -111,6 +128,7 @@
 
 
     <script src="js/cert.js"></script>
+    <script src="js/click.js"></script>
     <script src="js/cursor.js"></script>
 
   </section>
