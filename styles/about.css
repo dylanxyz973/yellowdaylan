@@ -1,6 +1,5 @@
 .about-section {
   display: flex;
-  justify-content: flex-start;
   padding: 90px 40px 40px 70px;
 }
 
@@ -12,16 +11,6 @@
   display: flex;
 }
 
-/* === Shared Text Styling === */
-.box,
-.answer-box,
-.detail-box,
-.intro-box {
-  font-weight: 700;
-  line-height: 1.6;
-  letter-spacing: 0.2px;
-}
-
 /* === Image Styling === */
 .me-img,
 .reveal-img,
@@ -29,17 +18,13 @@
   border-radius: 20px;
 }
 
-.main-heading {
-  font-size: 56px;         /* Larger than your body text */
-  margin-bottom: 45px;     /* Adds space between the title and your image/text */
-  text-transform: uppercase; /* Optional: Makes it feel more like a "header" */
-  letter-spacing: 1px;     
+h3 {
+  font-size: 36px !important;
 }
 
 .container {  
   align-items: center; 
-  gap: 30px;      
-  margin-bottom: 30px;    
+  gap: 40px;         
 }
 
 .me-img {
@@ -63,12 +48,6 @@
   align-self: flex-start;    
 }
 
-.question-box {
-  display: inline-block;
-  z-index: 2;
-  margin: 16px 0px;    
-}
-
 .intro-box {
   font-size: 22px;
   font-weight: bold;
@@ -85,11 +64,6 @@
   max-height: 360px; 
   margin-top: 20px;
   display: block;
-}
-
-.reveal-row {
-  gap: 20px;
-  align-items: flex-start;
 }
 
 /* stack text above images for this section only */

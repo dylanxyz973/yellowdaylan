@@ -60,7 +60,6 @@
   letter-spacing: 1px; /* slight spacing for clarity */
 }
 
-
 /* Quote text */
 .quote-text {
   position: relative;
@@ -85,29 +84,6 @@
   max-width: 70ch;
 }
 
-.about-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.about-list li {
-  display: grid;
-  grid-template-columns: 1.3ch 1fr;
-  column-gap: 0.6ch;
-  margin: 10px 0;
-}
-
-.about-list li::before {
-  font-weight: 700;
-  justify-self: start;
-}
-
-
-.about-section, .about-row, .about-title, .about-text {
-  text-align: left !important;
-}
-
 .work-section {
   padding-top: 36px;
   max-width: 900px;
@@ -120,7 +96,7 @@
   flex-wrap: nowrap; 
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 0px 24px 40px;
   gap: 0.5rem;
   box-sizing: border-box;
   position: relative;
@@ -128,7 +104,7 @@
 
 /* Card styles */
 .work-card {
-  background: rgba(200, 95, 60, 0.16);
+  background: rgba(150, 95, 50, 0.14);
   border-radius: 20px;
   padding: 15px 18px 18px;
   text-align: center;
@@ -144,10 +120,11 @@
 }
 
 .work-card:hover {
-  background: rgba(200, 95, 60, 0.22);
+  background: rgba(200, 95, 60, 0.24);
   box-shadow: 
     0 4px 14px rgba(166, 94, 46, 0.16),
     inset 0 1px 0 rgba(255,255,255,0.28);
+  color: #5A5F66;
 }
 
 /* Image inside card */
@@ -166,7 +143,6 @@
   margin: 14px 0px 10px;
   font-size: 28px;
   font-weight: 900;
-  color: #5A5F66;
 }
 
 .work-card p {
@@ -174,19 +150,8 @@
   margin: 0px 0 8px;
   font-size: 20px;
   font-weight: 700;
-  color: #5A5F66;
 }
-
-.python {
-  margin: 0;
-  font-size: 26px;
-  text-align: left;
-  white-space: normal;
-  font-weight: bold;
-  line-height: 1.6;
-}
-
-                
+           
 /* Navigation Arrows for home page */
 .nav {
   position: absolute;
@@ -199,51 +164,30 @@
 }
 
 .site-footer {
-  font-weight: 700;
+  text-align: center;
 }
 
-.footer-row {
-  position: relative;
-  min-height: 60px;
+/* ICON CONTAINER */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;       /* spacing between icons */
+  margin: 30px 0px 30px;
 }
 
-.footer-left,
-.footer-right {
-  bottom: 0;
-}
-
-/* LEFT */
-.footer-left {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-320px);
-  gap: 24px;
-}
-
-/* RIGHT */
-.footer-right {
-  position: absolute;
-  left: 50%;
-  transform: translateX(165px);
-  text-align: left;
-  font-size: 16px;
-  line-height: 1.4;
-  width: 330px;  
-}
-
-.footer-left svg {
-  width: 40px;
-  height: 40px;
+/* ICON STYLE */
+.footer-icons svg {
+  width: 45px;
+  height: 45px;
   fill: #5A5F66;
-  display: block;
 }
 
-.footer-left a:hover svg {
+.footer-icons a:hover svg {
   fill: #4F6D8A;
 }
 
-.footer-right p {
-  margin: 0;
+.site-footer p {
+  font-weight: 700;
 }
 
 

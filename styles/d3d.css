@@ -1,6 +1,5 @@
 .display {
   display: flex;
-  justify-content: flex-start;
   justify-content: center; /* centers vertically */
   align-items: center;     /* centers horizontally */
   text-align: center;      /* centers inline text */
@@ -30,8 +29,8 @@
 }
 
 .label-box {
-  display: inline-block; 
-  background: rgba(255, 255, 255, 0.3);             
+  display: inline-block;  
+  background: rgba(200, 95, 60, 0.14);       
   font-weight: bold;
   padding: 6px 14px;         
   margin-bottom: 8px; 
@@ -54,7 +53,7 @@
 }
 
 .tool-box {
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(200, 95, 60, 0.14);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +84,6 @@
   margin-top: 30px;
 }
 
-
 h4,
 p { 
   width: 100%;
@@ -93,54 +91,25 @@ p {
   text-align: left;
 }
 
-
 h4 {
-  margin: 30px auto 10px; 
+  margin: 20px auto 25px; 
   font-size: 24px;          
   font-weight: 800;      
-  padding: 5px 10px;
-  border-radius: 16px;
-}
-
-p {
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 600;
-  margin-top: 0;
 }
 
 .p-center {
-    text-align: center;
+  text-align: center;
 }
 
 /* === link style for github and other links === */
-a:not(.topnav a) {
-  display: inline-flex;
-  align-items: center;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 20px;
-  border: 2px solid #F4EAD0;
-  font-size: 20px;
-}
-
-a:not(.topnav a):hover {
-  background: rgba(255, 255, 255, 0.4);
-}
-
 .github-logo {
   margin-right: 8px; 
-}
-
-.link-row {
-  gap: 30px; /* space between links */
 }
 
 /* Back link to portfolio */
 .back-link {
   margin-top: 50px;
-  font-size: 22px !important; 
+  font-size: 24px !important; 
 }
 
 /* === Pictures === */
