@@ -5,7 +5,6 @@
   padding: 100px 40px 60px; 
 }
 
-
 /* === Grid Container === */
 .portfolio-box-container {
   display: flex;
@@ -21,7 +20,7 @@
 
 /* === Portfolio Box Base === */
 .portfolio-box {
-  background: rgba(150, 95, 50, 0.14);
+  background: rgba(176, 120, 60, 0.16);
   border-radius: 20px;
   padding: 15px 18px 18px;
   text-align: center;
@@ -54,9 +53,9 @@
 .portfolio-box:hover {
   z-index: 10;
   position: relative;
-  background: rgba(200, 95, 60, 0.24);
+  background: rgba(176, 120, 60, 0.26);
   box-shadow: 
     0 4px 14px rgba(166, 94, 46, 0.16),
     inset 0 1px 0 rgba(255,255,255,0.28);
-  color: #5A5F66;
+  color: #4F4A43;
 }

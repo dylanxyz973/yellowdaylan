@@ -1,7 +1,7 @@
-const headers = document.querySelectorAll('h4');
+const headers = document.querySelectorAll('h5');
 
 // hide all <p> initially
-document.querySelectorAll('h4 + p').forEach(p => {
+document.querySelectorAll('h5 + p').forEach(p => {
   p.style.display = 'none';
 });
 
@@ -17,7 +17,7 @@ headers.forEach(h => {
     const isOpen = p.style.display === 'block';
 
     // close all
-    document.querySelectorAll('h4 + p').forEach(el => {
+    document.querySelectorAll('h5 + p').forEach(el => {
       el.style.display = 'none';
     });
 

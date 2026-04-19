@@ -1,37 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 
 body,
 html {
   margin: 0;
   padding: 0;
   height: auto;
-  min-height: 100%;    
-  overflow: auto; 
+  min-height: 100%;
+  overflow: auto;
   cursor: none;
-  overflow-x: hidden !important; /* prevent horizontal scroll */
+  overflow-x: hidden !important;
+  /* prevent horizontal scroll */
   font-family: 'Manrope';
   color: #8C6A00;
-  background: linear-gradient(
-  115deg,
-  #FFF36A 0%,
-  #FFE600 28%,
-  #FFD200 65%,
-  #FFD000 100%
-);
+  background: linear-gradient(115deg,
+      #FFF36A 0%,
+      #FFE600 28%,
+      #FFD200 65%,
+      #FFD000 100%);
+
 }
+
 /* Define size of vertical scrollbar */
 ::-webkit-scrollbar {
-  width: 10px; 
+  width: 10px;
   background: yellow;
 }
 
 ::-webkit-scrollbar-thumb {
-  background:  yellow;
+  background: yellow;
   border-radius: 10px;
 }
-
 
 .custom-cursor {
   position: fixed;
@@ -60,58 +59,48 @@ html {
   display: flex;
   flex-direction: column;
   background-size: cover;
-  background-position: center; /* ensures background image stays centered */
-  background-repeat: no-repeat; /* prevents background from repeating */
-  overflow-y: auto;  /* allows vertical scrolling if content overflows */
-}
-
-.arrow-text,
-.answer-box,
-.detail-box,
-.modal-label {
-  font-weight: 700;
-}
-
-
-/* === Used by about, portfolio, display work pages  === */ 
-.intro-box {
-  display: inline-block !important;
-  width: auto;                /* remove full width */
-  max-width: fit-content;    /* ensures no extra space */
-  text-align: left; 
-  font-weight: 700; /* Extra Bold */
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 20px;
-  padding: 7px 9px;
-  margin-bottom: 15px;
+  background-position: center;
+  /* ensures background image stays centered */
+  background-repeat: no-repeat;
+  /* prevents background from repeating */
+  overflow-y: auto;
+  /* allows vertical scrolling if content overflows */
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 800;
   font-size: 62px;
-  text-align: center; 
-  margin: 0; 
+  text-align: center;
+  margin: 0;
   margin-bottom: 30px;
-  letter-spacing: 1px; /* Adds a bit of breathing room between letters */
-}
-
-.center-h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  letter-spacing: 1px;
+  /* Adds a bit of breathing room between letters */
 }
 
 h2 {
   font-size: 42px;
   text-align: center;
-  margin: 0.5em 0 0.5em 0; /* top right bottom left */
+  margin: 0.5em 0 0.5em 0;
+  /* top right bottom left */
 }
 
 h3 {
-  font-size: 36px;         
-  margin-bottom: 30px !important;   
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  margin-bottom: 10px !important;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+h6 {
+  margin-top: 0 !important;
+  margin-bottom: 0;
+  font-weight: 800;
+  font-size: 30px;
 }
 
 p {
@@ -121,8 +110,8 @@ p {
   margin-top: 12px;
 }
 
-a:not(.topnav a):not(.footer-icons a) {
-  color:#5A5F66;
+a:not(.topnav a):not(.footer-icons a):not(.arrow-link) {
+  color: #6B685F;
   text-decoration: none;
   font-size: 20px;
   display: inline-flex;
@@ -132,29 +121,29 @@ a:not(.topnav a):not(.footer-icons a) {
   padding: 6px 10px;
   border-radius: 20px;
   margin-right: 15px;
-  border: 1.4px solid #5A5F66; 
+  border: 1.4px solid #6B685F;
 }
 
-a:not(.topnav a):not(.footer-icons a):hover {
-  border-color: #4F6D8A;
-  background: rgba(200, 95, 60, 0.16);
+a:not(.topnav a):not(.footer-icons a):not(.arrow-link):hover {
+  border-color: #4F4A43;
+  background: rgba(170, 120, 60, 0.16);
 }
 
 a:hover {
-  color: #4F6D8A !important;
+  color: #4F4A43 !important;
 }
 
 /* === Nav Bar === */
 .topnav,
 .dropdown-content {
-  background: rgba(200, 95, 60, 0.14);
+  background: rgba(176, 120, 60, 0.16);
   backdrop-filter: blur(6px);
   z-index: 20;
 }
 
 .topnav a,
 .dropdown-content a {
-  color: #8C6A00; 
+  color: #8C6A00;
   font-size: 19px;
   text-decoration: none;
   font-weight: 700 !important;
@@ -167,10 +156,12 @@ a:hover {
 }
 
 .nav-logo {
-  height: 28px; /* Ideal size for a 4px padded navbar */
+  height: 28px;
+  /* Ideal size for a 4px padded navbar */
   width: auto;
-  margin-right: auto; /* Pushes the links to the right if you want the logo on the left */
-  padding-left: 10px; 
+  margin-right: auto;
+  /* Pushes the links to the right if you want the logo on the left */
+  padding-left: 10px;
 }
 
 .topnav {
@@ -180,13 +171,13 @@ a:hover {
   right: 30px;
   transform: none;
   width: 36%;
-  max-width: 95vw;  
+  max-width: 95vw;
   padding: 4px 8px;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 .topnav a {
@@ -196,20 +187,20 @@ a:hover {
 
 .topnav a.active {
   color: #8C6A00;
-  background-color: rgba(90, 95, 102, 0.16);
+  background-color: rgba(107, 104, 95, 0.16);
 }
 
 .topnav a:hover,
 .dropdown-content a:hover {
-  color: #4F6D8A;
-  background-color: rgba(90, 95, 102, 0.08);
+  color: #4F4A43;
+  background-color: rgba(107, 104, 95, 0.08);
 }
 
 /* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
-  overflow: visible; 
+  overflow: visible;
 }
 
 /* Dropdown content (hidden by default) */
@@ -236,9 +227,9 @@ a:hover {
 }
 
 .nav-icon {
-  width: 24px; 
+  width: 24px;
   height: 24px;
-  fill: currentColor; 
+  fill: currentColor;
   flex-shrink: 0;
 }
 
@@ -261,16 +252,26 @@ a:hover {
 }
 
 .nav:hover polyline {
-  stroke: #4F6D8A;
+  stroke: #4F4A43;
 }
 
 /* Placement for work page */
-.nav.left { left: 20px; }
-.nav.right { right: 20px; }
+.nav.left {
+  left: 20px;
+}
+
+.nav.right {
+  right: 20px;
+}
 
 /* Placement for featured work */
-.nav--work.left  { left: 8px; }
-.nav--work.right { right: 8px; }
+.nav--work.left {
+  left: 8px;
+}
+
+.nav--work.right {
+  right: 8px;
+}
 
 .close {
   position: absolute;
@@ -305,10 +306,11 @@ a:hover {
 .filter-buttons button {
   font-size: 22px;
   padding: 8px 12px;
-  margin: 10px;  /* Space between buttons */
-  background: rgba(200, 95, 60, 0.16);
+  margin: 10px;
+  /* Space between buttons */
+  background: rgba(176, 120, 60, 0.16);
   border: none;
-  color: #5A5F66;
+  color: #6B685F;
   border-radius: 16px;
   cursor: pointer;
   font-weight: 700;
@@ -316,16 +318,84 @@ a:hover {
 
 /* Hover only for non-active buttons */
 .filter-buttons button:hover:not(.active) {
-  background: rgba(200, 95, 60, 0.16);
-  box-shadow: 
+  background: rgba(176, 120, 60, 0.26);
+  box-shadow:
     0 4px 14px rgba(166, 94, 46, 0.16),
-    inset 0 1px 0 rgba(255,255,255,0.28);
-  color: #4F6D8A;
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  color: #4F4A43;
   border: none;
 }
 
-.filter-buttons button.active {  
-  background: rgba(200, 95, 60, 0.16);
-  border: 1.4px solid #5A5F66;
-};
+.filter-buttons button.active {
+  background: rgba(176, 120, 60, 0.16);
+  border: 1.4px solid #6B685F;
+}
 
+.tool-section,
+.tool-box-container {
+  flex-wrap: wrap;
+}
+
+.label-box,
+.tool-box,
+.back-link {
+  border-radius: 20px;
+  font-weight: 800;
+}
+
+.label-box {
+  display: inline-block;
+  background: rgba(176, 120, 60, 0.16);
+  font-weight: bold;
+  padding: 6px 14px;
+  margin-bottom: 8px;
+}
+
+.tool-section,
+.tool-box {
+  align-items: center;
+}
+
+.tool-section {
+  display: block;
+  margin: 30px 0;
+  text-align: left;
+  gap: 15px;
+}
+
+.tool-box-container {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.tool-box {
+  background: rgba(176, 120, 60, 0.16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 20px;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.tool-box:hover {
+  transform: scale(1.05);
+}
+
+.tool-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 8px;
+  align-self: center;
+  flex-shrink: 0;
+}

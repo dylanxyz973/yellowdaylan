@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 90px 20px 20px;
+  padding: 90px 10px 10px;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -21,13 +21,11 @@
 
 .hero-content {
   width: 100%;
-  align-items: center;
   justify-content: flex-start; /* stick to left */
-  box-sizing: border-box;
   text-align: left;
   flex-wrap: wrap;      
   margin-inline: auto; 
-  padding: clamp(16px, 3vw, 48px);
+  padding: 80px 36px 36px 36px;
   box-sizing: border-box;
   gap: 36px; 
 }
@@ -48,7 +46,7 @@
 /* Title */
 .hero-title {
   letter-spacing: 2px;
-  font-size: 105px;
+  font-size: 108px;
   font-weight: bold;
 }
 
@@ -60,28 +58,52 @@
   letter-spacing: 1px; /* slight spacing for clarity */
 }
 
-/* Quote text */
-.quote-text {
-  position: relative;
-  z-index: 2;        /* overlaps quote */
-  font-size: 50px;
-  font-weight: bold;
-  line-height: 1.4;
+.arrow-link {
+  display: flex; 
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px; /* Adjust this number to move the arrow up or down */
+}
+
+.downward-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+
+   /* The sides stay transparent to create the triangle shape */
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 40px solid rgba(176, 120, 60, 0.16);
+
+  cursor: pointer;
+}
+
+.arrow-link:hover .downward-arrow {
+  border-top-color: rgba(176, 120, 60, 0.26);
+  cursor: pointer;
 }
 
 .about-row {
-  flex-direction: column;
-  align-items: flex-start;                       
-  text-align: left;
+  margin-top: 255px;
+  flex-direction: column;   
+  align-items: center;                   
+  text-align: center;
   padding-bottom: 30px;
 }
 
-.about-text {
-  font-size: 20px;
-  line-height: 1.9;
-  font-weight: 700;
-  margin: 0;
-  max-width: 70ch;
+.about-row p,
+.about-row img {
+  max-width: 90%;
+}
+
+.about-row p {
+  font-weight: 800;
+}
+
+.about-row img {
+  display: block;
+  border-radius: 20px;
 }
 
 .work-section {
@@ -104,7 +126,7 @@
 
 /* Card styles */
 .work-card {
-  background: rgba(150, 95, 50, 0.14);
+  background: rgba(176, 120, 60, 0.16);
   border-radius: 20px;
   padding: 15px 18px 18px;
   text-align: center;
@@ -120,11 +142,11 @@
 }
 
 .work-card:hover {
-  background: rgba(200, 95, 60, 0.24);
+  background: rgba(176, 120, 60, 0.26);
   box-shadow: 
     0 4px 14px rgba(166, 94, 46, 0.16),
     inset 0 1px 0 rgba(255,255,255,0.28);
-  color: #5A5F66;
+  color: #4F4A43;
 }
 
 /* Image inside card */
@@ -179,15 +201,16 @@
 .footer-icons svg {
   width: 45px;
   height: 45px;
-  fill: #5A5F66;
+  fill: #6B685F;
 }
 
 .footer-icons a:hover svg {
-  fill: #4F6D8A;
+  fill: #4F4A43;
 }
 
 .site-footer p {
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 

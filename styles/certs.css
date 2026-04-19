@@ -5,7 +5,6 @@
   font-weight: bold;
 }
 
-
 .cert-list {
   list-style: none;
   padding: 0;
@@ -23,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(200, 95, 60, 0.16);
+  background: rgba(176, 120, 60, 0.16);
   border-radius: 8px;
   padding: 12px 16px;
   margin-bottom: 12px;
@@ -37,7 +36,7 @@
 
 .view-btn {
   font-family: 'Manrope' !important;
-  color: #5A5F66 !important;
+  color: #6B685F !important;
   background: transparent;
   border: none;
   font-size: 20px;
@@ -46,7 +45,7 @@
 }
 
 .view-btn:hover {
-  color: #4F6D8A !important;
+  color: #4F4A43 !important;
 }
 
 /* --- Integrated & Fixed Modal Styling --- */
@@ -123,11 +122,11 @@
   z-index: 2000;
   font-size: 40px;
   font-weight: bold;
-  color: red;
+  color: #8C6A00;
   cursor: pointer;
 }
 
 .close:hover {
-  color: #00F5FF;
+  color: #FF4D00;
 }
 

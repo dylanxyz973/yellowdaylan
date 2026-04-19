@@ -1,5 +1,4 @@
 .about-section {
-  display: flex;
   padding: 90px 40px 40px 70px;
 }
 
@@ -18,10 +17,6 @@
   border-radius: 20px;
 }
 
-h3 {
-  font-size: 36px !important;
-}
-
 .container {  
   align-items: center; 
   gap: 40px;         
@@ -38,26 +33,19 @@ h3 {
   font-size: 26px;
 }
 
-.answer-box,
-.detail-box {
-  border-radius: 20px;
-  padding: 10px 15px 10px 15px;
-  margin: 17px 0px;
-  width: fit-content;
-  font-size: 20px;   
-  align-self: flex-start;    
+.notes-container {
+  display: flex;
+  justify-content: space-between; /* Puts space between the two boxes */
+  gap: 40px;                     
+  margin: 40px auto;              /* Centers the whole section on your page */
+  max-width: 1000px;              /* Keeps the notes from stretching too wide */
 }
 
-.intro-box {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 20px 0px 12px 0px;
-}
-
-.text-col {
-  flex-direction: column; 
-  gap: 10px;
-  max-width: 60%;
+.note-box {
+  flex: 1;                        /* Makes both boxes take up equal width */
+  background: rgba(176, 120, 60, 0.16);   
+  border-radius: 20px;            
+  padding: 25px;
 }
 
 .reveal-img {
@@ -86,43 +74,3 @@ h3 {
   height: 360px;         /* fixed height */
   object-fit: cover;     /* crops without stretching */
 }
-
-
-/* h3 only apply in question box */
-h3 {
-  margin: 0px;
-  font-size: 22px;
-  font-weight: 900;
-}
-
-/* === Link styles for about page === */
-.intro-box a {
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 12px;
-  display: inline-block;
-}
-
-/* === Speaking turtle boy === */
-.clickable-image {
-  position: relative;
-  width: fit-content;
-}
-
-.clickable-image img {
-  display: block;
-  max-width: none;
-  flex-shrink: 0;
-}
-
-.click-indicator {
-  position: absolute;
-  left: -180px;   
-  bottom: 20px;
-  font-size: 18px;
-  font-weight: bold;
-  pointer-events: none;
-}
-
